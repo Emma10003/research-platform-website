@@ -1,0 +1,27 @@
+/* html 기본 css 영향 없앰 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+/* nav */
+.nav {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 30px;
+}
+
+/* logo */
+.logo {
+    display: inline-block;
+}
+
+.white-logo { /* 스크롤 할 때 하얀색->파란색으로 변경되도록 함 */
+    display: none;
+}
+
+/* nav-menu */
