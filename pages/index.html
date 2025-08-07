@@ -18,8 +18,8 @@
         />
     </head>
     <body>
-        <!-- header: 로고, 네비게이션 바 -->
-        <div class="nav">
+        <!-- (공통) header: 로고, 네비게이션 바 -->
+        <div class="nav-container">
             <div class="logo">
                 <a href="index.html">
                     <img src="../img/logo/logo_white.png" class="white-logo" />
@@ -32,26 +32,36 @@
                         <li class="main-menu">
                             리서치 서비스
                             <ul class="sub-menu">
-                                <li class="menu-item">마케팅 리서치</li>
+                                <li class="menu-item">
+                                    <a href="#">마케팅 리서치</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-menu">
                             데이터 서비스
                             <ul class="sub-menu">
-                                <li class="menu-item">구매빅데이터</li>
+                                <li class="menu-item">
+                                    <a href="#">구매빅데이터</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-menu">
                             회사소개
                             <ul class="sub-menu">
-                                <li class="menu-item">공지사항</li>
+                                <li class="menu-item">
+                                    <a href="#">공지사항</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-menu">
                             서비스 문의
                             <ul class="sub-menu">
-                                <li class="menu-item">문의하기</li>
-                                <li class="menu-item">자주 묻는 질문</li>
+                                <li class="menu-item">
+                                    <a href="#">문의하기</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">자주 묻는 질문</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -59,6 +69,8 @@
             </div>
         </div>
 
+        <!-- Section 안의 내용은 한 섹션 당 height를 높게 설정해놓고,
+         스크롤 시 html 요소 이벤트 효과로 연출해야 할 듯-->
         <!-- Section 1 -->
         <div class="deepData-container">
             <div class="text-group">
@@ -144,28 +156,171 @@
             </div>
 
             <div class="image-group">
-                <img src="../img/index/index_main_intro_visual.jpg"
+                <img src="../img/index/index_main_intro_visual.jpg" />
             </div>
         </div>
 
         <!-- Section 2 -->
-        <div class="technology-container"></div>
+        <div class="technology-container">
+            <div class="inner text-effect">
+                <h3 class="title">
+                    <div class="title-text">
+                        <div class="main-title">
+                            엠브레인은 데이터 테크놀로지로 앞서갑니다
+                        </div>
+                    </div>
+                </h3>
+                <p>
+                    <span class="sub-title">
+                        우리는 리서치에 머무르지 않고 더 큰 가치를 제공하기 위해
+                        리서치의 기본인 데이터부터 다시 혁신합니다.
+                    </span>
+                </p>
+            </div>
+            <div class="content-grid">
+                <div class="grid-item">
+                    <div class="content-image">
+                        <img src="../img/index/index_section2_1_research.jpg" />
+                        <div class="content-title">Research</div>
+                        <div class="content-p contentRow1">데이터부터 다른</div>
+                        <div class="content-p contentRow2">
+                            리서치 서비스를 제공합니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="content-image">
+                        <img
+                            src="../img/index/index_section2_2_technology.jpg"
+                        />
+                        <div class="content-title">Technology</div>
+                        <div class="content-p contentRow1">
+                            리서치 그리고 리서치의 기본이 되는 데이터를
+                        </div>
+                        <div class="content-p contentRow2">
+                            기술로 연결합니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="content-image">
+                        <img src="../img/index/index_section2_3_data.jpg" />
+                        <div class="content-title">Data</div>
+                        <div class="content-p contentRow1">
+                            우리만의 깊이 있는 데이터로
+                        </div>
+                        <div class="content-p contentRow2">
+                            새로운 시각을 제공합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Section 3 -->
         <div class="beyondBig-container">
-            <div class="slide" id="start">
-                <!--시작이 다른-->
+            <div class="head-text">Beyond big, Deep data</div>
+
+            <div class="slide-container">
+                <div class="slide" id="start">
+                    <!--시작이 다른-->
+                    <div class="main-title">시작이 다른</div>
+                    <div class="sub-title row1">
+                        우리의 데이터는 엄격하게 관리된 국내 최대 패널에서
+                        시작되어
+                    </div>
+                    <div class="sub-title row2">
+                        데이터 질과 정확도부터 차이를 나타냅니다.
+                    </div>
+                </div>
             </div>
-            <div class="slide" id="density">
-                <!--밀도가 다른-->
+            <div class="slide-container">
+                <div class="slide" id="density">
+                    <!--밀도가 다른-->
+                    <div class="main-title">밀도가 다른</div>
+                    <div class="sub-title row1">
+                        단순히 많은 데이터를 넘어 소비자 생각과 행동 속 숨겨진
+                        인사이트를 담은
+                    </div>
+                    <div class="sub-title row2">
+                        밀도 있는 deep data를 제공합니다.
+                    </div>
+                </div>
             </div>
-            <div class="slide" id="vision">
-                <!--시각이 다른-->
+            <div class="slide-container">
+                <div class="slide" id="vision">
+                    <!--시각이 다른-->
+                    <div class="main-title">시각이 다른</div>
+                    <div class="sub-title row1">
+                        deep data는 단순 결과가 아닌 세상을 바라보는 새로운
+                        시각을 제공해
+                    </div>
+                    <div class="sub-title row2">
+                        지금까지 찾지 못했던 숨은 기회를 발견합니다.
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Section 4 -->
-        <div class="quality-container"></div>
+        <!-- Section 2와 같은 스크롤 효과 -->
+        <div class="quality-container">
+            <div class="inner text-effect">
+                <h3 class="title">
+                    <div class="title-text">
+                        <div class="main-title">
+                            데이터 퀄리티는 패널로부터 시작됩니다
+                        </div>
+                    </div>
+                </h3>
+                <p>
+                    <span class="sub-title">
+                        170만 이상의 국내 최대 패널과 엄격하게 관리되는 규정에
+                        따라 질적으로 다른 데이터를 수집합니다.
+                    </span>
+                </p>
+            </div>
+            <div class="content-wrap">
+                <div class="content-grid">
+                    <ul class="grid-item">
+                        <li class="content-image">
+                            <img src="../img/index/index_section4_1.png" />
+                            <div class="content-title">
+                                높은 정확도의 데이터
+                            </div>
+                            <div class="content-p contentRow1">
+                                엄격한 패널 관리 시스템으로 데이터 수집의 오류를
+                            </div>
+                            <div class="content-p contentRow2">
+                                줄이고 정확도를 향상시킵니다.
+                            </div>
+                        </li>
+                        <li class="content-image">
+                            <div class="content-title">1,787,362</div>
+                            <div class="content-p contentRow1">
+                                철저한 관리를 통해 국내 최대 규모의 소비자
+                                패널을
+                            </div>
+                            <div class="content-p contentRow2">
+                                유지하고 있습니다.
+                            </div>
+                            <img src="../img/index/index_section4_2.png" />
+                        </li>
+                        <li class="content-image">
+                            <img src="../img/index/index_section4_3.png" />
+                            <div class="content-title">넓고 다양한 패널</div>
+                            <div class="content-p contentRow1">
+                                다양하고 넓게 분포되어 있는 패널을 통해 여러
+                                각도에서
+                            </div>
+                            <div class="content-p contentRow2">
+                                깊이 있는 데이터를 분석할 수 있습니다.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Section 5 -->
         <div class="service-container">

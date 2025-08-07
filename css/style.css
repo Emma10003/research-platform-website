@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* html 기본 css 영향 없앰 */
 * {
     margin: 0;
@@ -6,30 +14,38 @@
 }
 
 /* body */
+body {
+    /* 화면을 확대/축소해도 콘텐츠가 있는 화면은 항상 가운데에 오도록 하고싶음 */
+    position: relative;
+    width: 100%;
+    min-width: 1186px;
+}
 
 /* nav */
-.nav {
+.nav-container {
     /* display: flex; */
     width: 100%;
-    float: left;
+    height: auto;
+    /* float: left; */
     margin: 30px;
-    position: fixed; /* nav div 상단 고정 */
+    /* position: fixed; nav div 상단 고정 */
+    /*background-color 밝은색/어두운 색 둘 다 설정*/
 }
 
-.logo {
+.nav-container .logo {
     float: left;
 }
 
-.white-logo {
+.nav-container .white-logo {
     /* 스크롤 할 때 하얀색->파란색으로 변경되도록 함 */
     display: none;
 }
 
-.wrap-nav-menu {
+.nav-container .wrap-nav-menu {
     display: flex;
     flex: auto;
 }
-.nav-menu {
+.nav-container .nav-menu {
     display: block;
     position: relative;
     /* justify-content: center; */
@@ -39,15 +55,20 @@
     clear: left;
 }
 
-ul {
+.nav-container ul {
     display: flex;
     position: absolute;
     /* width: 100%; */
 }
 
-.nav-item {
+.nav-container .main-menu {
     display: inline-block;
     justify-content: center;
     padding: 20px;
+    list-style-type: none;
+}
+
+/* 문의하기, 자주묻는질문 수평으로 정렬되는 부분 해결하기 */
+.nav-container .menu-item {
     list-style-type: none;
 }

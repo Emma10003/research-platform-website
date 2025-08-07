@@ -1,4 +1,120 @@
-/*
-.char-child 폰트 적용해주기
-'Pretendard', sans-serif
-*/
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Section 1 ----------------------------------------------------- */
+/* 앞에 .deepData-container 붙여주기 */
+.deepData-container {
+    height: 1000px;
+}
+
+.char-parent {
+    display: inline;
+}
+
+.char-child {
+    display: inline;
+}
+
+.deepData-container .char-child {
+    font-weight: 900;
+    /* font-size 설정하기 */
+}
+
+/* Section 2 ----------------------------------------------------- */
+/* 앞에 .technology-container 붙여주기 */
+.technology-container {
+    height: 1000px;
+}
+
+/* .technology-container .title-text */
+
+/* .main-title */
+.technology-container .main-title {
+    font-weight: 900;
+}
+
+/* .technology-container .sub-title */
+.technology-container .sub-title {
+    font-weight: 400;
+}
+
+/* .content-grid */
+.technology-container .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*그리드 열 개수 및 비율 설정*/
+    column-gap: 10px; /*그리드 열 간격*/
+    place-items: center; /*그리드 아이템 가운데 정렬*/
+    box-sizing: border-box;
+}
+
+/* .technology-container .grid-item */
+
+/* .technology-container .content-image img 크기 지정 */
+
+/* .technology-container .content-title */
+.technology-container .content-title {
+    font-weight: 800;
+}
+
+/* .technology-container .content-p*/
+
+/* .technology-container .contentRow1 */
+
+/* .technology-container .contentRow2 */
+
+/* Section 3 ----------------------------------------------------- */
+/* 앞에 .beyondBig-container 붙여주기 */
+.beyondBig-container {
+    height: 1000px;
+}
+
+.beyondBig-container .head-text {
+    font-weight: 800;
+}
+
+.beyondBig-container .main-title {
+    font-weight: 900;
+}
+
+.beyondBig-container .sub-title {
+    font-weight: 600;
+}
+
+/* Section 4 ----------------------------------------------------- */
+/* 앞에 .quality-container 붙여주기 */
+.quality-container {
+    height: 1000px;
+}
+
+/* .quality-container .content-title */
+.quality-container .content-title {
+    font-weight: 800;
+}
+
+/* .content-grid */
+.quality-container .content-wrap {
+    text-align: center;
+}
+
+.quality-container ul {
+    margin-left:228px;
+    margin-right:228px;
+}
+
+.quality-container li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+}
+/* .quality-container li img 크기 지정 */
+
+/* .quality-container .content-p*/
+
+/* .quality-container .contentRow1 */
+
+/* .quality-container .contentRow2 */
