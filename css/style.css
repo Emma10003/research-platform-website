@@ -14,11 +14,25 @@
 }
 
 /* body */
+html,
 body {
-    /* 화면을 확대/축소해도 콘텐츠가 있는 화면은 항상 가운데에 오도록 하고싶음 */
-    position: relative;
     width: 100%;
-    min-width: 1186px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2000px; /* 최대 너비 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+div {
+    padding: 0px;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* nav */

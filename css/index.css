@@ -9,7 +9,7 @@
 /* Section 1 ----------------------------------------------------- */
 /* 앞에 .deepData-container 붙여주기 */
 .deepData-container {
-    height: 1000px;
+    height: 1500px;
 }
 
 .char-parent {
@@ -28,10 +28,8 @@
 /* Section 2 ----------------------------------------------------- */
 /* 앞에 .technology-container 붙여주기 */
 .technology-container {
-    height: 1000px;
+    height: 1500px;
 }
-
-/* .technology-container .title-text */
 
 /* .main-title */
 .technology-container .main-title {
@@ -43,17 +41,6 @@
     font-weight: 400;
 }
 
-/* .content-grid */
-.technology-container .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*그리드 열 개수 및 비율 설정*/
-    column-gap: 10px; /*그리드 열 간격*/
-    place-items: center; /*그리드 아이템 가운데 정렬*/
-    box-sizing: border-box;
-}
-
-/* .technology-container .grid-item */
-
 /* .technology-container .content-image img 크기 지정 */
 
 /* .technology-container .content-title */
@@ -61,7 +48,25 @@
     font-weight: 800;
 }
 
+/* .technology-container .content-grid */
+.technology-container .content-wrap {
+    text-align: center;
+}
+
+.technology-container ul {
+    margin-left: 228px;
+    margin-right: 228px;
+}
+
+.technology-container li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 40px;
+}
 /* .technology-container .content-p*/
+.technology-container .content-p {
+    font-weight: 400;
+}
 
 /* .technology-container .contentRow1 */
 
@@ -70,12 +75,20 @@
 /* Section 3 ----------------------------------------------------- */
 /* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
-    height: 1000px;
+    height: 1500px;
 }
 
 .beyondBig-container .head-text {
     font-weight: 800;
 }
+
+/* .beyondBig-container .slide-text 세 슬라이드의 글자 공통 속성 */
+
+/* #text-start 애니메이션 효과 */
+
+/* #text-density 애니메이션 효과 */
+
+/* #text-vision 애니메이션 효과 */
 
 .beyondBig-container .main-title {
     font-weight: 900;
@@ -85,25 +98,49 @@
     font-weight: 600;
 }
 
+/* .beyondBig-container row1 첫번째 줄 박스 스타일(margin같은 거) */
+
+/* .beyondBig-container row2 두번째 줄 박스 스타일(margin같은 거) */
+
+/* .beyondBig-container .slide-image 세 슬라이드의 이미지 공통 속성 */
+
+/* .beyondBig-container #img-start 애니메이션 효과 */
+
+/* .beyondBig-container #img-density 애니메이션 효과 */
+
+/* .beyondBig-container #img-vision 애니메이션 효과 */
+
 /* Section 4 ----------------------------------------------------- */
 /* 앞에 .quality-container 붙여주기 */
 .quality-container {
-    height: 1000px;
+    height: 1500px;
 }
+
+/* .main-title */
+.quality-container .main-title {
+    font-weight: 900;
+}
+
+/* .technology-container .sub-title */
+.quality-container .sub-title {
+    font-weight: 400;
+}
+
+/* .quality-container .title-text */
 
 /* .quality-container .content-title */
 .quality-container .content-title {
     font-weight: 800;
 }
 
-/* .content-grid */
+/* .quality-container .content-grid */
 .quality-container .content-wrap {
     text-align: center;
 }
 
 .quality-container ul {
-    margin-left:228px;
-    margin-right:228px;
+    margin-left: 228px;
+    margin-right: 228px;
 }
 
 .quality-container li {
@@ -114,7 +151,167 @@
 /* .quality-container li img 크기 지정 */
 
 /* .quality-container .content-p*/
+.quality-container .content-p {
+    font-weight: 400;
+}
 
 /* .quality-container .contentRow1 */
 
 /* .quality-container .contentRow2 */
+
+/* Section 5 ----------------------------------------------------- */
+.service-container {
+    height: 1500px;
+}
+
+/* .service-container .back-img */
+
+/* .service-container .title 박스 위치 등 설정 */
+
+/* .service-container .main-title-box 박스 속성(margin, 위치 등) 설정  */
+
+/* .service-container .main-title 폰트 속성 */
+
+/* .service-container .sub-title-box 박스 속성(margin, 위치 등) 설정 */
+
+/* .service-container .sub-title 폰트 속성 */
+
+/* .service-container row1 박스 속성 */
+
+/* .service-container row2 박스 속성 */
+
+/* .service-container a 사이즈 link-box 와 똑같이 만들기 */
+
+/* .service-container .link-box 박스 속성  */
+.service-container .link-box {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+/* .service-container .img-area (img 까지 하거나..) */
+
+/* .service-container text */
+
+/* .service-container .box-title */
+
+/* .service-container .box-paragraph */
+
+/* .service-container .arrow 사진 크기 조정 */
+
+/* .service-container .research-marketing 박스 위치 */
+
+/* .service-container .data-purchase 박스 위치 */
+
+/* Section 6 ----------------------------------------------------- */
+.relations-container {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+    z-index: 15;
+}
+
+.relations-container .relations-item {
+    width: 50%;
+    height: 406px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 80px 80px 0 80px;
+}
+
+.relations-container .relations-item:nth-child(1) {
+    background: url("../img/index/index_section6_IR_image.png") center center
+        no-repeat;
+    background-size: cover;
+    font-size: 24px;
+    line-height: 1.33;
+    font-weight: 700;
+    color: #fff;
+}
+.relations-container .relations-item:nth-child(2) {
+    background: url("../img/index/index_section6_TrendMonitor_image.png") center
+        center no-repeat;
+    background-size: cover;
+    font-size: 24px;
+    line-height: 1.33;
+    font-weight: 700;
+    color: #fff;
+}
+
+.relations-container .item-top {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 1.31;
+    font-weight: 700;
+    color: #fff;
+}
+
+.relations-container .item-ui {
+    margin-top: 58px;
+}
+
+.relations-container .item-ui .linkBtn {
+    width: 200px;
+    text-align: left;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 18px;
+    color: #fff;
+    border-color: #06c;
+    background-color: #06c;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 700;
+    /* border: 1px solid #111; */
+    border-radius: 2px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    transition: background 0.2s ease, border 0.2s ease;
+}
+
+.relations-container .item-ui .icon {
+    display: inline-flex;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.relations-container .item-ui .icon-arrow {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/index/index_section6_arrow_white.png");
+}
+
+/* footer */
+#dFoot {
+    position: relative;
+    background-color: #4c647f;
+    z-index: 155;
+    width: 100%;
+}
+
+.footer-top {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 193px;
+    height: 40px;
+    display: block;
+    font-size: 0;
+    background: url("../img/logo/logo_white.png") center center no-repeat;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 113px;
+    position: relative;
+    max-width: 1272px;
+    margin: 0 auto;
+}
