@@ -6,73 +6,66 @@
     font-style: normal;
 }
 
-/* Section 1 ----------------------------------------------------- */
+#dBody {
+    padding-top: 110px; /*헤더 영역 주기*/
+    position: relative;
+}
+
+/* ==================================================
+Section 1
+================================================== */
 /* 앞에 .deepData-container 붙여주기 */
 .deepData-container {
-    height: 1500px;
+    min-height: 1500px;
 }
 
-.char-parent {
-    display: inline;
-}
-
-.char-child {
-    display: inline;
-}
-
-.deepData-container .char-child {
-    font-weight: 900;
-    /* font-size 설정하기 */
-}
-
-/* Section 2 ----------------------------------------------------- */
-/* 앞에 .technology-container 붙여주기 */
+/* ==================================================
+Section 2
+================================================== */
+/* headline */
 .technology-container {
-    height: 1500px;
+    min-height: 1500px;
 }
 
-/* .main-title */
-.technology-container .main-title {
-    font-weight: 900;
+.technology-container .headline {
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-/* .technology-container .sub-title */
-.technology-container .sub-title {
-    font-weight: 400;
+.technology-container .effect-data {
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
-/* .technology-container .content-image img 크기 지정 */
-
-/* .technology-container .content-title */
-.technology-container .content-title {
-    font-weight: 800;
+/* content */
+.technology-container .content {
+    display: flex;
+    justify-content: center;
 }
 
-/* .technology-container .content-grid */
-.technology-container .content-wrap {
+.technology-container .inner-grid {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 70px;
+}
+
+.technology-container .inner-item {
+    list-style-type: none;
+    margin: 20px;
     text-align: center;
 }
 
-.technology-container ul {
-    margin-left: 228px;
-    margin-right: 228px;
+/* .technology-container .inner-title */
+
+/* .technology-container .inner-content */
+.technology-container .inner-content {
+    margin-top: 10px;
 }
 
-.technology-container li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 40px;
-}
-/* .technology-container .content-p*/
-.technology-container .content-p {
-    font-weight: 400;
-}
-
-/* .technology-container .contentRow1 */
-
-/* .technology-container .contentRow2 */
-
-/* Section 3 ----------------------------------------------------- */
+/* ==================================================
+Section 3
+================================================== */
 /* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
     height: 1500px;
@@ -110,7 +103,9 @@
 
 /* .beyondBig-container #img-vision 애니메이션 효과 */
 
-/* Section 4 ----------------------------------------------------- */
+/* ==================================================
+Section 4
+================================================== */
 /* 앞에 .quality-container 붙여주기 */
 .quality-container {
     height: 1500px;
@@ -159,7 +154,9 @@
 
 /* .quality-container .contentRow2 */
 
-/* Section 5 ----------------------------------------------------- */
+/* ==================================================
+Section 5
+================================================== */
 .service-container {
     height: 1500px;
 }
@@ -306,7 +303,7 @@
     background: url("../img/logo/logo_white.png") center center no-repeat;
 }
 
-.inner {
+.footer .inner {
     display: flex;
     align-items: center;
     justify-content: flex-end;

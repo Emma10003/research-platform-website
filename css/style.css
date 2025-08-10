@@ -1,3 +1,6 @@
+/* ========================================================
+폰트 적용
+======================================================== */
 @font-face {
     font-family: "Pretendard-Regular";
     src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -6,21 +9,36 @@
     font-style: normal;
 }
 
-/* html 기본 css 영향 없앰 */
+/* ========================================================
+초기화
+======================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body */
-html,
-body {
-    width: 100%;
-    margin: 0 auto; /* 가운데 정렬 */
+html {
+    overflow-y: scroll; /*내용이 부모요소의 면적보다 길 때*/
 }
 
-.wrapper {
+html,
+body {
+    font-family: "Pretendard", sans-serif;
+    color: #111;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+    word-break: keep-all; /*단어 띄어쓰기 및 줄바꿈 속성*/
+}
+
+body {
+    position: relative; /*미리 body를 relative로 만들어두*/
+    width: 100%;
+}
+
+.wrap {
     width: 100%;
     max-width: 2000px; /* 최대 너비 지정 */
     margin: 0 auto; /* 가운데 정렬 */
@@ -31,58 +49,90 @@ div {
     vertical-align: top;
 }
 
+/*모든 태그에 리스트 아이콘 없애기*/
+ul,
+ol,
+dl,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    font-weight: 400;
+}
+
 img {
     max-width: 100%;
 }
 
-/* nav */
-.nav-container {
-    /* display: flex; */
+/* ========================================================
+dHead
+======================================================== */
+.header-inner {
+    position: fixed;
     width: 100%;
     height: auto;
-    /* float: left; */
-    margin: 30px;
-    /* position: fixed; nav div 상단 고정 */
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 1;
+
     /*background-color 밝은색/어두운 색 둘 다 설정*/
 }
 
-.nav-container .logo {
-    float: left;
+.header-inner-light {
+    background-color: white;
 }
 
-.nav-container .white-logo {
+.header-inner-dark {
+    background-color: #111;
+    display: none;
+}
+
+.header-inner .logo {
+    position: absolute;
+    top: 35px;
+}
+
+.header-inner .white-logo {
     /* 스크롤 할 때 하얀색->파란색으로 변경되도록 함 */
     display: none;
 }
 
-.nav-container .wrap-nav-menu {
+.header-inner .gnb-wrap {
     display: flex;
+    position: relative;
     flex: auto;
 }
-.nav-container .nav-menu {
-    display: block;
-    position: relative;
-    /* justify-content: center; */
+.header-inner .gnb-list {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     clear: left;
 }
 
-.nav-container ul {
-    display: flex;
-    position: absolute;
-    /* width: 100%; */
-}
-
-.nav-container .main-menu {
+.header-inner .gnb-list-cell {
     display: inline-block;
     justify-content: center;
+    text-align: center;
     padding: 20px;
     list-style-type: none;
+    font-size: 20px;
 }
 
-/* 문의하기, 자주묻는질문 수평으로 정렬되는 부분 해결하기 */
-.nav-container .menu-item {
-    list-style-type: none;
+.header-inner .snb-list {
+    /* .gnb-wrap 또는 .gnb-list 영역에 마우스 호버했을 때 나타남 */
+    display: none;
+}
+
+.header-inner .snb-list-cell {
+    text-align: center;
+    font-size: 17px;
 }

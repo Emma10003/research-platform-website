@@ -1,0 +1,45 @@
+/*
+Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+*/
+
+.board-view-body blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 2px 8px 2px 20px;
+    border-width: 0;
+    border-left: 5px solid #ccc;
+}
+
+.board-view-body hr {
+    display: block;
+    border: 0px;
+    border-top: 1px solid #ccc;
+}
+
+.board-view-body ol,
+.board-view-body dl {
+    padding: 0 40px;
+    list-style-type: auto;
+}
+
+.board-view-body ul {
+    padding: 0 40px;
+    list-style-type: disc;
+}
+
+.board-view-body em {
+    font-style: italic;
+}
+
+.board-view-body img {
+    max-width: 100%;
+    height: auto !important;
+    object-fit: contain;
+}

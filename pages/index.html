@@ -9,6 +9,8 @@
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"
         ></script>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/index.css" />
         <link
@@ -18,53 +20,54 @@
         />
     </head>
     <body>
-        <div class="wrapper">
-            <!-- (공통) header: 로고, 네비게이션 바 -->
-             <header 
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img
-                            src="../img/logo/logo_white.png"
-                            class="white-logo"
-                        />
-                        <img src="../img/logo/logo.png" />
-                    </a>
-                </div>
-                <div class="wrap-nav-menu">
-                    <div class="nav-menu">
-                        <ul>
-                            <li class="main-menu">
+        <div class="wrap">
+            <!-- dHead: 로고, 네비게이션 바 -->
+            <header id="dHead" class="">
+                <!-- header-inner -->
+                <div class="header-inner header-inner-light">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img
+                                src="../img/logo/logo_white.png"
+                                class="white-logo"
+                            />
+                            <img src="../img/logo/logo.png" />
+                        </a>
+                    </div>
+                    <!-- gnb -->
+                    <div class="gnb-wrap">
+                        <ul class="gnb-list">
+                            <li class="gnb-list-cell font600">
                                 리서치 서비스
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
+                                <ul class="snb-list font400">
+                                    <li class="snb-list-cell">
                                         <a href="#">마케팅 리서치</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu">
+                            <li class="gnb-list-cell font600">
                                 데이터 서비스
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
+                                <ul class="snb-list font400">
+                                    <li class="snb-list-cell">
                                         <a href="#">구매빅데이터</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu">
+                            <li class="gnb-list-cell font600">
                                 회사소개
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
+                                <ul class="snb-list font400">
+                                    <li class="snb-list-cell">
                                         <a href="#">공지사항</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu">
+                            <li class="gnb-list-cell font600">
                                 서비스 문의
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
+                                <ul class="snb-list font400">
+                                    <li class="snb-list-cell">
                                         <a href="#">문의하기</a>
                                     </li>
-                                    <li class="menu-item">
+                                    <li class="snb-list-cell">
                                         <a href="#">자주 묻는 질문</a>
                                     </li>
                                 </ul>
@@ -72,404 +75,357 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+                <!-- // header-inner -->
+            </header>
+            <!-- // dHead -->
 
             <!-- Section 안의 내용은 한 섹션 당 height를 높게 설정해놓고,
          스크롤 시 html 요소 이벤트 효과로 연출해야 할 듯-->
-            <!-- Section 1 -->
-            <div class="deepData-container">
-                <div class="text-group">
-                    <div class="text-row">
-                        <div class="char-parent">
-                            <div class="char-child">D</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">e</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">e</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">p</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">&nbsp;</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">d</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">a</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">t</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">a</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">,</div>
-                        </div>
-                    </div>
-                    <div class="text-row">
-                        <div class="char-parent">
-                            <div class="char-child">b</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">e</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">t</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">t</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">e</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">r</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">&nbsp;</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">i</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">n</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">s</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">i</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">g</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">h</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">t</div>
-                        </div>
-                        <div class="char-parent">
-                            <div class="char-child">s</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="image-group">
-                    <img src="../img/index/index_main_intro_visual.jpg" />
-                </div>
-            </div>
-
-            <!-- Section 2 -->
-            <div class="technology-container">
-                <div class="inner text-effect">
-                    <h3 class="title">
-                        <div class="title-text">
-                            <div class="main-title">
-                                엠브레인은 데이터 테크놀로지로 앞서갑니다
-                            </div>
-                        </div>
-                    </h3>
-                    <p>
-                        <span class="sub-title">
-                            우리는 리서치에 머무르지 않고 더 큰 가치를 제공하기
-                            위해 리서치의 기본인 데이터부터 다시 혁신합니다.
-                        </span>
-                    </p>
-                </div>
-                <div class="content-wrap">
-                    <div class="content-grid">
-                        <ul class="grid-item">
-                            <li class="content-image">
-                                <img
-                                    src="../img/index/index_section2_1_research.jpg"
-                                />
-                                <div class="content-title">Research</div>
-                                <div class="content-p contentRow1">
-                                    데이터부터 다른
-                                </div>
-                                <div class="content-p contentRow2">
-                                    리서치 서비스를 제공합니다.
-                                </div>
-                            </li>
-                            <li class="content-image">
-                                <img
-                                    src="../img/index/index_section2_2_technology.jpg"
-                                />
-                                <div class="content-title">Technology</div>
-                                <div class="content-p contentRow1">
-                                    리서치 그리고 리서치의 기본이 되는 데이터를
-                                </div>
-                                <div class="content-p contentRow2">
-                                    기술로 연결합니다.
-                                </div>
-                            </li>
-                            <li class="content-image">
-                                <img
-                                    src="../img/index/index_section2_3_data.jpg"
-                                />
-                                <div class="content-title">Data</div>
-                                <div class="content-p contentRow1">
-                                    우리만의 깊이 있는 데이터로
-                                </div>
-                                <div class="content-p contentRow2">
-                                    새로운 시각을 제공합니다.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3 -->
-            <div class="beyondBig-container">
-                <div class="head-text">Beyond big, Deep data</div>
-
-                <!-- 1. 시작이 다른 -->
-                <div class="slide-container">
-                    <div class="slide-text" id="text-start">
-                        <div class="main-title">시작이 다른</div>
-                        <div class="sub-title row1">
-                            우리의 데이터는 엄격하게 관리된 국내 최대 패널에서
-                            시작되어
-                        </div>
-                        <div class="sub-title row2">
-                            데이터 질과 정확도부터 차이를 나타냅니다.
-                        </div>
-                    </div>
-                    <div class="slide-image" id="img-start">
-                        <img src="../img/index/index_section3_visual_1.jpg"
-                    </div>
-                </div>
-                <!-- 2. 밀도가 다른 -->
-                <div class="slide-container">
-                    <div class="slide" id="text-density">
-                        <div class="main-title">밀도가 다른</div>
-                        <div class="sub-title row1">
-                            단순히 많은 데이터를 넘어 소비자 생각과 행동 속
-                            숨겨진 인사이트를 담은
-                        </div>
-                        <div class="sub-title row2">
-                            밀도 있는 deep data를 제공합니다.
-                        </div>
-                    </div>
-                    <div class="slide-image" id="img-density">
-                        <img src="../img/index/index_section3_visual_2.jpg"
-                    </div>
-                </div>
-                <!-- 3. 시각이 다른 -->
-                <div class="slide-container">
-                    <div class="slide" id="text-vision">
-                        <div class="main-title">시각이 다른</div>
-                        <div class="sub-title row1">
-                            deep data는 단순 결과가 아닌 세상을 바라보는 새로운
-                            시각을 제공해
-                        </div>
-                        <div class="sub-title row2">
-                            지금까지 찾지 못했던 숨은 기회를 발견합니다.
-                        </div>
-                    </div>
-                    <div class="slide-image" id="img-vision">
-                        <img src="../img/index/index_section3_visual_3.jpg"
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 4 -->
-            <!-- Section 2와 같은 스크롤 효과 -->
-            <div class="quality-container">
-                <div class="inner text-effect">
-                    <h3 class="title">
-                        <div class="title-text">
-                            <div class="main-title">
-                                데이터 퀄리티는 패널로부터 시작됩니다
-                            </div>
-                        </div>
-                    </h3>
-                    <p>
-                        <span class="sub-title">
-                            170만 이상의 국내 최대 패널과 엄격하게 관리되는
-                            규정에 따라 질적으로 다른 데이터를 수집합니다.
-                        </span>
-                    </p>
-                </div>
-                <div class="content-wrap">
-                    <div class="content-grid">
-                        <ul class="grid-item">
-                            <li class="content-image">
-                                <img src="../img/index/index_section4_1.png" />
-                                <div class="content-title">
-                                    높은 정확도의 데이터
-                                </div>
-                                <div class="content-p contentRow1">
-                                    엄격한 패널 관리 시스템으로 데이터 수집의
-                                    오류를
-                                </div>
-                                <div class="content-p contentRow2">
-                                    줄이고 정확도를 향상시킵니다.
-                                </div>
-                            </li>
-                            <li class="content-image">
-                                <div class="content-title">1,787,362</div>
-                                <div class="content-p contentRow1">
-                                    철저한 관리를 통해 국내 최대 규모의 소비자
-                                    패널을
-                                </div>
-                                <div class="content-p contentRow2">
-                                    유지하고 있습니다.
-                                </div>
-                                <img src="../img/index/index_section4_2.png" />
-                            </li>
-                            <li class="content-image">
-                                <img src="../img/index/index_section4_3.png" />
-                                <div class="content-title">
-                                    넓고 다양한 패널
-                                </div>
-                                <div class="content-p contentRow1">
-                                    다양하고 넓게 분포되어 있는 패널을 통해 여러
-                                    각도에서
-                                </div>
-                                <div class="content-p contentRow2">
-                                    깊이 있는 데이터를 분석할 수 있습니다.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 5 -->
-            <div class="service-container">
-                <div class="back-img">
-                    <img src="../img/index/index_section5.png" />
-                </div>
-
-                <div class="title">
-                    <div class="main-title-box">
-                        <div class="main-title">엠브레인</div>
-                        <div class="main-title">서비스</div>
-                    </div>
-                    <div class="sub-title-box">
-                        <div class="sub-title row1">
-                            고객의 니즈에 맞춘 전방위적인
-                        </div>
-                        <div class="sub-title row2">
-                            리서치와 데이터 서비스를 제공합니다.
-                        </div>
-                    </div>
-                </div>
-
-                <!--마케팅 리서치-->
-                <a href="../html/research_marketing.html">
-                    <div class="link-box" id="research-marketing">
-                        <div class="img-area">
-                            <img
-                                src="../img/index/index_section5_icon1_marketing.png"
-                            />
-                        </div>
+            <!-- dBody -->
+            <section id="dBody">
+                <!-- Section 1 -->
+                <div class="deepData-container">
+                    <div class="text-group">
                         <div class="text">
-                            <div class="box-title">마케팅 리서치</div>
-                            <div class="box-paragraph">
-                                올바른 비즈니스 의사결정을 위한 맞춤형
-                                리서치를<br />
-                                제공합니다.
-                            </div>
-                        </div>
-                        <div class="arrow">
-                            <img
-                                src="../img/index/index_section5_arrow_gray.png"
-                            />
+                            <div class="text-row">Deep data,</div>
+                            <div class="text-row">better insights</div>
                         </div>
                     </div>
-                </a>
 
-                <!-- 구매빅데이터 -->
-                <a href="../html/data_purchase.html">
-                    <div class="link-box" id="data-purchase">
-                        <div class="img-area">
-                            <img
-                                src="../img/index/index_section5_icon1_marketing.png"
-                            />
-                        </div>
-                        <div class="text">
-                            <div class="box-title">구매빅데이터</div>
-                            <div class="box-paragraph">
-                                소비 행동 및 트렌드를 분석하고 예측하기 위한<br />
-                                데이터를 제공하며, 제품의 성장과 기회를
-                                포착하기<br />
-                                위한 전략적 의사결정에 활용할 수 있습니다.
-                            </div>
-                        </div>
-                        <div class="arrow">
-                            <img
-                                src="../img/index/index_section5_arrow_gray.png"
-                            />
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Section 6 -->
-            <div class="relations-container">
-                <div class="relations-item">
-                    <div class="item-top">Investor Relations</div>
-                    <div class="item-subject">
-                        코스닥 상장 기업 엠브레인의<br />
-                        공시 및 기업 주요 발표를 확인해 보세요
-                    </div>
-                    <div class="item-ui">
-                        <a
-                            href="https://embrain.irpage.co.kr/"
-                            target="_blank"
-                            class="linkBtn"
-                        >
-                            IR 사이트
-                            <span class="icon icon-arrow"></span>
-                        </a>
+                    <div class="image-group">
+                        <img src="../img/index/index_main_intro_visual.jpg" />
                     </div>
                 </div>
-                <div class="relations-item">
-                    <div class="item-top">Trend Monitor</div>
-                    <div class="item-subject">
-                        엠브레인이 제공하는 트렌드 관련 새로운<br />
-                        정보와 인사이트를 확인해 보세요
+
+                <!-- Section 2 -->
+                <div class="technology-container">
+                    <!-- headline -->
+                    <div class="headline">
+                        <div class="outer">
+                            <h3 class="inner effect-data">
+                                <span class="effect-headline fontHead font700">
+                                    엠브레인은 데이터 테크놀로지로 앞서갑니다
+                                </span>
+                            </h3>
+                            <p class="inner effect-data">
+                                <span class="effect-subheadline fontSubHead">
+                                    우리는 리서치에 머무르지 않고 더 큰 가치를
+                                    제공하기 위해 리서치의 기본인 데이터부터
+                                    다시 혁신합니다.
+                                </span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="item-ui">
-                        <a
-                            href="https://www.trendmonitor.co.kr/tmweb/main.do"
-                            target="_blank"
-                            class="linkBtn"
-                        >
-                            트렌드모니터
-                            <span class="icon icon-arrow"></span>
-                        </a>
+                    <!-- content -->
+                    <div class="content">
+                        <div class="inner">
+                            <ul class="inner-grid">
+                                <li class="inner-item">
+                                    <img
+                                        src="../img/index/index_section2_1_research.jpg"
+                                    />
+                                    <div class="inner-title fontBlue fontTitle">
+                                        Research
+                                    </div>
+                                    <div
+                                        class="inner-content fontGray fontContent"
+                                    >
+                                        데이터부터 다른<br />
+                                        리서치 서비스를 제공합니다.
+                                    </div>
+                                </li>
+                                <li class="inner-item">
+                                    <img
+                                        src="../img/index/index_section2_2_technology.jpg"
+                                    />
+                                    <div class="inner-title fontBlue fontTitle">
+                                        Technology
+                                    </div>
+                                    <div
+                                        class="inner-content fontGray fontContent"
+                                    >
+                                        리서치 그리고 리서치의 기본이 되는
+                                        데이터를 <br />
+                                        기술로 연결합니다.
+                                    </div>
+                                </li>
+                                <li class="inner-item">
+                                    <img
+                                        src="../img/index/index_section2_3_data.jpg"
+                                    />
+                                    <div class="inner-title fontBlue fontTitle">
+                                        Data
+                                    </div>
+                                    <div
+                                        class="inner-content fontGray fontContent"
+                                    >
+                                        우리만의 깊이 있는 데이터로<br />
+                                        새로운 시각을 제공합니다.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Section 3 -->
+                <div class="beyondBig-container">
+                    <div class="inner effect-data">Beyond big, Deep data</div>
+                    <div class="slider-nav">
+                        <button type="button" class="btn-slider-nav"></button>
+                        <button type="button" class="btn-slider-nav"></button>
+                        <button type="button" class="btn-slider-nav"></button>
+                    </div>
+                    <!-- 8/11 여기부터 태그 수정 시작하기 -->
+                    <!-- 1. 시작이 다른 -->
+                    <div class="slide-container">
+                        <div class="slide-text" id="text-start">
+                            <div class="main-title">시작이 다른</div>
+                            <div class="sub-title row1">
+                                우리의 데이터는 엄격하게 관리된 국내 최대
+                                패널에서 시작되어
+                            </div>
+                            <div class="sub-title row2">
+                                데이터 질과 정확도부터 차이를 나타냅니다.
+                            </div>
+                        </div>
+                        <div class="slide-image" id="img-start">
+                            <img src="../img/index/index_section3_visual_1.jpg"
+                        </div>
+                    </div>
+                    <!-- 2. 밀도가 다른 -->
+                    <div class="slide-container">
+                        <div class="slide" id="text-density">
+                            <div class="main-title">밀도가 다른</div>
+                            <div class="sub-title row1">
+                                단순히 많은 데이터를 넘어 소비자 생각과 행동 속
+                                숨겨진 인사이트를 담은
+                            </div>
+                            <div class="sub-title row2">
+                                밀도 있는 deep data를 제공합니다.
+                            </div>
+                        </div>
+                        <div class="slide-image" id="img-density">
+                            <img src="../img/index/index_section3_visual_2.jpg"
+                        </div>
+                    </div>
+                    <!-- 3. 시각이 다른 -->
+                    <div class="slide-container">
+                        <div class="slide" id="text-vision">
+                            <div class="main-title">시각이 다른</div>
+                            <div class="sub-title row1">
+                                deep data는 단순 결과가 아닌 세상을 바라보는
+                                새로운 시각을 제공해
+                            </div>
+                            <div class="sub-title row2">
+                                지금까지 찾지 못했던 숨은 기회를 발견합니다.
+                            </div>
+                        </div>
+                        <div class="slide-image" id="img-vision">
+                            <img src="../img/index/index_section3_visual_3.jpg"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <!-- Section 2와 같은 스크롤 효과 -->
+                <div class="quality-container">
+                    <div class="inner text-effect">
+                        <h3 class="title">
+                            <div class="title-text">
+                                <div class="main-title">
+                                    데이터 퀄리티는 패널로부터 시작됩니다
+                                </div>
+                            </div>
+                        </h3>
+                        <p>
+                            <span class="sub-title">
+                                170만 이상의 국내 최대 패널과 엄격하게 관리되는
+                                규정에 따라 질적으로 다른 데이터를 수집합니다.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="content-wrap">
+                        <div class="content-grid">
+                            <ul class="grid-item">
+                                <li class="content-image">
+                                    <img
+                                        src="../img/index/index_section4_1.png"
+                                    />
+                                    <div class="content-title">
+                                        높은 정확도의 데이터
+                                    </div>
+                                    <div class="content-p contentRow1">
+                                        엄격한 패널 관리 시스템으로 데이터
+                                        수집의 오류를
+                                    </div>
+                                    <div class="content-p contentRow2">
+                                        줄이고 정확도를 향상시킵니다.
+                                    </div>
+                                </li>
+                                <li class="content-image">
+                                    <div class="content-title">1,787,362</div>
+                                    <div class="content-p contentRow1">
+                                        철저한 관리를 통해 국내 최대 규모의
+                                        소비자 패널을
+                                    </div>
+                                    <div class="content-p contentRow2">
+                                        유지하고 있습니다.
+                                    </div>
+                                    <img
+                                        src="../img/index/index_section4_2.png"
+                                    />
+                                </li>
+                                <li class="content-image">
+                                    <img
+                                        src="../img/index/index_section4_3.png"
+                                    />
+                                    <div class="content-title">
+                                        넓고 다양한 패널
+                                    </div>
+                                    <div class="content-p contentRow1">
+                                        다양하고 넓게 분포되어 있는 패널을 통해
+                                        여러 각도에서
+                                    </div>
+                                    <div class="content-p contentRow2">
+                                        깊이 있는 데이터를 분석할 수 있습니다.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="service-container">
+                    <div class="back-img">
+                        <img src="../img/index/index_section5.png" />
+                    </div>
+
+                    <div class="title">
+                        <div class="main-title-box">
+                            <div class="main-title">엠브레인</div>
+                            <div class="main-title">서비스</div>
+                        </div>
+                        <div class="sub-title-box">
+                            <div class="sub-title row1">
+                                고객의 니즈에 맞춘 전방위적인
+                            </div>
+                            <div class="sub-title row2">
+                                리서치와 데이터 서비스를 제공합니다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--마케팅 리서치-->
+                    <a href="../html/research_marketing.html">
+                        <div class="link-box" id="research-marketing">
+                            <div class="img-area">
+                                <img
+                                    src="../img/index/index_section5_icon1_marketing.png"
+                                />
+                            </div>
+                            <div class="text">
+                                <div class="box-title">마케팅 리서치</div>
+                                <div class="box-paragraph">
+                                    올바른 비즈니스 의사결정을 위한 맞춤형
+                                    리서치를<br />
+                                    제공합니다.
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img
+                                    src="../img/index/index_section5_arrow_gray.png"
+                                />
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- 구매빅데이터 -->
+                    <a href="../html/data_purchase.html">
+                        <div class="link-box" id="data-purchase">
+                            <div class="img-area">
+                                <img
+                                    src="../img/index/index_section5_icon1_marketing.png"
+                                />
+                            </div>
+                            <div class="text">
+                                <div class="box-title">구매빅데이터</div>
+                                <div class="box-paragraph">
+                                    소비 행동 및 트렌드를 분석하고 예측하기
+                                    위한<br />
+                                    데이터를 제공하며, 제품의 성장과 기회를
+                                    포착하기<br />
+                                    위한 전략적 의사결정에 활용할 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img
+                                    src="../img/index/index_section5_arrow_gray.png"
+                                />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="relations-container">
+                    <div class="relations-item">
+                        <div class="item-top">Investor Relations</div>
+                        <div class="item-subject">
+                            코스닥 상장 기업 엠브레인의<br />
+                            공시 및 기업 주요 발표를 확인해 보세요
+                        </div>
+                        <div class="item-ui">
+                            <a
+                                href="https://embrain.irpage.co.kr/"
+                                target="_blank"
+                                class="linkBtn"
+                            >
+                                IR 사이트
+                                <span class="icon icon-arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relations-item">
+                        <div class="item-top">Trend Monitor</div>
+                        <div class="item-subject">
+                            엠브레인이 제공하는 트렌드 관련 새로운<br />
+                            정보와 인사이트를 확인해 보세요
+                        </div>
+                        <div class="item-ui">
+                            <a
+                                href="https://www.trendmonitor.co.kr/tmweb/main.do"
+                                target="_blank"
+                                class="linkBtn"
+                            >
+                                트렌드모니터
+                                <span class="icon icon-arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // dBody -->
 
             <!-- footer -->
             <!-- <div class="footer-container">
             <img src="../img/logo/logo_white.png" />
         </div> -->
-        <footer id="dFoot">
-            <div class="footer-top">
-                <div class="inner">
-                    <h2>엠브레인</h2>
-                    <div class="footer-menu">
-                        <ul>
-                            <li>서비스 문의</li>
-                            <li>개인정보처리방침</li>
-                            <li>내부정보관리규정</li>
-                        </ul>
+            <footer id="dFoot">
+                <div class="footer-top">
+                    <div class="inner">
+                        <h2>엠브레인</h2>
+                        <div class="footer-menu">
+                            <ul>
+                                <li>서비스 문의</li>
+                                <li>개인정보처리방침</li>
+                                <li>내부정보관리규정</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         </div>
 
         <script src="../js/index.js"></script>
