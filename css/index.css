@@ -31,8 +31,29 @@ effect-data 공통 동작
 Section 1
 ================================================== */
 /* 앞에 .deepData-container 붙여주기 */
-.deepData-container {
+/* .deepData-container {
     min-height: 1500px;
+} */
+
+.deepData-container .text-group {
+    position:relative;
+    top: 330px;
+    left: 370px;
+}
+
+.deepData-container .row1 {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.deepData-container .row2 {
+    position: absolute;
+    left: 100px;
+}
+
+.deepData-container .text-row {
+    font-size: 80px;
 }
 
 /* ==================================================
