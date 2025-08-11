@@ -12,6 +12,22 @@
 }
 
 /* ==================================================
+effect-data 공통 동작
+================================================== */
+
+/* 그냥 effect-data 상태일 때는 안 보임 */
+.effect-data {
+    /* transform: translate(0%, 100px); */
+    /* opacity: 0; */
+}
+
+/* js로 .active 클래스 추가 시 동작 */
+.effect-data .active {
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
+/* ==================================================
 Section 1
 ================================================== */
 /* 앞에 .deepData-container 붙여주기 */
@@ -68,11 +84,72 @@ Section 3
 ================================================== */
 /* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
-    height: 1500px;
+    height: 100%;
+    position: relative;
 }
 
-.beyondBig-container .head-text {
-    font-weight: 800;
+/* Beyond big, Deep data 텍스트 */
+.beyondBig-container .inner-head {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 25px;
+    z-index: 5;
+}
+
+/* 이미지 슬라이드 바 */
+.beyondBig-container .slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    /* left: 50%; */
+    z-index: 5;
+}
+
+.beyondBig-container .btn-slider-nav {
+    display: block;
+    width: 4px;
+    height: 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.3;
+    background-color: #fff;
+}
+
+.beyondBig-container .btn-slider-nav.active {
+    opacity: 1;
+    background-color: #fff;
+}
+
+/* 이미지 위 텍스트 */
+.beyondBig-container .text-group {
+    position: absolute;
+    top: 50%;
+    left: 30px; /* .slider-nav 로 부터의 거리 */
+    width: 100%;
+}
+
+.beyondBig-container .text-cell {
+    position: absolute;
+    left: 100px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.beyondBig-container .text-cell.active {
+    /* js로 active 클래스 추가 */
+    opacity: 1;
+    z-index: 9;
+    /* transform: translate(); */
+}
+
+.beyondBig-container .main-title {
+    font-size: 60px;
+}
+
+.beyondBig-container .sub-title {
+    margin-top: 10px;
 }
 
 /* .beyondBig-container .slide-text 세 슬라이드의 글자 공통 속성 */
@@ -83,17 +160,20 @@ Section 3
 
 /* #text-vision 애니메이션 효과 */
 
-.beyondBig-container .main-title {
-    font-weight: 900;
+/* 이미지 */
+.beyondBig-container .image-cell {
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 0;
 }
 
-.beyondBig-container .sub-title {
-    font-weight: 600;
+.beyondBig-container .image-cell.active {
+    /* js로 active 클래스 추가 */
+    position: relative;
+    opacity: 1;
+    z-index: 4;
 }
-
-/* .beyondBig-container row1 첫번째 줄 박스 스타일(margin같은 거) */
-
-/* .beyondBig-container row2 두번째 줄 박스 스타일(margin같은 거) */
 
 /* .beyondBig-container .slide-image 세 슬라이드의 이미지 공통 속성 */
 
