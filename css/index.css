@@ -18,7 +18,7 @@ effect-data 공통 동작
 /* 그냥 effect-data 상태일 때는 안 보임 */
 /* .effect-data {
     transform: translate(0%, 100px); */
-    /* opacity: 0;
+/* opacity: 0;
 } */
 
 /* js로 .active 클래스 추가 시 동작 */
@@ -101,7 +101,7 @@ Section 3
 /* 이미지 슬라이드 바 */
 .beyondBig-container .slider-nav {
     position: absolute;
-    top: 30%;
+    top: 300px;
     left: 80px;
     /* left: 50%; */
     z-index: 5;
@@ -126,7 +126,7 @@ Section 3
 /* 이미지 위 텍스트 */
 .beyondBig-container .text-group {
     position: absolute;
-    top: 30%;
+    top: 300px;
     left: 30px; /* .slider-nav 로 부터의 거리 */
     width: 100%;
 }
@@ -164,9 +164,6 @@ Section 3
 /* 이미지 */
 .beyondBig-container .image-cell {
     position: absolute;
-    /* width: 100%;
-    height: 100vh; */
-    object-fit: cover;
     opacity: 0;
     z-index: 0;
 }
@@ -194,26 +191,6 @@ Section 4
     height: 1500px;
 }
 
-/* 
-.quality-container .point-items {
-    text-align: center;
-}
-
-.quality-container ul {
-    margin-left: 228px;
-    margin-right: 228px;
-}
-
-.quality-container li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 20px;
-} */
-
-.quality-container .inner-content {
-    margin-top: 10px;
-}
-
 .quality-container .headline {
     justify-content: center;
     margin-bottom: 40px;
@@ -234,18 +211,15 @@ Section 4
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 70px;
+    gap: 20px;
 }
 
 .quality-container .inner-item {
     list-style-type: none;
-    margin: 20px;
+    margin: 8px;
     text-align: center;
 }
 
-/* .technology-container .inner-title */
-
-/* .technology-container .inner-content */
 .quality-container .inner-content {
     margin-top: 10px;
 }
@@ -255,48 +229,69 @@ Section 5
 ================================================== */
 .service-container {
     height: 1500px;
+    position: relative;
 }
 
-/* .service-container .back-img */
-
-/* .service-container .title 박스 위치 등 설정 */
-
-/* .service-container .main-title-box 박스 속성(margin, 위치 등) 설정  */
-
-/* .service-container .main-title 폰트 속성 */
-
-/* .service-container .sub-title-box 박스 속성(margin, 위치 등) 설정 */
-
-/* .service-container .sub-title 폰트 속성 */
-
-/* .service-container row1 박스 속성 */
-
-/* .service-container row2 박스 속성 */
-
-/* .service-container a 사이즈 link-box 와 똑같이 만들기 */
-
-/* .service-container .link-box 박스 속성  */
-.service-container .link-box {
-    display: inline-block;
-    border: 1px solid red;
-    border-radius: 3px;
+.service-container .inner-title {
+    position: absolute;
+    top: 250px;
+    left: 24px;
+    font-size: 65px;
 }
 
-/* .service-container .img-area (img 까지 하거나..) */
+.service-container .inner-content {
+    position: absolute;
+    top: 460px;
+    left: 24px;
+}
 
-/* .service-container text */
+.service-container .grid-layout-inner {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    right: 60px;
+}
 
-/* .service-container .box-title */
+.service-container .grid-layout-cell {
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 4px;
+}
 
-/* .service-container .box-paragraph */
+.service-container .item-icon {
+    width: 50px;
+    padding: 0px;
+    margin-top: 20px;
+}
 
-/* .service-container .arrow 사진 크기 조정 */
+.service-container .item-subject {
+    font-size: 35px;
+    margin: 10px 0px;
+}
 
-/* .service-container .research-marketing 박스 위치 */
+.service-container .item-contents {
+    height: 80px;
+}
 
-/* .service-container .data-purchase 박스 위치 */
+.service-container .icon-arrow {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 25px;
+}
 
-/* Section 6 ----------------------------------------------------- */
+/* 아래 두 개는 js로 grid-layout-cell 마우스 호버 시 클래스 추가로 효과 주기 */
+.service-container .item-subject.hover {
+    color: #06c;
+}
+
+.service-container .icon-arrow.hover {
+    content: url("../img/index/index_section5_arrow_blue.png");
+}
+
+/* ==================================================
+Section 6
+================================================== */
 .relations-container {
     position: relative;
     max-width: 1920px;
@@ -380,7 +375,9 @@ Section 5
     background-image: url("../img/index/index_section6_arrow_white.png");
 }
 
-/* footer */
+/* ==================================================
+footer
+================================================== */
 #dFoot {
     position: relative;
     background-color: #4c647f;
@@ -397,6 +394,10 @@ Section 5
     display: block;
     font-size: 0;
     background: url("../img/logo/logo_white.png") center center no-repeat;
+}
+
+.footer-top .footer-menu {
+    /* position:absolute; */
 }
 
 .footer .inner {
