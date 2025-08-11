@@ -16,10 +16,10 @@ effect-data 공통 동작
 ================================================== */
 
 /* 그냥 effect-data 상태일 때는 안 보임 */
-.effect-data {
-    /* transform: translate(0%, 100px); */
-    /* opacity: 0; */
-}
+/* .effect-data {
+    transform: translate(0%, 100px); */
+    /* opacity: 0;
+} */
 
 /* js로 .active 클래스 추가 시 동작 */
 .effect-data .active {
@@ -84,7 +84,8 @@ Section 3
 ================================================== */
 /* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
-    height: 100%;
+    /* height: 100%; */
+    min-height: 1500px;
     position: relative;
 }
 
@@ -100,7 +101,7 @@ Section 3
 /* 이미지 슬라이드 바 */
 .beyondBig-container .slider-nav {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 80px;
     /* left: 50%; */
     z-index: 5;
@@ -125,7 +126,7 @@ Section 3
 /* 이미지 위 텍스트 */
 .beyondBig-container .text-group {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 30px; /* .slider-nav 로 부터의 거리 */
     width: 100%;
 }
@@ -163,6 +164,8 @@ Section 3
 /* 이미지 */
 .beyondBig-container .image-cell {
     position: absolute;
+    /* width: 100%;
+    height: 100vh; */
     object-fit: cover;
     opacity: 0;
     z-index: 0;
@@ -191,25 +194,8 @@ Section 4
     height: 1500px;
 }
 
-/* .main-title */
-.quality-container .main-title {
-    font-weight: 900;
-}
-
-/* .technology-container .sub-title */
-.quality-container .sub-title {
-    font-weight: 400;
-}
-
-/* .quality-container .title-text */
-
-/* .quality-container .content-title */
-.quality-container .content-title {
-    font-weight: 800;
-}
-
-/* .quality-container .content-grid */
-.quality-container .content-wrap {
+/* 
+.quality-container .point-items {
     text-align: center;
 }
 
@@ -222,17 +208,47 @@ Section 4
     list-style-type: none;
     display: inline-block;
     margin: 20px;
-}
-/* .quality-container li img 크기 지정 */
+} */
 
-/* .quality-container .content-p*/
-.quality-container .content-p {
-    font-weight: 400;
+.quality-container .inner-content {
+    margin-top: 10px;
 }
 
-/* .quality-container .contentRow1 */
+.quality-container .headline {
+    justify-content: center;
+    margin-bottom: 40px;
+}
 
-/* .quality-container .contentRow2 */
+.quality-container .effect-data {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+/* content */
+.quality-container .content {
+    display: flex;
+    justify-content: center;
+}
+
+.quality-container .inner-grid {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 70px;
+}
+
+.quality-container .inner-item {
+    list-style-type: none;
+    margin: 20px;
+    text-align: center;
+}
+
+/* .technology-container .inner-title */
+
+/* .technology-container .inner-content */
+.quality-container .inner-content {
+    margin-top: 10px;
+}
 
 /* ==================================================
 Section 5
