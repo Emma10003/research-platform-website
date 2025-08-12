@@ -1,6 +1,6 @@
 $(function () {
     // 페이지 처음 시작할 때 header 숨김
-    // $("#dHead").hide();
+    $("#dHead").hide();
     emblemChange();
 });
 
