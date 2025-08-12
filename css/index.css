@@ -22,16 +22,11 @@ effect-data 공통 동작
 /* ==================================================
 Section 1
 ================================================== */
-/* 앞에 .deepData-container 붙여주기 */
-/* .deepData-container {
-    min-height: 1500px;
-} */
-
 .deepData-container {
     text-align: center;
     height: 1000px;
     overflow: hidden;
-    /* background: url('../img/index/index_main_intro_visual.jpg') ; */
+    background: url('../img/index/index_main_intro_visual.jpg') center center no-repeat;
 }
 
 .deepData-container .text-group {
@@ -102,9 +97,6 @@ Section 2
     text-align: center;
 }
 
-/* .technology-container .inner-title */
-
-/* .technology-container .inner-content */
 .technology-container .inner-content {
     margin-top: 10px;
 }
@@ -112,7 +104,6 @@ Section 2
 /* ==================================================
 Section 3
 ================================================== */
-/* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
     /* height: 100%; */
     /* min-height: 1500px; */
@@ -184,14 +175,6 @@ Section 3
     margin-top: 10px;
 }
 
-/* .beyondBig-container .slide-text 세 슬라이드의 글자 공통 속성 */
-
-/* #text-start 애니메이션 효과 */
-
-/* #text-density 애니메이션 효과 */
-
-/* #text-vision 애니메이션 효과 */
-
 /* 이미지 */
 .beyondBig-container .image-cell {
     position: absolute;
@@ -206,18 +189,9 @@ Section 3
     z-index: 4;
 }
 
-/* .beyondBig-container .slide-image 세 슬라이드의 이미지 공통 속성 */
-
-/* .beyondBig-container #img-start 애니메이션 효과 */
-
-/* .beyondBig-container #img-density 애니메이션 효과 */
-
-/* .beyondBig-container #img-vision 애니메이션 효과 */
-
 /* ==================================================
 Section 4
 ================================================== */
-/* 앞에 .quality-container 붙여주기 */
 .quality-container {
     height: 1500px;
     align-content: center;
@@ -386,7 +360,6 @@ Section 6
     align-items: center;
     padding: 0 20px;
     font-weight: 700;
-    /* border: 1px solid #111; */
     border-radius: 2px;
     box-sizing: border-box;
     white-space: nowrap;
@@ -406,4 +379,3 @@ Section 6
     height: 24px;
     background-image: url("../img/index/index_section6_arrow_white.png");
 }
-
