@@ -35,20 +35,25 @@ Section 1
     min-height: 1500px;
 } */
 
+.deepData-container {
+    text-align: center;
+    background: url('../img/index/index_main_intro_visual.jpg') ;
+}
+
 .deepData-container .text-group {
+    display: inline-block;
     position:relative;
-    top: 330px;
-    left: 370px;
+    top: 500px;
+    /* left: 370px; */
 }
 
 .deepData-container .row1 {
-    position: absolute;
-    top: -100px;
-    left: -100px;
+    position: relative;
+    left: -150px;
 }
 
 .deepData-container .row2 {
-    position: absolute;
+    position: relative;
     left: 100px;
 }
 
@@ -62,10 +67,12 @@ Section 2
 /* headline */
 .technology-container {
     min-height: 1500px;
+    align-content: center;
 }
 
 .technology-container .headline {
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     margin-bottom: 40px;
 }
 
@@ -106,7 +113,8 @@ Section 3
 /* 앞에 .beyondBig-container 붙여주기 */
 .beyondBig-container {
     /* height: 100%; */
-    min-height: 1500px;
+    /* min-height: 1500px; */
+    justify-content: center;
     position: relative;
 }
 
@@ -114,7 +122,7 @@ Section 3
 .beyondBig-container .inner-head {
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 100px;
     font-size: 25px;
     z-index: 5;
 }
@@ -122,7 +130,7 @@ Section 3
 /* 이미지 슬라이드 바 */
 .beyondBig-container .slider-nav {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 80px;
     /* left: 50%; */
     z-index: 5;
@@ -147,7 +155,7 @@ Section 3
 /* 이미지 위 텍스트 */
 .beyondBig-container .text-group {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 30px; /* .slider-nav 로 부터의 거리 */
     width: 100%;
 }
@@ -210,6 +218,7 @@ Section 4
 /* 앞에 .quality-container 붙여주기 */
 .quality-container {
     height: 1500px;
+    align-content: center;
 }
 
 .quality-container .headline {
@@ -255,21 +264,21 @@ Section 5
 
 .service-container .inner-title {
     position: absolute;
-    top: 250px;
+    top: 330px;
     left: 24px;
     font-size: 65px;
 }
 
 .service-container .inner-content {
     position: absolute;
-    top: 460px;
+    top: 540px;
     left: 24px;
 }
 
 .service-container .grid-layout-inner {
     display: flex;
     position: absolute;
-    top: 200px;
+    top: 270px;
     right: 60px;
 }
 

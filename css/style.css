@@ -41,7 +41,7 @@ body {
 
 .wrap {
     width: 100%;
-    max-width: 2000px; /* 최대 너비 지정 */
+    max-width: 1920px; /* 최대 너비 지정 */
     margin: 0 auto; /* 가운데 정렬 */
 }
 
