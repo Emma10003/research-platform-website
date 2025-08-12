@@ -79,7 +79,7 @@ a {
 }
 
 /* ========================================================
-dHead
+dHead (네비게이션 포함)
 ======================================================== */
 #dHead {
     position: sticky;
@@ -149,4 +149,93 @@ dHead
 .header-inner .snb-list-cell {
     text-align: center;
     font-size: 17px;
+}
+
+/* ==================================================
+footer
+================================================== */
+#dFoot {
+    position: relative;
+    background-color: #4c647f;
+    z-index: 155;
+    width: 100%;
+    height: 500px;
+}
+
+.footer-top {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: block;
+    font-size: 0;
+    border-bottom: 1px solid #8f9eaf;
+}
+
+footer .inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 113px;
+    position: relative;
+    max-width: 1272px;
+    margin: 0 auto;
+}
+
+footer .emblem {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    height: 40px;
+}
+
+footer .family-menu {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+footer .footer-info {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+footer .footer-sns {
+    margin-top: 30px;
+}
+
+footer .sns-logo {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-copy {
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer .footer-site-menu {
+    position: absolute;
+    top: 150px;
+    right: 5px;
+}
+
+footer .menu-item {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+footer .menu-title {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+}
+
+footer .menu-drop {
+    display: inline-block;
+}
+
+footer .menu-drop li {
+    display: inline-block;
+    margin-right: 10px;
 }
