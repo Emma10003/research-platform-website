@@ -1,13 +1,5 @@
-@font-face {
-    font-family: "Pretendard-Regular";
-    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-        format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
 #dBody {
-    padding-top: 110px; /*헤더 영역 주기*/
+    /* padding-top: 110px; */
     position: relative;
 }
 
@@ -37,12 +29,14 @@ Section 1
 
 .deepData-container {
     text-align: center;
-    background: url('../img/index/index_main_intro_visual.jpg') ;
+    height: 100%;
+    overflow: hidden;
+    /* background: url('../img/index/index_main_intro_visual.jpg') ; */
 }
 
 .deepData-container .text-group {
     display: inline-block;
-    position:relative;
+    position: relative;
     top: 500px;
     /* left: 370px; */
 }
@@ -59,6 +53,12 @@ Section 1
 
 .deepData-container .text-row {
     font-size: 80px;
+}
+
+.deepData-container #image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ==================================================
@@ -468,7 +468,7 @@ footer .footer-copy {
     font-size: 14px;
 }
 
-footer .footer-site-menu{
+footer .footer-site-menu {
     position: absolute;
     top: 150px;
     right: 5px;

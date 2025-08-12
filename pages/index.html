@@ -9,7 +9,6 @@
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/index.css" />
@@ -30,15 +29,20 @@
                             <img
                                 src="../img/logo/logo_white.png"
                                 class="white-logo"
+                                id="white-logo"
                             />
-                            <img src="../img/logo/logo.png" />
+                            <img
+                                src="../img/logo/logo_blue.png"
+                                class="blue-logo"
+                                id="blue-logo"
+                            />
                         </a>
                     </div>
                     <!-- gnb -->
                     <div class="gnb-wrap">
                         <ul class="gnb-list">
                             <li class="gnb-list-cell font600">
-                                리서치 서비스
+                                <a href="#">리서치 서비스</a>
                                 <ul class="snb-list font400">
                                     <li class="snb-list-cell">
                                         <a href="#">마케팅 리서치</a>
@@ -46,7 +50,7 @@
                                 </ul>
                             </li>
                             <li class="gnb-list-cell font600">
-                                데이터 서비스
+                                <a href="#">데이터 서비스</a>
                                 <ul class="snb-list font400">
                                     <li class="snb-list-cell">
                                         <a href="#">구매빅데이터</a>
@@ -54,7 +58,7 @@
                                 </ul>
                             </li>
                             <li class="gnb-list-cell font600">
-                                회사소개
+                                <a href="#">회사소개</a>
                                 <ul class="snb-list font400">
                                     <li class="snb-list-cell">
                                         <a href="#">공지사항</a>
@@ -62,7 +66,7 @@
                                 </ul>
                             </li>
                             <li class="gnb-list-cell font600">
-                                서비스 문의
+                                <a href="#">서비스 문의</a>
                                 <ul class="snb-list font400">
                                     <li class="snb-list-cell">
                                         <a href="#">문의하기</a>
@@ -93,7 +97,10 @@
                     </div>
 
                     <div class="image-group">
-                        <img src="../img/index/index_main_intro_visual.jpg" />
+                        <img
+                            src="../img/index/index_main_intro_visual.jpg"
+                            id="image-main"
+                        />
                     </div>
                 </div>
 
@@ -505,7 +512,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer-copy fontLightGray">Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.</div>
+                            <div class="footer-copy fontLightGray">
+                                Copyright(C) MACROMILL EMBRAIN ALL Right
+                                Reserved.
+                            </div>
                         </div>
                         <div class="footer-site-menu">
                             <ul class="menu-group">
@@ -603,6 +613,7 @@
             <!-- //dFoot -->
         </div>
 
+        <script src="../js/header.js"></script>
         <script src="../js/index.js"></script>
     </body>
 </html>

@@ -75,14 +75,19 @@ img {
 a {
     cursor: pointer;
     text-decoration: none;
-    color:#111;
+    color: #111;
 }
 
 /* ========================================================
 dHead
 ======================================================== */
+#dHead {
+    position: sticky;
+    top: 0; /* sticky를 쓰려면 top이 있어야 함 */
+    z-index: 10;
+}
+
 .header-inner {
-    position: fixed;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -92,13 +97,15 @@ dHead
     /*background-color 밝은색/어두운 색 둘 다 설정*/
 }
 
+/* 배경색에 따라 클래스 토글... */
 .header-inner-light {
+    color: #111111;
     background-color: white;
 }
 
 .header-inner-dark {
-    background-color: #111;
-    display: none;
+    color: #fff;
+    background-color: transparent;
 }
 
 .header-inner .logo {
