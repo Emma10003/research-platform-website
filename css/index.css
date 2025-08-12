@@ -40,11 +40,13 @@ Section 1
 .deepData-container .row1 {
     position: relative;
     left: -150px;
+    perspective: 100px;
 }
 
 .deepData-container .row2 {
     position: relative;
     left: 100px;
+    perspective: 100px;
 }
 
 .deepData-container .text-row {

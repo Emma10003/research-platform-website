@@ -1,0 +1,24 @@
+/*  -----------------------------------------------------------
+                        애니메이션 효과 작성
+----------------------------------------------------------- */
+.intro-effect {
+    animation-name: flyIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /* 끝난 후 상태 유지 */
+    animation-timing-function: ease-out;
+}
+
+@keyframes flyIn {
+    from {
+        filter:blur(10px);
+        /* 일단 이 transition 어케 작동하는건지... */
+        transition: transform 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        transform: translateZ(-800px) scale(50);
+        opacity: 0;
+    }
+    to{
+        filter:blur(0px);
+        transform: translateZ(0) scale(1);
+        opacity: 1;
+    }
+}
