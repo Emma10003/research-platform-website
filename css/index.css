@@ -14,10 +14,10 @@ effect-data 공통 동작
 } */
 
 /* js로 .active 클래스 추가 시 동작 */
-.effect-data .active {
+/* .effect-data .active {
     transform: translate(0%, 0%);
     opacity: 1;
-}
+} */
 
 /* ==================================================
 Section 1
@@ -26,7 +26,10 @@ Section 1
     text-align: center;
     height: 1000px;
     overflow: hidden;
-    background: url('../img/index/index_main_intro_visual.jpg') center center no-repeat;
+    background: url("../img/index/index_main_intro_visual.jpg") center center
+        no-repeat;
+    position: relative;
+    z-index: 0;
 }
 
 .deepData-container .text-group {

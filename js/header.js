@@ -1,6 +1,5 @@
 $(function () {
     // 페이지 처음 시작할 때 header 숨김
-    // $("#dHead").hide();
     emblemChange();
     gnbDropdown();
 });
@@ -16,16 +15,16 @@ function emblemChange() {
 
 // header 마우스 hover -> 세부 메뉴 슬라이드 등장 효과
 function gnbDropdown() {
-    console.log("gnbDropdown() 함수 실행");
     // 마우스가 영역에 들어온 경우
     $(".header-inner").on("mouseenter", function () {
-        $(".header-inner").css({
-            cursor: "pointer",
-        });
-        $(".snb-list").show();
+        $(".snb-list").fadeIn();
+        $(".snb-list-cell").removeClass("snb-text-slidedown");
+        $(".snb-list-cell").addClass("snb-text-slideup");
     });
     // 마우스가 영역을 벗어난 경우
     $(".header-inner").on("mouseleave", function () {
-        $(".snb-list").hide();
+        $(".snb-list").fadeOut("fast");
+        $(".snb-list-cell").removeClass("snb-text-slideup");
+        $(".snb-list-cell").addClass("snb-text-slidedown");
     });
 }
