@@ -1,21 +1,41 @@
 /*  -----------------------------------------------------------
                         애니메이션 효과 작성
 ----------------------------------------------------------- */
+
+/* ============================================================
+                Header 메뉴 드롭다운 효과
+============================================================ */
+.snb-slidedown {
+
+}
+
+@keyframes slideDown {
+    from {
+
+    }
+    to {
+        
+    }
+}
+
+/* ============================================================
+                    Section 1 타이포 효과
+============================================================ */
 /* 애니메이션이 적용될 글자의 초기 상태 설정 */
 .deepData-container .charChild {
     display: inline-block;
+    opacity: 0;
 }
 
 .intro-effect {
     animation-name: flyIn;
     animation-duration: 1s;
     animation-fill-mode: forwards; /* 끝난 후 상태 유지 */
-    /* animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
-    animation-timing-function: ease;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes flyIn {
-    from {
+    0% {
         filter: blur(8px);
         /* 
         translate : X, Y축으로 이동한 자리에서 애니메이션이 시작했다가, 원래 자리로 돌아오도록 함.
@@ -23,6 +43,10 @@
         */
         transform: translate(50%, 45%) scale(20);
         opacity: 0;
+    }
+    50% {
+        filter: blur(4px);
+        opacity: 0.4;
     }
     to {
         filter: blur(0px);

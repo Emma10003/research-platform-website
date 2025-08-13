@@ -111,7 +111,8 @@ dHead (네비게이션 포함)
 
 .header-inner .logo {
     position: absolute;
-    top: 35px;
+    top: 30px;
+    left: 30px;
 }
 
 .header-inner .white-logo {

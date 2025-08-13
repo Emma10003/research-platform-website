@@ -34,7 +34,8 @@ function addFlyInEffect() {
         const delay = index * 0.07;
         // 계산된 지연시간을 해당 요소의 style 속성으로 직접 추가
         $(this).css({
-            "animation-delay": `${delay}s`
+            "animation-delay": `${delay}s`,
+            opacity: "1",
         });
         // 애니메이션 효과를 위한 클래스 추가
         $(this).addClass("intro-effect");
