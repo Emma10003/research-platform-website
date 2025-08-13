@@ -53,6 +53,7 @@
         transform: translateY(30px);
     }
 }
+
 /* ============================================================
                     Section 1 타이포 효과
 ============================================================ */
@@ -87,5 +88,25 @@
         filter: blur(0px);
         transform: translate(0) scale(1);
         opacity: 1;
+    }
+}
+
+/* ============================================================
+                    Section 2 스크롤 효과
+============================================================ */
+.containerGoUp {
+    animation-name: containerGoUp;
+    animation-timing-function: ease-out;
+}
+
+@keyframes containerGoUp {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(1200px);
     }
 }

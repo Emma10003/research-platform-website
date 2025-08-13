@@ -8,6 +8,7 @@ $(function () {
     /* ------------------------------
     Section 2
     ------------------------------ */
+    scrollTechCont();
 });
 
 /* ===========================================================
@@ -44,18 +45,23 @@ function addFlyInEffect() {
 
         // 애니메이션 효과를 위한 클래스 추가
         $(this).addClass("intro-effect");
-        console.log("애니메이션 시작")
+        console.log("애니메이션 시작");
     });
 
     // 애니메이션 종료 후 클래스 제거
     $(".charChild").on("animationend", function () {
-        console.log("애니메이션 종료")
+        console.log("애니메이션 종료");
         $(this).removeClass("intro-effect");
-        $("#dHead").addClass("active").show({delay: 3000});
+        $("#dHead").addClass("active").show({ delay: 3000 });
     });
-    
 }
 
 /* ===========================================================
 Section 2
 =========================================================== */
+// 스크롤 시 technology-container가 위로 올라오는 애니메이션
+function scrollTechCont() {
+    $(".technology-container").on("scroll", function () {
+        $(this).addClass("containerGoUp");
+    });
+}
