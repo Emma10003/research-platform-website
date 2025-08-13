@@ -61,7 +61,5 @@ Section 2
 =========================================================== */
 // 스크롤 시 technology-container가 위로 올라오는 애니메이션
 function scrollTechCont() {
-    $(".technology-container").on("scroll", function () {
-        $(this).addClass("containerGoUp");
-    });
+    $("")
 }
