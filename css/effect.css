@@ -5,6 +5,12 @@
 /* ============================================================
                 Header 메뉴 드롭다운 효과
 ============================================================ */
+.bar-slidedown {
+    animation-name: navSlideDown;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
 .snb-text-slideup {
     animation-name: textSlideUp;
     animation-duration: 1s;
@@ -13,8 +19,18 @@
 .snb-text-slidedown {
     animation-name: textSlideDown;
     animation-duration: 1s;
-    animation-fill-mode: backwards;
     animation-timing-function: ease-out;
+}
+
+@keyframes navSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes textSlideUp {

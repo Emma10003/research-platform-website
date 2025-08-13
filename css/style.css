@@ -40,6 +40,12 @@ body {
     width: 100%;
 }
 
+.header-wrap {
+    width: 100%;
+    max-width: 1920px; /* 최대 너비 지정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
 .wrap {
     width: 100%;
     max-width: 1920px; /* 최대 너비 지정 */
@@ -84,15 +90,16 @@ dHead (네비게이션 포함)
 ======================================================== */
 #dHead {
     position: sticky;
-    top: 0; /* sticky를 쓰려면 top이 있어야 함 */
+    top: 0;
     display: none;
     z-index: 10;
 }
 
-#dHead .active {
+#dHead.active {
     position: sticky;
     top: 0; /* sticky를 쓰려면 top이 있어야 함 */
     z-index: 10;
+    background-color: #fff;
 }
 
 .header-inner {
@@ -109,7 +116,7 @@ dHead (네비게이션 포함)
     cursor: pointer;
 }
 
-.header-inner .light {
+.header-inner.light {
     color: #111111;
 }
 

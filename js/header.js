@@ -20,6 +20,7 @@ function gnbDropdown() {
         $(".snb-list").fadeIn();
         $(".snb-list-cell").removeClass("snb-text-slidedown");
         $(".snb-list-cell").addClass("snb-text-slideup");
+        // $(".snb-list-wrap").addClass("bar-slidedown");
     });
     // 마우스가 영역을 벗어난 경우
     $(".header-inner").on("mouseleave", function () {
