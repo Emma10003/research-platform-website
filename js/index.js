@@ -31,12 +31,10 @@ function addFlyInEffect() {
     // 각 글자에 순차적으로 애니메이션 적용
     $(".charChild").each(function (index) {
         // 각 글자의 애니메이션 시작 지연시간 계산
-        const delay = index * 0.05;
+        const delay = index * 0.07;
         // 계산된 지연시간을 해당 요소의 style 속성으로 직접 추가
         $(this).css({
-            "animaion-delay": `${delay}s`,
-            "transform-origin": `translate(${100 - (index - 1) * 10}% , 50%)`,
-            "transform" : `translate()`
+            "animation-delay": `${delay}s`
         });
         // 애니메이션 효과를 위한 클래스 추가
         $(this).addClass("intro-effect");
