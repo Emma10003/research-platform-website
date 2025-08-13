@@ -109,10 +109,8 @@ dHead (네비게이션 포함)
     cursor: pointer;
 }
 
-/* 배경색에 따라 클래스 토글... */
 .header-inner .light {
     color: #111111;
-    background-color: white;
 }
 
 .header-inner .logo {
