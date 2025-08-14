@@ -1,11 +1,23 @@
 $(function () {
+    emblemChange();
     /* ------------------------------
     Section 1 : 텍스트 애니메이션
     ------------------------------ */
     // 이펙트 클래스 추가
     addFlyInEffect();
-
 });
+
+/* ===========================================================
+Header 로고
+=========================================================== */
+// 윈도우 넓이가 1280px 이하이면 로고 심플한 걸로 바꾸기
+function emblemChange() {
+    const browserWidth = window.innerWidth;
+    if (browserWidth <= 1290) {
+        $("#blue-logo").attr("src", "../img/logo/nav_logo_blue.png");
+        return;
+    }
+}
 
 /* ===========================================================
 Section 1

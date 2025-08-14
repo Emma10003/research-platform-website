@@ -1,11 +1,16 @@
 /* ==============================================
                     공통 적용 영역
 ============================================== */
-$(function(){
+$(function () {
+    // 헤더 보이기
+    showHeader();
     // 화면 면적에 따라 로고 변경
     emblemChange();
-})
+});
 
+/* ==============================================
+                    헤더 관련
+============================================== */
 // 윈도우 넓이가 1280px 이하이면 로고 심플한 걸로 바꾸기
 function emblemChange() {
     const browserWidth = window.innerWidth;
@@ -13,4 +18,9 @@ function emblemChange() {
         $("#blue-logo").attr("src", "../img/logo/nav_logo_blue.png");
         return;
     }
+}
+
+// #dHead에 적용된 display:none 보이기
+function showHeader() {
+    $("#dHead").addClass("active").show();
 }
