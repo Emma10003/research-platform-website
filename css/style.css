@@ -100,14 +100,14 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0; /* sticky를 쓰려면 top이 있어야 함 */
     z-index: 10;
-    background-color: rgba(247, 250, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-inner {
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     z-index: 10;
 }
 

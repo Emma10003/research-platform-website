@@ -12,12 +12,13 @@ function gnbDropdown() {
         $(".snb-list").fadeIn();
         $(".snb-list-cell").removeClass("snb-text-slidedown");
         $(".snb-list-cell").addClass("snb-text-slideup");
-        // $(".snb-list-wrap").addClass("bar-slidedown");
+        $(".gnb-list").css("border-bottom", "0.5px solid #b5bfcaff");
     });
     // 마우스가 영역을 벗어난 경우
     $(".header-inner").on("mouseleave", function () {
         $(".snb-list").fadeOut("fast");
         $(".snb-list-cell").removeClass("snb-text-slideup");
         $(".snb-list-cell").addClass("snb-text-slidedown");
+        $(".gnb-list").css("border-bottom", "none")
     });
 }
