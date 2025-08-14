@@ -97,22 +97,18 @@
 .text-appear {
     animation-name: textAppear;
     animation-timeline: view();
-    animation-range: entry 20% cover 100vh;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.25, 1.26);
+    animation-range: entry 10% cover 100vh;
+    /* animation-timing-function: cubic-bezier(0.42, 0, 0.25, 1.26); */
+    animation-timing-function: ease;
 }
 
 @keyframes textAppear {
     0% {
         opacity: 0;
-        transform: translateY(200px);
+        transform: translateY(500px);
     }
-    30% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-    40% {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-/* 위에꺼 작동 안 함 */
