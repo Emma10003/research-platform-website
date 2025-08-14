@@ -103,14 +103,21 @@ dHead (네비게이션 포함)
     background-color: rgba(247, 250, 255, 0.8);
 }
 
+#dHead.sub-active {
+    position: fixed;
+    top: 0; /* sticky를 쓰려면 top이 있어야 함 */
+    z-index: 10;
+    background-color: rgba(247, 250, 255, 0.8);
+}
+
+
+
 .header-inner {
     width: 100%;
     height: auto;
     box-sizing: border-box;
     padding: 20px;
     z-index: 10;
-
-    /*background-color 밝은색/어두운 색 둘 다 설정*/
 }
 
 .header-inner:hover {

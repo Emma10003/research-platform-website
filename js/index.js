@@ -5,17 +5,11 @@ $(function () {
     // 이펙트 클래스 추가
     addFlyInEffect();
 
-    /* ------------------------------
-    Section 2
-    ------------------------------ */
-    scrollTechCont();
 });
 
 /* ===========================================================
 Section 1
 =========================================================== */
-// 글자 하나하나 big->normal 사이즈로 날아오는 것 처럼 보이는 효과
-
 // 텍스트 쪼개기
 function deepDataSplitLetters() {
     for (let i = 0; i < 2; i++) {
@@ -30,6 +24,7 @@ function deepDataSplitLetters() {
     }
 }
 
+// charChild에 애니메이션 적용
 function addFlyInEffect() {
     deepDataSplitLetters();
 
