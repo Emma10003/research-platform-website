@@ -123,6 +123,7 @@ dHead (네비게이션 포함)
     position: absolute;
     top: 30px;
     left: 25px;
+    z-index: 10;
 }
 
 .header-inner .white-logo {
