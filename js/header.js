@@ -11,7 +11,6 @@ function gnbDropdown() {
     $(".header-inner").on("mouseenter", function () {
         $(".snb-list-wrap").show();
         $("#dHead").addClass("active-snb");
-        // $("#dHead").addClass("bar-slidedown");
 
         // 텍스트 애니메이션 클래스
         $(".snb-list-cell").removeClass("snb-text-slidedown");
@@ -21,9 +20,9 @@ function gnbDropdown() {
     $(".header-inner").on("mouseleave", function () {
         $(".snb-list-wrap").hide();
         $("#dHead").removeClass("active-snb");
-        // $("#dHead").removeClass("bar-slidedown");
 
         // 텍스트 애니메이션 클래스
+        $(".snb-list-cell").removeClass("snb-text-slidedown");
         $(".snb-list-cell").addClass("snb-text-slidedown");
         $(".gnb-list").css("border-bottom", "none");
     });
