@@ -92,6 +92,7 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0;
     width: 100vw;
+    height: 80px;
     display: none;
     z-index: 10;
 }
@@ -100,10 +101,17 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0; /* sticky를 쓰려면 top이 있어야 함 */
     z-index: 10;
+    height: 80px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    transition: height 0.5s ease;
+}
+
+#dHead.active-snb {
+    height: 180px;
+    transition: height 0.5s ease;
 }
 
 .header-inner {
@@ -161,15 +169,6 @@ dHead (네비게이션 포함)
 .header-inner .snb-list-wrap {
     display: none;
 }
-
-.header-inner .snb-list {
-    opacity: 0;
-}
-/* gnb에 마우스 호버 시 active 클래스 추가 */
-.header-inner .snb-list.active {
-    opacity: 1;
-}
-
 
 .header-inner .snb-list-cell {
     text-align: center;
