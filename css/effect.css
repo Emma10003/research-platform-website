@@ -7,12 +7,12 @@
 ============================================================ */
 .snb-text-slideup {
     animation-name: textSlideUp;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
 .snb-text-slidedown {
     animation-name: textSlideDown;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
 
