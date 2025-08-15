@@ -100,14 +100,17 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0; /* sticky를 쓰려면 top이 있어야 함 */
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header-inner {
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 20px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     z-index: 10;
 }
 
@@ -121,7 +124,7 @@ dHead (네비게이션 포함)
 
 .header-inner .logo {
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 25px;
     z-index: 10;
 }
@@ -134,7 +137,7 @@ dHead (네비게이션 포함)
 .header-inner .gnb-wrap {
     display: flex;
     position: relative;
-    flex: auto;
+    /* flex: auto; */
 }
 .header-inner .gnb-list {
     display: flex;
@@ -155,9 +158,18 @@ dHead (네비게이션 포함)
     width: 150px;
 }
 
-.header-inner .snb-list {
+.header-inner .snb-list-wrap {
     display: none;
 }
+
+.header-inner .snb-list {
+    opacity: 0;
+}
+/* gnb에 마우스 호버 시 active 클래스 추가 */
+.header-inner .snb-list.active {
+    opacity: 1;
+}
+
 
 .header-inner .snb-list-cell {
     text-align: center;

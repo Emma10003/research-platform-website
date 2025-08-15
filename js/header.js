@@ -9,16 +9,16 @@ $(function () {
 function gnbDropdown() {
     // 마우스가 영역에 들어온 경우
     $(".header-inner").on("mouseenter", function () {
-        $(".snb-list").fadeIn();
+        $(".snb-list-wrap").show();
+        $(".snb-list").addClass("active")
         $(".snb-list-cell").removeClass("snb-text-slidedown");
         $(".snb-list-cell").addClass("snb-text-slideup");
-        $(".gnb-list").css("border-bottom", "0.5px solid #b5bfcaff");
     });
     // 마우스가 영역을 벗어난 경우
     $(".header-inner").on("mouseleave", function () {
-        $(".snb-list").fadeOut("fast");
-        $(".snb-list-cell").removeClass("snb-text-slideup");
+        $(".snb-list-cell").hide();
+        $(".snb-list").removeClass("active")
         $(".snb-list-cell").addClass("snb-text-slidedown");
-        $(".gnb-list").css("border-bottom", "none")
+        $(".gnb-list").css("border-bottom", "none");
     });
 }
