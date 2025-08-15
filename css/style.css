@@ -92,7 +92,7 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 80px;
+    height: 90px;
     display: none;
     z-index: 10;
 }
@@ -101,7 +101,7 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0; /* sticky를 쓰려면 top이 있어야 함 */
     z-index: 10;
-    height: 80px;
+    height: 90px;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
