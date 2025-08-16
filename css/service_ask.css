@@ -3,7 +3,7 @@
 }
 
 .form-container {
-    height: 1500px;
+    height: 1800px;
 }
 
 /* 제목 영역 */
@@ -81,7 +81,7 @@
 .form-container .item-input-label {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .form-container .fontRequired {
@@ -142,6 +142,16 @@
 }
 
 /* 문의 내용 */
+.form-container .form-data-inquiry-grid {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.form-data-inquiry-grid-cell {
+    display: flex;
+}
+
 .form-container .icon-form-tip {
     width: 20px;
     height: 24px;
@@ -151,6 +161,11 @@
 
 .form-container .icon-form-tip:hover {
     cursor: pointer;
+}
+
+.form-container .form-grid-cell-text {
+    font-weight: 400;
+    transform: translateY(4px);
 }
 
 .form-container .inquiry-contents {
@@ -174,4 +189,92 @@
 .form-container .item-inquiry-detail {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+/* 개인정보 수집 */
+.form-container .form-check-grid-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.form-container .form-check-grid {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-container .form-check-box {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-container .form-check-box input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.form-container .check-icon {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    position: relative;
+    /* top: 15px; */
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.form-container .form-check-grid-item .form-check-text {
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+.form-container .form-check-grid-item .form-check-wholeInfo {
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+.form-container .form-check-grid-item .form-check-wholeInfo:hover {
+    cursor: pointer;
+}
+
+/* 버튼 */
+.form-container .btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    border: none;
+    background-color: #06c;
+    border-radius: 2px;
+}
+
+.form-container .btn-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(14px);
+}
+
+.form-container .btn-grid-cell {
+    display: flex;
+}
+
+.form-container .submit-btn {
+    display: flex;
+    border: 0;
+    background-color: #06c;
+    /* font-size: 24px; */
+}
+
+.form-container .submit-btn-text {
+    display: inline-block;
+    padding: 20px 0px;
+    color: #fff;
+    font-size: 24px;
+    vertical-align: middle;
 }

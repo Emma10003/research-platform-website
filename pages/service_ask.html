@@ -291,12 +291,32 @@
 
                                         <!-- 문의 내용 -->
                                         <div class="form-data-items-vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label">
-                                                    <div class="item-input-label font600">
-                                                        문의 내용
-                                                        <strong class="fontRequired">*</strong>
-                                                        <span class="icon icon-form-tip"></span>
+                                            <div class="form-data-inquiry-grid">
+                                                <div class="form-data-inquiry-grid-item">
+                                                    <div class="form-data-inquiry-grid-cell">
+                                                        <div class="item-header">
+                                                            <div class="item-header-label">
+                                                                <div
+                                                                    class="item-input-label font600">
+                                                                    문의 내용
+                                                                    <strong class="fontRequired"
+                                                                        >*</strong
+                                                                    >
+                                                                    <!-- 클릭 시 모달팝업 -->
+                                                                    <span
+                                                                        class="icon icon-form-tip"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-data-inquiry-grid-item">
+                                                    <div class="form-check-grid-cell">
+                                                        <div class="form-grid-cell-text">
+                                                            <!-- span 자리에 글자수 세기 -->
+                                                            <span class="text-count"></span> / 1,000
+                                                            byte
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -322,12 +342,62 @@
                                                 </div>
                                             </div>
                                             <div class="item-body">
-                                                <div class="item-detail">
-                                                    <checkbox>...</checkbox>
+                                                <div class="item-personal-detail">
+                                                    <label class="form-check-box">
+                                                        <input type="checkbox" id="chkAgree" />
+                                                        <div class="form-check-grid-horizontal">
+                                                            <div class="form-check-grid">
+                                                                <div class="form-check-grid-item">
+                                                                    <span class="form-check-icon">
+                                                                        <img
+                                                                            src="../img/service_ask/icon-checkbox-gray.png"
+                                                                            class="check-icon" />
+                                                                    </span>
+                                                                </div>
+                                                                <div class="form-check-grid-item">
+                                                                    <span class="form-check-text">
+                                                                        개인정보 수집 및 이용에
+                                                                        동의합니다.
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-check-grid">
+                                                                <div class="form-check-grid-item">
+                                                                    <!-- 클릭 시 모달팝업 -->
+                                                                    <span
+                                                                        class="form-check-wholeInfo fontBlue font600">
+                                                                        [전문보기]
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- 개인정보 수집 끝 -->
+
+                                        <!-- 신청 버튼 -->
+                                        <div class="btn">
+                                            <div class="btn-grid">
+                                                <div class="btn-grid-item">
+                                                    <button
+                                                        type="button"
+                                                        class="submit-btn"
+                                                        id="submit-btn">
+                                                        <span class="submit-btn-text font700">
+                                                            서비스 문의 신청
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-grid-item">
+                                                    <span class="btn-icon-arrow">
+                                                        <img
+                                                            src="../img/service_ask/icon-arrow-forward-white-48.png" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- // form-data-items -->
                                 </div>
