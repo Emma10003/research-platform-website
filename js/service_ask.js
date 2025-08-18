@@ -123,7 +123,8 @@ function changeCheckIconGray() {
 
 // 문의내용 글자수 세기
 function textCount() {
-    const count = $("#inquiry-contents").val().length;
-    console.log("글자 수: ", count);
-    
+    $("#inquiry-contents").keyup((e) => {
+        const count = $("#inquiry-contents").val().length;
+        $(".text-count").html(`<strong>${count}</strong>`);
+    });
 }
