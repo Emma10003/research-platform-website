@@ -223,7 +223,7 @@
     border-radius: 3px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
 }
 .form-container .service-ask-modal-grid {
     display: flex;
@@ -343,7 +343,7 @@
     border-radius: 3px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
 }
 .form-container .personal-info-modal-grid {
     display: flex;
@@ -443,4 +443,59 @@
 
 .form-container .btn-grid-item {
     transform: translateY(3px);
+}
+
+/* 버튼 팝업 */
+.alertpop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
+    z-index: 100;
+}
+
+.alertpop.actived {
+    left: 0;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+}
+
+.alertpop-wrap {
+    position: absolute;
+    opacity: 0;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #fff;
+    transition: opacity 0.4s ease;
+    border: 1px solid #0c4d98;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 여기부터 수정하기. */
+.form-container .personal-info-modal-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .personal-info-modal-grid-inner.innertitle {
+    padding: 30px;
+}
+
+.form-container .personal-info-modal-grid-inner.innercontent {
+    padding: 0 45px 30px 45px;
+}
+
+.form-container .personal-info-modal-title-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

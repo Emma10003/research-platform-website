@@ -22,7 +22,40 @@ $(function () {
     textCount();
 
     // 입력여부 확인
-    $(".submit-btn").click(checkRequiredInput);
+    $(".submit-btn").click(function (e) {
+        const inputService = $("#ask-category").val();
+        const inputName = $("#inquiry-name").val().length;
+        const inputFirm = $("#inquiry-firm").val().length;
+        const inputPhone = $("#inquiry-tel").val().length;
+        const inputEmail = $("#inquiry-email").val().length;
+        const inputContents = $("#inquiry-contents").val().length;
+
+        if (inputService === "") {
+            alert("서비스 유형을 선택해 주세요.");
+            return;
+        }
+
+        if (inputName <= 0) {
+            $("#form-name").prepend(
+                `
+                <div class="alertpop actived">
+                    <div class="alertpop-wrap">
+                        <div class="alertpop-title">
+                            이름을 입력해 주세요.
+                        </div>
+                        <div class="alertpop-btn">
+                        <button type="button" id="check-btn">
+                            확인
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                `
+            )
+            $("#form-name").focus();
+            return;
+        }
+    });
 });
 
 // 문의내용 모달팝업
@@ -136,15 +169,4 @@ function textCount() {
 }
 
 // 모든 입력란이 입력되었는지 확인하기
-function checkRequiredInput() {
-    const inputService = $(".inquiry-full").val();
-    const inputName = $(".inquiry-name").val().length;
-    const inputFirm = $(".inquiry-firm").val().length;
-    const inputPhone = $(".inquiry-tel").val().length;
-    const inputEmail = $(".inquiry-email").val().length;
-    const inputContents = $(".inquiry-contents").val().length;
-
-    if(inputService === "") {
-        alert("서비스 유형을 선택해 주세요.")
-    }
-}
+function checkRequiredInput() {}
