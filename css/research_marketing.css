@@ -153,3 +153,88 @@ Section 4
 .right-business-container .info-title {
     font-size: 24px;
 }
+
+/* =============================
+Section 5
+============================= */
+.solution-container .text-group {
+    margin-top: 100px;
+}
+
+.solution-container .text-title {
+    line-height: 1.31;
+}
+
+.solution-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.solution-container .point {
+    margin-top: 60px;
+}
+
+.solution-container .point-items {
+    margin: 0;
+    padding: 0;
+}
+
+.solution-container .point ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.solution-container .point li {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.solution-container .item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 18px;
+}
+
+.solution-container .item-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.solution-container .info-title {
+    font-size: 24px;
+}
+
+/* =============================
+Section 5
+============================= */
+.company-container .text-group {
+    margin-top: 100px;
+}
+
+.company-container .text-title {
+    line-height: 1.31;
+}
+
+.company-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.company-container .text-title p {
+    text-align: center;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.company-container .img-group {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.company-container .img-group img {
+    margin: 20px 0;
+}

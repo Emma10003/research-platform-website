@@ -80,23 +80,26 @@
 }
 
 /* ============================================================
-                    Section 2 스크롤 효과
+                        텍스트 스크롤 효과
 ============================================================ */
 .text-appear {
     animation-name: textAppear;
     animation-timeline: view();
     animation-range: entry 10% cover 50vh;
     /* animation-timing-function: cubic-bezier(0.42, 0, 0.25, 1.26); */
-    transition: transform 0.4s transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.4s ease;
+    transition: transform 0.4s transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), scale 0.4s ease, opacity 0.4s ease;
+    scroll-behavior: smooth;
 }
 
 @keyframes textAppear {
     0% {
         opacity: 0;
+        scale: 0.5;
         transform: translateY(500px);
     }
     100% {
         opacity: 1;
+        scale: 1;
         transform: translateY(0);
     }
 }
@@ -105,26 +108,22 @@
 /* ============================================================
                     Section 1 클리핑 효과
 ============================================================ */
-.makeRect {
-    animation-name: makeRect;
-    /* animation-timeline: view(); */
-    /* animation-range: entry 50% exit 100%; */
+.shapeAnimation {
+    background-size: cover;
+    animation: shapeAnimation 4s;
 }
-/* 
-@keyframes makeRect {
+
+@keyframes shapeAnimation {
     0% {
-        clip-path: polygon(0px 0px 0px 0px);
+        clip-path: circle(100% at 50% 50%);
     }
     25% {
-        clip-path: polygon(600px 20px);
+        clip-path: circle(25% at 20% 40%);
     }
     50% {
-        clip-path: polygon(300px 40px);
-    }
-    75% {
-        clip-path: polygon();
+        clip-path: circle(25% at 70% 80%);
     }
     100% {
-        clip-path: polygon();
+        clip-path: circle(100% at 50% 50%);
     }
-} */
+}
