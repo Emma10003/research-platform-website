@@ -62,3 +62,29 @@ Section 1
     object-fit: cover;
     z-index: 1;
 }
+
+/* =============================
+Section 2
+============================= */
+.right-business-container {
+}
+
+.right-business-container .text-group {
+    margin-top: 100px;
+}
+
+.right-business-container .text-title {
+    line-height: 1.31;
+}
+
+.right-business-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.right-business-container .text-title p {
+    text-align: center;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-top: 20px;
+}

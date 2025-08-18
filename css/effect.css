@@ -37,6 +37,7 @@
     }
 }
 
+/* index */
 /* ============================================================
                     Section 1 타이포 효과
 ============================================================ */
@@ -84,7 +85,7 @@
 .text-appear {
     animation-name: textAppear;
     animation-timeline: view();
-    animation-range: entry 10% cover 100vh;
+    animation-range: entry 10% cover 50vh;
     /* animation-timing-function: cubic-bezier(0.42, 0, 0.25, 1.26); */
     animation-timing-function: ease;
 }
@@ -99,3 +100,31 @@
         transform: translateY(0);
     }
 }
+
+/* research_marketing */
+/* ============================================================
+                    Section 1 클리핑 효과
+============================================================ */
+.makeRect {
+    animation-name: makeRect;
+    /* animation-timeline: view(); */
+    /* animation-range: entry 50% exit 100%; */
+}
+/* 
+@keyframes makeRect {
+    0% {
+        clip-path: polygon(0px 0px 0px 0px);
+    }
+    25% {
+        clip-path: polygon(600px 20px);
+    }
+    50% {
+        clip-path: polygon(300px 40px);
+    }
+    75% {
+        clip-path: polygon();
+    }
+    100% {
+        clip-path: polygon();
+    }
+} */
