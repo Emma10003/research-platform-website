@@ -1,0 +1,246 @@
+#dBody {
+    position: relative;
+}
+
+.body-container {
+    padding-bottom: 500px;
+}
+
+/* =============================
+Section 1
+============================= */
+.cover-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.cover-container .cover-text-group {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.cover-container .page-title {
+    width: 550px;
+}
+
+.cover-container .text-inner span {
+    display: block;
+    font-size: 100px;
+    line-height: 1;
+}
+
+.cover-container .text-inner span:nth-child(1) {
+    text-align: left;
+}
+
+.cover-container .text-inner span:nth-child(2) {
+    text-align: right;
+}
+
+.cover-container .page-desc {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 18%;
+}
+
+/* 이미지 */
+.cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* =============================
+Section 2
+============================= */
+.panel-bigdata-container .text-group {
+    margin-top: 100px;
+}
+
+.panel-bigdata-container .text-title {
+    line-height: 1.31;
+}
+
+.panel-bigdata-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.panel-bigdata-container .text-title p {
+    text-align: center;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.panel-bigdata-container .img-group {
+    margin-top: 70px;
+}
+
+.panel-bigdata-container .img-group-item {
+    position: relative;
+    width: 1080px;
+    margin: auto;
+}
+
+/* =============================
+Section 3
+============================= */
+.difference-container .text-group {
+    margin-top: 100px;
+}
+
+.difference-container .text-title {
+    line-height: 1.31;
+}
+
+.difference-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.difference-container .text-title p {
+    text-align: center;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* 이미지 */
+.difference-container .img-group {
+    margin-top: 70px;
+}
+
+.difference-container .img-group-item {
+    position: relative;
+    width: 1080px;
+    margin: auto;
+}
+
+.difference-container .point {
+    margin-top: 60px;
+}
+
+.difference-container .point-items {
+    margin: 0;
+    padding: 0;
+}
+
+.difference-container .point ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.difference-container .point li {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.difference-container .item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 18px;
+}
+
+.difference-container .item-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.difference-container .info-title {
+    font-size: 24px;
+}
+
+.difference-container .info-contents {
+    /* display: inline-block; */
+    margin-top: 15px;
+}
+
+/* =============================
+Section 4
+============================= */
+.beyond-container .text-group {
+    margin-top: 100px;
+}
+
+.beyond-container .text-title {
+    line-height: 1.31;
+}
+
+.beyond-container .text-title h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.beyond-container .text-title p {
+    text-align: center;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* 이미지 */
+.beyond-container .point ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beyond-container .point li {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.beyond-container .img-category {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.beyond-container .item-img {
+    position: relative;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 4px solid #0066cc;
+    margin: 40px auto 0 auto;
+}
+
+.beyond-container .panel-icon {
+    width: 72px;
+}
+
+.beyond-container .item-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.beyond-container .info-title {
+    font-size: 24px;
+}
+
+.beyond-container .info-contents {
+    /* display: inline-block; */
+    margin-top: 15px;
+}

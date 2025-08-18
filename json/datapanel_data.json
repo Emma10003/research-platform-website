@@ -1,0 +1,29 @@
+{
+    "website": {
+        "id": "H 0172***",
+        "date": "2024년 4월 5일",
+        "url": "https://www.seouljarang.net/sh...",
+        "previous-domain": "dreamsearch.or.kr"
+    },
+    "app": {
+        "id": "A 0002***",
+        "date": "2024년 5월 9일",
+        "package_name": "com.kakao.talk",
+        "category": "커뮤니케이션",
+        "screen-time": "0시간 47분 55초"
+    },
+    "offline": {
+        "id": "P 0277***",
+        "date": "2024년 3월 2일",
+        "place": "스타벅스",
+        "complex": "OO 백화점",
+        "area": "부산 서면"
+    },
+    "credit-card": {
+        "id": "P 0194***",
+        "date": "2024년 1월 9일",
+        "card-brand": "OO카드",
+        "franchise": "편의점 건대화양점",
+        "price": "12,300원"
+    }
+}

@@ -115,13 +115,16 @@
 
 @keyframes shapeAnimation {
     0% {
-        clip-path: circle(100% at 50% 50%);
+        clip-path: circle(25% at 50% 50%);
     }
     25% {
         clip-path: circle(25% at 20% 40%);
     }
     50% {
         clip-path: circle(25% at 70% 80%);
+    }
+    75% {
+        clip-path: circle(25% at 50% 50%);
     }
     100% {
         clip-path: circle(100% at 50% 50%);
