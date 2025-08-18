@@ -22,40 +22,7 @@ $(function () {
     textCount();
 
     // 입력여부 확인
-    $(".submit-btn").click(function (e) {
-        const inputService = $("#ask-category").val();
-        const inputName = $("#inquiry-name").val().length;
-        const inputFirm = $("#inquiry-firm").val().length;
-        const inputPhone = $("#inquiry-tel").val().length;
-        const inputEmail = $("#inquiry-email").val().length;
-        const inputContents = $("#inquiry-contents").val().length;
-
-        if (inputService === "") {
-            alert("서비스 유형을 선택해 주세요.");
-            return;
-        }
-
-        if (inputName <= 0) {
-            $("#form-name").prepend(
-                `
-                <div class="alertpop actived">
-                    <div class="alertpop-wrap">
-                        <div class="alertpop-title">
-                            이름을 입력해 주세요.
-                        </div>
-                        <div class="alertpop-btn">
-                        <button type="button" id="check-btn">
-                            확인
-                        </button>
-                        </div>
-                    </div>
-                </div>
-                `
-            )
-            $("#form-name").focus();
-            return;
-        }
-    });
+    $(".submit-btn").click(inputRequiredCheck);
 });
 
 // 문의내용 모달팝업
@@ -168,5 +135,136 @@ function textCount() {
     });
 }
 
-// 모든 입력란이 입력되었는지 확인하기
-function checkRequiredInput() {}
+// 입력창 입력확인
+function inputRequiredCheck() {
+    const inputService = $("#ask-category").val();
+    const inputName = $("#inquiry-name").val();
+    const inputFirm = $("#inquiry-firm").val();
+    const inputPhone = $("#inquiry-tel").val();
+    const inputEmail = $("#inquiry-email").val();
+    const inputContents = $("#inquiry-contents").val();
+
+    if (inputService === "") {
+        $("#alertpop-service").addClass("actived");
+        $("#alertpop-service").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">서비스 유형을 선택해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#form-service").focus();
+        return;
+    }
+
+    if (inputName === "") {
+        $("#alertpop-name").addClass("actived");
+        $("#alertpop-name").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">이름을 입력해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#inquiry-name").focus();
+        return;
+    }
+
+    if (inputFirm === "") {
+        $("#alertpop-firm").addClass("actived");
+        $("#alertpop-firm").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">기관 또는 회사명을 입력해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#inquiry-firm").focus();
+        return;
+    }
+
+    if (inputPhone === "") {
+        $("#alertpop-tel").addClass("actived");
+        $("#alertpop-tel").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">연락처를 입력해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#inquiry-tel").focus();
+        return;
+    }
+
+    if (inputEmail === "") {
+        $("#alertpop-email").addClass("actived");
+        $("#alertpop-email").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">이메일을 입력해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#inquiry-email").focus();
+        return;
+    }
+
+    if (inputContents === "") {
+        $("#alertpop-contents").addClass("actived");
+        $("#alertpop-contents").prepend(
+            `
+                <div class="alertpop-wrap">
+                    <div class="alertpop-item">
+                        <div class="alertpop-title font600">문의사항을 입력해 주세요.</div>
+                    </div>
+                    <div class="alertpop-item">
+                        <div class="alertpop-btn">
+                            <button type="button" class="fontBlue font600" id="check-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+                `
+        );
+        $("#alertpop-contents").focus();
+        return;
+    }
+}
+
+function closeInputPopup() {
+    $(".alertpop").removeClass("actived");
+}

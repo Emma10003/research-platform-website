@@ -398,6 +398,14 @@
 }
 
 /* 버튼 */
+.form-container .submit-btn {
+    display: flex;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    /* font-size: 24px; */
+}
+
 .form-container .btn {
     margin-top: 30px;
     width: 100%;
@@ -423,13 +431,6 @@
 
 .form-container .btn-grid-cell {
     display: flex;
-}
-
-.form-container .submit-btn {
-    display: flex;
-    border: 0;
-    background-color: transparent;
-    /* font-size: 24px; */
 }
 
 .form-container .submit-btn-text {
@@ -468,9 +469,9 @@
 
 .alertpop-wrap {
     position: absolute;
-    opacity: 0;
-    min-width: 300px;
-    max-width: 400px;
+    opacity: 1;
+    min-width: 350px;
+    max-width: 500px;
     background-color: #fff;
     transition: opacity 0.4s ease;
     border: 1px solid #0c4d98;
@@ -480,22 +481,25 @@
     transform: translate(-50%, -50%);
 }
 
-/* 여기부터 수정하기. */
-.form-container .personal-info-modal-grid {
+.alertpop-item {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 55px 30px 30px 30px;
 }
 
-.form-container .personal-info-modal-grid-inner.innertitle {
-    padding: 30px;
+.alertpop-title {
+    font-size: 18px;
 }
 
-.form-container .personal-info-modal-grid-inner.innercontent {
-    padding: 0 45px 30px 45px;
+#check-btn {
+    background-color: #fff;
+    border: 1px solid #06c;
+    min-width: 92px;
+    padding: 10px 0px;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
-.form-container .personal-info-modal-title-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#check-btn:hover {
+    background-color: #f7f7f7;
 }
