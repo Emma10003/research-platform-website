@@ -66,9 +66,6 @@ Section 1
 /* =============================
 Section 2
 ============================= */
-.right-business-container {
-}
-
 .right-business-container .text-group {
     margin-top: 100px;
 }
@@ -87,4 +84,32 @@ Section 2
     line-height: 1.44;
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* =============================
+Section 3
+============================= */
+.mcd-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.mcd-container .text {
+    font-size: 120px;
+    /* text-align: center; */
+}
+
+.mcd-container .dot {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.mcd-container .dot:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #0066CC;
 }
