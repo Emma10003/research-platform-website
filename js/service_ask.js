@@ -3,9 +3,11 @@
 ============================================== */
 
 $(function () {
+    // 모달팝업
     $(".icon-form-tip").click(openPopUpServiceAsk);
     $(".form-check-wholeInfo").click(openPopUpPersonalInfo);
 
+    // 체크박스
     $("#chkAgree").click(() => {
         if ($("#chkAgree").prop("checked")) {
             changeCheckIconBlue();
@@ -16,7 +18,11 @@ $(function () {
         }
     });
 
+    // 글자수세기
     textCount();
+
+    // 입력여부 확인
+    $(".submit-btn").click(checkRequiredInput);
 });
 
 // 문의내용 모달팝업
@@ -123,8 +129,22 @@ function changeCheckIconGray() {
 
 // 문의내용 글자수 세기
 function textCount() {
-    $("#inquiry-contents").keyup((e) => {
+    $("#inquiry-contents").keydown((e) => {
         const count = $("#inquiry-contents").val().length;
         $(".text-count").html(`<strong>${count}</strong>`);
     });
+}
+
+// 모든 입력란이 입력되었는지 확인하기
+function checkRequiredInput() {
+    const inputService = $(".inquiry-full").val();
+    const inputName = $(".inquiry-name").val().length;
+    const inputFirm = $(".inquiry-firm").val().length;
+    const inputPhone = $(".inquiry-tel").val().length;
+    const inputEmail = $(".inquiry-email").val().length;
+    const inputContents = $(".inquiry-contents").val().length;
+
+    if(inputService === "") {
+        alert("서비스 유형을 선택해 주세요.")
+    }
 }

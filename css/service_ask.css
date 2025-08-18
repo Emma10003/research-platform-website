@@ -409,6 +409,11 @@
     cursor: pointer;
 }
 
+.form-container .btn:hover {
+    background-color: #115baf;
+    transition: background-color 0.4s ease;
+}
+
 .form-container .btn-grid {
     display: flex;
     align-items: center;
@@ -423,7 +428,7 @@
 .form-container .submit-btn {
     display: flex;
     border: 0;
-    background-color: #06c;
+    background-color: transparent;
     /* font-size: 24px; */
 }
 
@@ -433,4 +438,9 @@
     color: #fff;
     font-size: 24px;
     vertical-align: middle;
+    cursor: pointer;
+}
+
+.form-container .btn-grid-item {
+    transform: translateY(3px);
 }

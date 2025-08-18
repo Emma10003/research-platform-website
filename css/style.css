@@ -92,6 +92,7 @@ dHead (네비게이션 포함)
     position: fixed;
     top: 0;
     width: 100vw;
+    max-width: 1920px;
     height: 90px;
     display: none;
     z-index: 10;
