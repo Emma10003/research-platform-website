@@ -3,7 +3,7 @@
 }
 
 .body-container {
-    height: 1700px;
+    padding-bottom: 500px;
 }
 
 /* =============================
@@ -64,7 +64,7 @@ Section 1
 }
 
 /* =============================
-Section 2
+Section 2, 4
 ============================= */
 .right-business-container .text-group {
     margin-top: 100px;
@@ -111,5 +111,45 @@ Section 3
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: #0066CC;
+    background: #0066cc;
+}
+
+/* =============================
+Section 4
+============================= */
+.right-business-container .point {
+    margin-top: 60px;
+}
+
+.right-business-container .point-items {
+    margin: 0;
+    padding: 0;
+}
+
+.right-business-container .point ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.right-business-container .point li {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.right-business-container .item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 18px;
+}
+
+.right-business-container .item-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.right-business-container .info-title {
+    font-size: 24px;
 }
