@@ -109,8 +109,7 @@
                                         </h2>
                                     </div>
                                     <div class="form-info-inner-content">
-                                        엠브레인이 제공하는 서비스를 신청하시거나 문의사항이 있을
-                                        시<br />
+                                        엠브레인이 제공하는 서비스를 신청하시거나 문의사항이 있을 시<br />
                                         다음 양식을 작성해주세요. <br />
                                         연락처를 남겨 주시면 담당자가 곧 연락 드리겠습니다.
                                     </div>
@@ -120,9 +119,7 @@
                                     </div>
                                     <div class="btns">
                                         <button type="button" class="faq-btn">
-                                            <a
-                                                href="service_FAQ.html"
-                                                class="btn-text fontBlue font700">
+                                            <a href="service_FAQ.html" class="btn-text fontBlue font700">
                                                 자주 묻는 질문
                                                 <div class="icon">
                                                     <img
@@ -135,10 +132,7 @@
                                         </button>
                                     </div>
                                     <div class="tel-box" style="margin-top: 30px">
-                                        <img
-                                            src="../img/service_ask/유선문의.png"
-                                            class="tel-box-img"
-                                            width="320px" />
+                                        <img src="../img/service_ask/유선문의.png" class="tel-box-img" width="320px" />
                                     </div>
                                 </div>
                                 <div class="form-data">
@@ -155,26 +149,12 @@
                                             </div>
                                             <div class="item-body">
                                                 <div class="item-detail">
-                                                    <select
-                                                        class="inquiry-full"
-                                                        id="ask-category"
-                                                        name="ask-category"
-                                                        required>
-                                                        <option value="">
-                                                            문의 유형을 선택해 주세요.
-                                                        </option>
-                                                        <option value="inquiry_category_research">
-                                                            리서치 서비스
-                                                        </option>
-                                                        <option value="inquiry_category_data">
-                                                            데이터 서비스
-                                                        </option>
-                                                        <option value="inquiry_category_marketing">
-                                                            마케팅 서비스
-                                                        </option>
-                                                        <option value="inquiry_category_ect">
-                                                            기타 문의
-                                                        </option>
+                                                    <select class="inquiry-full" id="ask-category" name="ask-category" required>
+                                                        <option value="">문의 유형을 선택해 주세요.</option>
+                                                        <option value="inquiry_category_research">리서치 서비스</option>
+                                                        <option value="inquiry_category_data">데이터 서비스</option>
+                                                        <option value="inquiry_category_marketing">마케팅 서비스</option>
+                                                        <option value="inquiry_category_ect">기타 문의</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -190,12 +170,9 @@
                                                         <div class="form-input-items-vertical">
                                                             <div class="item-header">
                                                                 <div class="item-header-label">
-                                                                    <div
-                                                                        class="item-input-label font600">
+                                                                    <div class="item-input-label font600">
                                                                         이름
-                                                                        <strong class="fontRequired"
-                                                                            >*</strong
-                                                                        >
+                                                                        <strong class="fontRequired">*</strong>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -217,12 +194,9 @@
                                                         <div class="form-input-items-vertical">
                                                             <div class="item-header">
                                                                 <div class="item-header-label">
-                                                                    <div
-                                                                        class="item-input-label font600">
+                                                                    <div class="item-input-label font600">
                                                                         기관 또는 회사명
-                                                                        <strong class="fontRequired"
-                                                                            >*</strong
-                                                                        >
+                                                                        <strong class="fontRequired">*</strong>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -296,15 +270,11 @@
                                                     <div class="form-data-inquiry-grid-cell">
                                                         <div class="item-header">
                                                             <div class="item-header-label">
-                                                                <div
-                                                                    class="item-input-label font600">
+                                                                <div class="item-input-label font600">
                                                                     문의 내용
-                                                                    <strong class="fontRequired"
-                                                                        >*</strong
-                                                                    >
+                                                                    <strong class="fontRequired">*</strong>
                                                                     <!-- 클릭 시 모달팝업 -->
-                                                                    <span
-                                                                        class="icon icon-form-tip"></span>
+                                                                    <span class="icon icon-form-tip"></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -314,8 +284,7 @@
                                                     <div class="form-check-grid-cell">
                                                         <div class="form-grid-cell-text">
                                                             <!-- span 자리에 글자수 세기 -->
-                                                            <span class="text-count"></span> / 1,000
-                                                            byte
+                                                            <span class="text-count"><strong>0</strong></span> / 1,000 byte
                                                         </div>
                                                     </div>
                                                 </div>
@@ -329,6 +298,10 @@
                                                         placeholder="문의하실 내용을 작성해 주세요."></textarea>
                                                 </div>
                                             </div>
+                                            <!-- 모달팝업 -->
+                                            <div class="service-ask-modal-page" onclick="closePopUpServiceAsk()">
+                                                <div class="service-ask-modal"></div>
+                                            </div>
                                         </div>
                                         <!-- 문의 내용 끝 -->
 
@@ -336,9 +309,7 @@
                                         <div class="form-data-items-vertical">
                                             <div class="item-header">
                                                 <div class="item-header-label">
-                                                    <div class="item-input-label font600">
-                                                        개인정보 수집 및 이용 동의
-                                                    </div>
+                                                    <div class="item-input-label font600">개인정보 수집 및 이용 동의</div>
                                                 </div>
                                             </div>
                                             <div class="item-body">
@@ -349,30 +320,26 @@
                                                             <div class="form-check-grid">
                                                                 <div class="form-check-grid-item">
                                                                     <span class="form-check-icon">
-                                                                        <img
-                                                                            src="../img/service_ask/icon-checkbox-gray.png"
-                                                                            class="check-icon" />
+                                                                        <img src="../img/service_ask/icon-checkbox-gray.png" class="check-icon gray" />
                                                                     </span>
                                                                 </div>
                                                                 <div class="form-check-grid-item">
-                                                                    <span class="form-check-text">
-                                                                        개인정보 수집 및 이용에
-                                                                        동의합니다.
-                                                                    </span>
+                                                                    <span class="form-check-text"> 개인정보 수집 및 이용에 동의합니다. </span>
                                                                 </div>
                                                             </div>
                                                             <div class="form-check-grid">
                                                                 <div class="form-check-grid-item">
                                                                     <!-- 클릭 시 모달팝업 -->
-                                                                    <span
-                                                                        class="form-check-wholeInfo fontBlue font600">
-                                                                        [전문보기]
-                                                                    </span>
+                                                                    <span class="form-check-wholeInfo fontBlue font600"> [전문보기] </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </label>
                                                 </div>
+                                            </div>
+                                            <!-- 모달팝업 -->
+                                            <div class="personal-info-modal-page" onclick="closePopUpPersonalInfo()">
+                                                <div class="personal-info-modal"></div>
                                             </div>
                                         </div>
                                         <!-- 개인정보 수집 끝 -->
@@ -381,19 +348,13 @@
                                         <div class="btn">
                                             <div class="btn-grid">
                                                 <div class="btn-grid-item">
-                                                    <button
-                                                        type="button"
-                                                        class="submit-btn"
-                                                        id="submit-btn">
-                                                        <span class="submit-btn-text font700">
-                                                            서비스 문의 신청
-                                                        </span>
+                                                    <button type="button" class="submit-btn" id="submit-btn">
+                                                        <span class="submit-btn-text font700"> 서비스 문의 신청 </span>
                                                     </button>
                                                 </div>
                                                 <div class="btn-grid-item">
                                                     <span class="btn-icon-arrow">
-                                                        <img
-                                                            src="../img/service_ask/icon-arrow-forward-white-48.png" />
+                                                        <img src="../img/service_ask/icon-arrow-forward-white-48.png" />
                                                     </span>
                                                 </div>
                                             </div>
@@ -427,8 +388,7 @@
                     <div class="footer-info">
                         <div class="footer-address fontLightGray">
                             <span>(주)마크로밀 엠브레인</span><br />
-                            <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
-                            ><br />
+                            <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span><br />
                             <span>대표전화: <strong>02-3444-4000</strong></span
                             ><br />
                             <span>이메일: webmaster@embrain.com</span><br />
@@ -450,9 +410,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-copy fontLightGray">
-                            Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
-                        </div>
+                        <div class="footer-copy fontLightGray">Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.</div>
                     </div>
                     <div class="footer-site-menu">
                         <ul class="menu-group">

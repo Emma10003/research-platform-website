@@ -3,7 +3,7 @@
 }
 
 .form-container {
-    height: 1800px;
+    height: 1700px;
 }
 
 /* 제목 영역 */
@@ -191,6 +191,71 @@
     margin-bottom: 20px;
 }
 
+/* 문의 내용 - 모달 팝업 */
+.form-container .service-ask-modal-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
+    z-index: 100;
+}
+
+.form-container .service-ask-modal-page.actived {
+    left: 0;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+}
+
+.form-container .service-ask-modal {
+    position: absolute;
+    opacity: 0;
+    min-width: 480px;
+    max-width: 540px;
+    background-color: #fff;
+    transition: opacity 0.4s ease;
+    border: 1px solid #0c4d98;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+.form-container .service-ask-modal-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .service-ask-modal-grid-inner.innertitle {
+    padding: 30px;
+}
+
+.form-container .service-ask-modal-grid-inner.innercontent {
+    padding: 0 30px 30px 30px;
+}
+
+.form-container .service-ask-modal-title-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-container .title-grid-item {
+    font-size: 24px;
+}
+
+.form-container .icon-close {
+    cursor: pointer;
+}
+
+.form-container .service-ask-modal-content li {
+    color: #444;
+}
+
 /* 개인정보 수집 */
 .form-container .form-check-grid-horizontal {
     display: flex;
@@ -228,6 +293,10 @@
     background-color: #fff;
 }
 
+.form-container .check-icon.hide {
+    display: none;
+}
+
 .form-container .form-check-grid-item .form-check-text {
     display: inline-block;
     transform: translateY(-2px);
@@ -242,6 +311,92 @@
     cursor: pointer;
 }
 
+/* 개인정보 수집 - 모달 팝업 */
+.form-container .personal-info-modal-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
+    z-index: 100;
+}
+
+.form-container .personal-info-modal-page.actived {
+    left: 0;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+}
+
+.form-container .personal-info-modal {
+    position: absolute;
+    opacity: 0;
+    min-width: 480px;
+    max-width: 555px;
+    background-color: #fff;
+    transition: opacity 0.4s ease;
+    border: 1px solid #0c4d98;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+.form-container .personal-info-modal-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .personal-info-modal-grid-inner.innertitle {
+    padding: 30px;
+}
+
+.form-container .personal-info-modal-grid-inner.innercontent {
+    padding: 0 45px 30px 45px;
+}
+
+.form-container .personal-info-modal-title-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* 위쪽에 이미 정의해둠
+.form-container .title-grid-item {
+    font-size: 24px;
+}
+
+.form-container .icon-close {
+    cursor: pointer;
+} */
+
+.form-container .personal-info-modal-content .content-item::before {
+    content: "";
+    position: relative;
+    top: 13px;
+    left: -15px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #aaa;
+    border-radius: 50%;
+}
+
+.form-container .personal-info-modal-content .item-title {
+    font-size: 18px;
+    line-height: 1.44;
+}
+
+.form-container .personal-info-modal-content .item-desc {
+    line-height: 1.5;
+}
+
+.form-container .content-item-last {
+    margin-top: 20px;
+}
+
 /* 버튼 */
 .form-container .btn {
     margin-top: 30px;
@@ -251,6 +406,7 @@
     border: none;
     background-color: #06c;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .form-container .btn-grid {
