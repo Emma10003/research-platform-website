@@ -1,0 +1,64 @@
+#dBody {
+    position: relative;
+}
+
+.body-container {
+    height: 1700px;
+}
+
+/* =============================
+Section 1
+============================= */
+.cover-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.cover-container .cover-text-group {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.cover-container .page-title {
+    width: 944px;
+}
+
+.cover-container .text-inner span {
+    display: block;
+    font-size: 100px;
+    line-height: 1;
+}
+
+.cover-container .text-inner span:nth-child(1) {
+    text-align: left;
+}
+
+.cover-container .text-inner span:nth-child(2) {
+    text-align: right;
+}
+
+.cover-container .page-desc {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 18%;
+}
+
+/* 이미지 */
+.cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
