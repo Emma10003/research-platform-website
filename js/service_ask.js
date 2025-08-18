@@ -7,7 +7,7 @@ $(function () {
     $(".form-check-wholeInfo").click(openPopUpPersonalInfo);
 
     $("#chkAgree").click(() => {
-        if (!$("#chkAgree").prop("checked")) {
+        if ($("#chkAgree").prop("checked")) {
             changeCheckIconBlue();
             $("#chkAgree").click(changeCheckIconGray);
         } else {
