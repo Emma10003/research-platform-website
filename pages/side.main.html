@@ -1,337 +1,420 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>트렌드리포트 | Ch.엠브레인</title>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/font.css" />
-        <link rel="stylesheet" href="../css/effect.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/side.main.css" />
-        <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
-    </head>
-    <body>
-        <!-- header-wrap -->
-        <div class="header-wrap">
-            <!-- dHead: 로고, 네비게이션 바 -->
-            <header id="dHead" class="dHead">
-                <!-- header-inner -->
-                <div class="header-inner .light">
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo/logo_blue.png" class="blue-logo" id="blue-logo" />
-                        </a>
-                    </div>
-                    <!-- gnb -->
-                    <div class="gnb-wrap">
-                        <ul class="gnb-list">
-                            <li class="gnb-list-cell font600">
-                                <a href="#">리서치 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="research_marketing.html">마케팅 리서치</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">데이터 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="data_panel.html">패널빅데이터</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">Ch.엠브레인</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="side.main.html">트렌드리포트</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">서비스 문의</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="service_ask.html">문의하기</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트렌드리포트 | Ch.엠브레인</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/effect.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/side.main.css" />
+    <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header id="dHead" class="dHead">
+        <div class="header-inner .light">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../img/logo/logo_blue.png"
+                class="blue-logo"
+                id="blue-logo"
+                alt="엠브레인 로고"
+              />
+            </a>
+          </div>
+          <div class="gnb-wrap">
+            <ul class="gnb-list">
+              <li class="gnb-list-cell font600">
+                <a href="#">리서치 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="research_marketing.html">마케팅 리서치</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- // header-inner -->
-            </header>
-            <!-- // dHead -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">데이터 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="data_panel.html">패널빅데이터</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">Ch.엠브레인</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="side.main.html">트렌드리포트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">서비스 문의</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="service_ask.html">문의하기</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-menu-btn" aria-label="모바일 메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <!-- // header-wrap -->
+      </header>
+    </div>
 
-        <!-- wrap 시작 -->
-        <div class="wrap">
-            <!-- dBody -->
-            <section id="dBody">
-                <div class="body-container">
-                    <div class="text-area font700">
-                        <h2 class="font700">시장과 소비자에 대한 최신 정보를 확인해 보세요</h2>
-                    </div>
-                    <div class="grid-area">
-                        <div class="grid-wrap">
-                            <div class="grid-wrap-inner">
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-66">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_healthcare.png" id="healthcare" />
-                                            <div class="item-info row1">
-                                                <div class="date font600">2025.06.30</div>
-                                                <div class="title fontWhite font600">2025. 2Q Healthcare Trend</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_fashion.png" />
-                                        </div>
-                                        <div class="item-info row1">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Fashion Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_alcohol.png" />
-                                        </div>
-                                        <div class="item-info row2">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Alcohol/Cigarette Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_home.png" />
-                                        </div>
-                                        <div class="item-info row2">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Home/Interior Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_travel.png" />
-                                        </div>
-                                        <div class="item-info row2">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Travel Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-66">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_shopping.png" />
-                                        </div>
-                                        <div class="item-info row3">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Shopping Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_beauty.png" />
-                                        </div>
-                                        <div class="item-info row3">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Beauty Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_mobility.png" />
-                                        </div>
-                                        <div class="item-info row4">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">
-                                                2025. 2Q Mobility/Home<br />
-                                                Appliance Trend
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="grid-inner-item width-per-33">
-                                    <div class="item-wrap">
-                                        <div class="item-img">
-                                            <img src="../img/side.main/side.main_finance.png" />
-                                        </div>
-                                        <div class="item-info row4">
-                                            <div class="date font600">2025.06.30</div>
-                                            <div class="title fontWhite font600">2025. 2Q Finance Trend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- dFoot -->
-            <footer id="dFoot">
-                <div class="footer-top fontWhite">
-                    <div class="inner">
-                        <div class="emblem">
-                            <img src="../img/logo/logo_white.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom fontWhite">
-                    <div class="inner">
-                        <div class="footer-info">
-                            <div class="footer-address fontLightGray">
-                                <span>(주)마크로밀 엠브레인</span><br />
-                                <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span><br />
-                                <span>대표전화: <strong>02-3444-4000</strong></span
-                                ><br />
-                                <span>이메일: webmaster@embrain.com</span><br />
-                                <span>대표이사: <strong>최인수</strong></span
-                                ><br />
-                                <span>사업자등록번호: <strong>02-3444-4000</strong></span
-                                ><br />
-                            </div>
-                            <div class="footer-sns">
-                                <ul class="sns-logo">
-                                    <li class="sns-logo-item">
-                                        <img src="../img/footer/footer_iso.png" />
-                                    </li>
-                                    <li class="sns-logo-item">
-                                        <img src="../img/footer/footer_blog.png" />
-                                    </li>
-                                    <li class="sns-logo-item">
-                                        <img src="../img/footer/footer_insta.png" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-copy fontLightGray">Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.</div>
-                        </div>
-                        <div class="footer-site-menu">
-                            <ul class="menu-group">
-                                <li class="menu-item">
-                                    <div class="menu-title font700">Deep data</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>Deep data</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">리서치 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>마케팅 리서치</li>
-                                        <li>·</li>
-                                        <li>공공/여론 리서치</li>
-                                        <li>·</li>
-                                        <li>논문/학술 리서치</li>
-                                        <li>·</li>
-                                        <li>이지서베이</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">데이터 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>구매빅데이터</li>
-                                        <li>·</li>
-                                        <li>패널빅데이터</li>
-                                        <li>·</li>
-                                        <li>인공지능 학습용 데이터</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">마케팅 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>브랜드/마케팅 전략 컨설팅</li>
-                                        <li>·</li>
-                                        <li>마케팅 커뮤니케이션</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">Ch.엠브레인</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>트렌드리포트</li>
-                                        <li>·</li>
-                                        <li>스냅 인사이트</li>
-                                        <li>·</li>
-                                        <li>트렌드모니터</li>
-                                        <li>·</li>
-                                        <li>트렌드줍줍</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">회사소개</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>엠브레인</li>
-                                        <li>·</li>
-                                        <li>인프라</li>
-                                        <li>·</li>
-                                        <li>인재채용</li>
-                                        <li>·</li>
-                                        <li>공지사항</li>
-                                        <li>·</li>
-                                        <li>IR</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">서비스 문의</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>서비스 소개자료</li>
-                                        <li>·</li>
-                                        <li>서비스 문의</li>
-                                        <li>·</li>
-                                        <li>자주 묻는 질문</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- //dFoot -->
+    <div class="mobile-gnb-wrap">
+      <div class="mobile-gnb-header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/logo/logo_blue.png" alt="엠브레인 로고" />
+          </a>
         </div>
+        <button class="mobile-menu-close" aria-label="모바일 메뉴 닫기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-gnb-body">
+        <ul class="mobile-gnb-list">
+          <li>
+            <a href="#">리서치 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="research_marketing.html">마케팅 리서치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">데이터 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="data_panel.html">패널빅데이터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ch.엠브레인</a>
+            <ul class="mobile-snb-list">
+              <li><a href="side.main.html">트렌드리포트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스 문의</a>
+            <ul class="mobile-snb-list">
+              <li><a href="service_ask.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <script src="../js/script.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="../js/side.main.js"></script>
-    </body>
+    <div class="wrap">
+      <section id="dBody">
+        <div class="body-container">
+          <div class="text-area font700">
+            <h2 class="font700">
+              시장과 소비자에 대한 최신 정보를 확인해 보세요
+            </h2>
+          </div>
+          <div class="grid-area">
+            <div class="grid-wrap">
+              <div class="grid-wrap-inner">
+                <div class="grid-inner-item width-per-66">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_healthcare.png"
+                        id="healthcare"
+                        alt="Healthcare Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Healthcare Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_fashion.png"
+                        alt="Fashion Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Fashion Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_alcohol.png"
+                        alt="Alcohol/Cigarette Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Alcohol/Cigarette Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_home.png"
+                        alt="Home/Interior Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Home/Interior Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_travel.png"
+                        alt="Travel Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Travel Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-66">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_shopping.png"
+                        alt="Shopping Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Shopping Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_beauty.png"
+                        alt="Beauty Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Beauty Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_mobility.png"
+                        alt="Mobility/Home Appliance Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Mobility/Home<br />
+                          Appliance Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-inner-item width-per-33">
+                  <div class="item-wrap">
+                    <div class="item-img">
+                      <img
+                        src="../img/side.main/side.main_finance.png"
+                        alt="Finance Trend"
+                      />
+                      <div class="item-info">
+                        <div class="date font600">2025.06.30</div>
+                        <div class="title fontWhite font600">
+                          2025. 2Q Finance Trend
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="dFoot">
+        <div class="footer-top fontWhite">
+          <div class="inner">
+            <div class="emblem">
+              <img src="../img/logo/logo_white.png" alt="엠브레인 푸터 로고" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fontWhite">
+          <div class="inner">
+            <div class="footer-info">
+              <div class="footer-address fontLightGray">
+                <span>(주)마크로밀 엠브레인</span><br />
+                <span
+                  >서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
+                ><br />
+                <span>대표전화: <strong>02-3444-4000</strong></span
+                ><br />
+                <span>이메일: webmaster@embrain.com</span><br />
+                <span>대표이사: <strong>최인수</strong></span
+                ><br />
+                <span>사업자등록번호: <strong>02-3444-4000</strong></span
+                ><br />
+              </div>
+              <div class="footer-sns">
+                <ul class="sns-logo">
+                  <li class="sns-logo-item">
+                    <img src="../img/footer/footer_iso.png" alt="ISO 인증" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img src="../img/footer/footer_blog.png" alt="블로그" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img
+                      src="../img/footer/footer_insta.png"
+                      alt="인스타그램"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-copy fontLightGray">
+                Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
+              </div>
+            </div>
+            <div class="footer-site-menu">
+              <ul class="menu-group">
+                <li class="menu-item">
+                  <div class="menu-title font700">Deep data</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>Deep data</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">리서치 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>마케팅 리서치</li>
+                    <li>·</li>
+                    <li>공공/여론 리서치</li>
+                    <li>·</li>
+                    <li>논문/학술 리서치</li>
+                    <li>·</li>
+                    <li>이지서베이</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">데이터 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>구매빅데이터</li>
+                    <li>·</li>
+                    <li>패널빅데이터</li>
+                    <li>·</li>
+                    <li>인공지능 학습용 데이터</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">마케팅 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>브랜드/마케팅 전략 컨설팅</li>
+                    <li>·</li>
+                    <li>마케팅 커뮤니케이션</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">Ch.엠브레인</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>트렌드리포트</li>
+                    <li>·</li>
+                    <li>스냅 인사이트</li>
+                    <li>·</li>
+                    <li>트렌드모니터</li>
+                    <li>·</li>
+                    <li>트렌드줍줍</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">회사소개</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>엠브레인</li>
+                    <li>·</li>
+                    <li>인프라</li>
+                    <li>·</li>
+                    <li>인재채용</li>
+                    <li>·</li>
+                    <li>공지사항</li>
+                    <li>·</li>
+                    <li>IR</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">서비스 문의</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>서비스 소개자료</li>
+                    <li>·</li>
+                    <li>서비스 문의</li>
+                    <li>·</li>
+                    <li>자주 묻는 질문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/header.js"></script>
+  </body>
 </html>

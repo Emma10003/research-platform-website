@@ -1,388 +1,658 @@
 #dBody {
-    /* padding-top: 110px; */
-    position: relative;
+  position: relative;
 }
 
 /* ==================================================
-effect-data 공통 동작
-================================================== */
-
-/* 그냥 effect-data 상태일 때는 안 보임 */
-/* .effect-data {
-    transform: translate(0%, 100px); */
-/* opacity: 0;
-} */
-
-/* js로 .active 클래스 추가 시 동작 */
-/* .effect-data .active {
-    transform: translate(0%, 0%);
-    opacity: 1;
-} */
-
-/* ==================================================
-Section 1
+Section 1 - 메인 비주얼
 ================================================== */
 .deepData-container {
-    text-align: center;
-    height: 100vh;
-    overflow: hidden;
-    background: url("../img/index/index_main_intro_visual.jpg") center center no-repeat;
-    position: relative;
-    z-index: 0;
+  text-align: center;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  background: url("../img/index/index_main_intro_visual.jpg") center center
+    no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 .deepData-container .text-group {
-    display: inline-block;
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -40%);
+  display: inline-block;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 90%;
+  max-width: 800px;
 }
 
 .deepData-container .row1 {
-    position: relative;
-    left: -150px;
+  position: relative;
+  left: -150px;
 }
 
 .deepData-container .row2 {
-    position: relative;
-    left: 100px;
+  position: relative;
+  left: 100px;
 }
 
 .deepData-container .text-row {
-    font-size: 80px;
+  font-size: 80px;
+  white-space: nowrap;
 }
 
 .deepData-container .image-group {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  object-fit: cover;
 }
 
 /* ==================================================
-Section 2
+Section 2 - 기술 소개
 ================================================== */
-/* headline */
 .technology-container {
-    min-height: 1100px;
-    align-content: center;
+  min-height: 1100px;
+  align-content: center;
+  padding: 80px 20px;
 }
 
 .technology-container .headline {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 
 .technology-container .effect-data {
-    margin-left: 30px;
-    margin-top: 15px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
-/* content */
 .technology-container .content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .technology-container .inner-grid {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 70px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 70px;
+  flex-wrap: wrap;
 }
 
 .technology-container .inner-item {
-    list-style-type: none;
-    margin: 20px;
-    text-align: center;
+  list-style-type: none;
+  margin: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+}
+
+.technology-container .inner-item img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
 }
 
 .technology-container .inner-content {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* ==================================================
-Section 3
+Section 3 - Beyond Big Data
 ================================================== */
 .beyondBig-container {
-    /* height: 100%; */
-    /* min-height: 1500px; */
-    justify-content: center;
-    position: relative;
+  justify-content: center;
+  position: relative;
+  min-height: 800px;
 }
 
-/* Beyond big, Deep data 텍스트 */
 .beyondBig-container .inner-head {
-    position: absolute;
-    left: 50px;
-    top: 100px;
-    font-size: 25px;
-    z-index: 5;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  font-size: 25px;
+  z-index: 5;
 }
 
-/* 이미지 슬라이드 바 */
 .beyondBig-container .slider-nav {
-    position: absolute;
-    top: 350px;
-    left: 80px;
-    /* left: 50%; */
-    z-index: 5;
+  position: absolute;
+  top: 350px;
+  left: 80px;
+  z-index: 5;
 }
 
 .beyondBig-container .btn-slider-nav {
-    display: block;
-    width: 4px;
-    height: 25px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    opacity: 0.3;
-    background-color: #fff;
+  display: block;
+  width: 4px;
+  height: 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.3;
+  background-color: #fff;
 }
 
 .beyondBig-container .btn-slider-nav.active {
-    opacity: 1;
-    background-color: #fff;
+  opacity: 1;
+  background-color: #fff;
 }
 
-/* 이미지 위 텍스트 */
 .beyondBig-container .text-group {
-    position: absolute;
-    top: 350px;
-    left: 30px; /* .slider-nav 로 부터의 거리 */
-    width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .beyondBig-container .text-cell {
-    position: absolute;
-    left: 100px;
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    z-index 0.4s ease;
 }
 
 .beyondBig-container .text-cell.active {
-    /* js로 active 클래스 추가 */
-    opacity: 1;
-    z-index: 9;
-    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
+  opacity: 1;
+  z-index: 9;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    z-index 0.4s ease;
 }
 
 .beyondBig-container .main-title {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .beyondBig-container .sub-title {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-/* 이미지 */
 .beyondBig-container .image-group {
-    position: relative;
+  position: relative;
 }
 
 .beyondBig-container .image-cell {
-    position: absolute;
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    z-index 0.4s ease;
 }
 
 .beyondBig-container .image-cell.active {
-    /* js로 active 클래스 추가 */
-    position: relative;
-    opacity: 1;
-    z-index: 4;
-    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
+  position: relative;
+  opacity: 1;
+  z-index: 4;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+    z-index 0.4s ease;
+}
+
+.beyondBig-container .image-cell img {
+  width: 100%;
+  height: auto;
 }
 
 /* ==================================================
-Section 4
+Section 4 - 품질 관리
 ================================================== */
 .quality-container {
-    height: 1200px;
-    align-content: center;
+  height: auto;
+  min-height: 1200px;
+  align-content: center;
+  padding: 80px 20px;
 }
 
 .quality-container .headline {
-    justify-content: center;
-    margin-bottom: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .quality-container .effect-data {
-    margin-left: 30px;
-    margin-top: 15px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
-/* content */
 .quality-container .content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .quality-container .inner-grid {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .quality-container .inner-item {
-    list-style-type: none;
-    margin: 8px;
-    text-align: center;
+  list-style-type: none;
+  margin: 8px;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+}
+
+.quality-container .inner-item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
 
 .quality-container .inner-content {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* ==================================================
-Section 5
+Section 5 - 서비스 소개
 ================================================== */
 .service-container {
-    height: 1000px;
-    position: relative;
+  height: auto;
+  min-height: 1000px;
+  position: relative;
+  padding: 80px 20px;
 }
 
 .service-container .inner-title {
-    position: absolute;
-    top: 330px;
-    left: 24px;
-    font-size: 65px;
+  position: absolute;
+  top: 330px;
+  left: 24px;
+  font-size: 65px;
 }
 
 .service-container .inner-content {
-    position: absolute;
-    top: 540px;
-    left: 24px;
+  position: absolute;
+  top: 540px;
+  left: 24px;
 }
 
 .service-container .grid-layout-inner {
-    display: flex;
-    position: absolute;
-    top: 250px;
-    right: 60px;
+  display: flex;
+  position: absolute;
+  top: 250px;
+  right: 60px;
+  flex-wrap: wrap;
 }
 
 .service-container .grid-layout-cell {
-    background-color: #fff;
-    margin: 30px;
-    padding: 10px 40px;
-    border-radius: 4px;
+  background-color: #fff;
+  margin: 30px;
+  padding: 10px 40px;
+  border-radius: 4px;
+  min-width: 280px;
 }
 
 .service-container .item-icon {
-    width: 50px;
-    padding: 0px;
-    margin-top: 20px;
+  width: 50px;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.service-container .item-icon img {
+  width: 100%;
+  height: auto;
 }
 
 .service-container .item-subject {
-    font-size: 35px;
-    margin: 10px 0px;
+  font-size: 35px;
+  margin: 10px 0px;
 }
 
 .service-container .item-contents {
-    height: 80px;
+  height: auto;
+  min-height: 80px;
 }
 
 .service-container .icon-arrow {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 25px;
 }
 
-/* 아래 두 개는 js로 grid-layout-cell 마우스 호버 시 클래스 추가로 효과 주기 */
+.service-container .icon-arrow img {
+  width: 100%;
+  height: auto;
+}
+
 .service-container .item-subject.hover {
-    color: #06c;
+  color: #06c;
 }
 
 .service-container .icon-arrow.hover {
-    content: url("../img/index/index_section5_arrow_blue.png");
+  content: url("../img/index/index_section5_arrow_blue.png");
+}
+
+.service-container .image-group img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* ==================================================
-Section 6
+Section 6 - 관련 사이트
 ================================================== */
 .relations-container {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    background: #fff;
-    z-index: 15;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  background: #fff;
+  z-index: 15;
+  flex-wrap: wrap;
 }
 
 .relations-container .relations-item {
-    width: 50%;
-    height: 406px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 80px 80px 0 80px;
+  width: 50%;
+  min-width: 300px;
+  height: 406px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 80px 80px 0 80px;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
 .relations-container .relations-item:nth-child(1) {
-    background: url("../img/index/index_section6_IR_image.png") center center no-repeat;
-    background-size: cover;
-    font-size: 24px;
-    line-height: 1.33;
-    font-weight: 700;
-    color: #fff;
+  background: url("../img/index/index_section6_IR_image.png") center center
+    no-repeat;
+  background-size: cover;
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #fff;
 }
+
 .relations-container .relations-item:nth-child(2) {
-    background: url("../img/index/index_section6_TrendMonitor_image.png") center center no-repeat;
-    background-size: cover;
-    font-size: 24px;
-    line-height: 1.33;
-    font-weight: 700;
-    color: #fff;
+  background: url("../img/index/index_section6_TrendMonitor_image.png") center
+    center no-repeat;
+  background-size: cover;
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #fff;
 }
 
 .relations-container .item-top {
-    margin-top: 20px;
-    font-size: 32px;
-    line-height: 1.31;
-    font-weight: 700;
-    color: #fff;
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 1.31;
+  font-weight: 700;
+  color: #fff;
 }
 
 .relations-container .item-ui {
-    margin-top: 58px;
+  margin-top: 58px;
 }
 
 .relations-container .item-ui .linkBtn {
-    width: 200px;
-    text-align: left;
-    justify-content: space-between;
-    height: 60px;
-    font-size: 18px;
-    color: #fff;
-    border-color: #06c;
-    background-color: #06c;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 20px;
-    font-weight: 700;
-    border-radius: 2px;
-    box-sizing: border-box;
-    white-space: nowrap;
-    transition: background 0.2s ease, border 0.2s ease;
+  width: 200px;
+  text-align: left;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 18px;
+  color: #fff;
+  border-color: #06c;
+  background-color: #06c;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 700;
+  border-radius: 2px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  transition: background 0.2s ease, border 0.2s ease;
 }
 
 .relations-container .item-ui .icon {
-    display: inline-flex;
-    font-size: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
+  display: inline-flex;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .relations-container .item-ui .icon-arrow {
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/index/index_section6_arrow_white.png");
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/index/index_section6_arrow_white.png");
+}
+
+/* ========================================================
+모바일 반응형 미디어 쿼리
+======================================================== */
+
+@media screen and (max-width: 768px) {
+  .deepData-container {
+    min-height: 500px;
+  }
+
+  .deepData-container .text-row {
+    font-size: 50px;
+  }
+
+  .deepData-container .row1,
+  .deepData-container .row2 {
+    left: 0;
+    position: static;
+  }
+
+  .technology-container {
+    padding: 60px 15px;
+    min-height: auto;
+  }
+
+  .technology-container .inner-grid {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .technology-container .inner-item {
+    margin: 10px 0;
+    max-width: 400px;
+  }
+
+  .technology-container .headline {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .technology-container .effect-data {
+    margin-left: 0;
+  }
+
+  .beyondBig-container {
+    min-height: 600px;
+    padding: 20px;
+  }
+
+  .beyondBig-container .inner-head {
+    position: static;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .beyondBig-container .slider-nav {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .beyondBig-container .btn-slider-nav {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .beyondBig-container {
+    display: none;
+  }
+
+  .beyondBig-container .text-cell {
+    position: static;
+    left: 0;
+    margin-bottom: 30px;
+  }
+
+  .beyondBig-container .main-title {
+    font-size: 40px;
+  }
+
+  .beyondBig-container .image-group {
+    margin-top: 20px;
+  }
+
+  .beyondBig-container .image-cell {
+    position: static;
+  }
+
+  .quality-container {
+    padding: 60px 15px;
+    min-height: auto;
+  }
+
+  .quality-container .inner-grid {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .quality-container .inner-item {
+    margin: 10px 0;
+    max-width: 400px;
+  }
+
+  .quality-container .effect-data {
+    margin-left: 0;
+  }
+
+  .service-container {
+    padding: 60px 15px;
+    min-height: auto;
+    height: auto;
+  }
+
+  .service-container .inner-title {
+    display: none;
+  }
+
+  .service-container .inner-content {
+    display: none;
+  }
+
+  .service-container .grid-layout-inner {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-container .grid-layout-cell {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .relations-container {
+    flex-direction: column;
+  }
+
+  .relations-container .relations-item {
+    width: 100%;
+    min-width: auto;
+    height: 300px;
+    padding: 40px 20px;
+  }
+
+  .relations-container .item-top {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .relations-container .item-subject {
+    font-size: 18px;
+  }
+
+  .relations-container .item-ui {
+    margin-top: 30px;
+  }
+
+  .relations-container .item-ui .linkBtn {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .deepData-container {
+    min-height: 400px;
+  }
+
+  .deepData-container .text-row {
+    font-size: 35px;
+  }
+
+  .technology-container,
+  .quality-container {
+    padding: 40px 10px;
+  }
+
+  .technology-container .inner-item,
+  .quality-container .inner-item {
+    margin: 5px 0;
+  }
+
+  .beyondBig-container {
+    padding: 15px;
+  }
+
+  .beyondBig-container .main-title {
+    font-size: 28px;
+  }
+
+  .beyondBig-container .sub-title {
+    font-size: 14px;
+  }
+
+  .service-container {
+    padding: 40px 10px;
+  }
+
+  .service-container .inner-title {
+    font-size: 35px;
+  }
+
+  .service-container .item-subject {
+    font-size: 24px;
+  }
+
+  .service-container .grid-layout-cell {
+    padding: 15px 20px;
+  }
+
+  .relations-container .relations-item {
+    height: 250px;
+    padding: 30px 15px;
+  }
+
+  .relations-container .item-top {
+    font-size: 24px;
+  }
+
+  .relations-container .item-subject {
+    font-size: 16px;
+  }
+
+  .relations-container .item-ui .linkBtn {
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+    padding: 0 15px;
+  }
 }

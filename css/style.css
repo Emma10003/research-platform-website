@@ -2,67 +2,71 @@
 폰트 적용
 ======================================================== */
 @font-face {
-    font-family: "Pretendard-Regular";
-    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-        format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ========================================================
 초기화
 ======================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    overflow-x: hidden;
-    overflow-y: scroll; /*내용이 부모요소의 면적보다 길 때*/
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html,
 body {
-    font-family: "Pretendard", sans-serif;
-    color: #111;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 0;
-    word-break: keep-all; /*단어 띄어쓰기 및 줄바꿈 속성*/
+  font-family: "Pretendard", sans-serif;
+  color: #111;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 body {
-    position: relative; /*미리 body를 relative로 만들어두*/
-    min-width: 1186px;
-    width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .header-wrap {
-    width: 100%;
-    max-width: 1920px; /* 최대 너비 지정 */
-    margin: 0 auto; /* 가운데 정렬 */
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .wrap {
-    width: 100%;
-    max-width: 1920px; /* 최대 너비 지정 */
-    margin: 0 auto; /* 가운데 정렬 */
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 div {
-    padding: 0px;
-    vertical-align: top;
+  padding: 0px;
+  vertical-align: top;
 }
 
-/*모든 태그에 리스트 아이콘 없애기*/
 ul,
 ol,
 dl,
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h1,
@@ -72,201 +76,598 @@ h4,
 h5,
 h6,
 th {
-    font-weight: 400;
-}
-
-img {
-    max-width: 100%;
+  font-weight: 400;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #111;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
 }
 
 /* ========================================================
 dHead (네비게이션 포함)
 ======================================================== */
 #dHead {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    max-width: 1920px;
-    height: 90px;
-    display: none;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  max-width: 1920px;
+  height: 90px;
+  display: block;
+  z-index: 10;
 }
 
 #dHead.active {
-    position: fixed;
-    top: 0; /* sticky를 쓰려면 top이 있어야 함 */
-    z-index: 10;
-    width: 100%;
-    height: 90px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
-    transition: height 0.5s ease;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  transition: height 0.5s ease;
 }
 
 #dHead.active-snb {
-    height: 160px;
-    transition: height 0.5s ease;
+  height: 160px;
+  transition: height 0.5s ease;
 }
 
 .header-inner {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 10px 20px 0 20px;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 25px;
+  z-index: 10;
 }
 
 .header-inner:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header-inner.light {
-    color: #111111;
+  color: #111111;
 }
 
 .header-inner .logo {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    z-index: 10;
+  position: static;
+  height: 40px;
+}
+.header-inner .logo img {
+  height: 100%;
 }
 
 .header-inner .white-logo {
-    /* 스크롤 할 때 하얀색->파란색으로 변경되도록 함 */
-    display: none;
+  display: none;
 }
 
 .header-inner .gnb-wrap {
-    display: flex;
-    position: relative;
-    /* flex: auto; */
+  display: flex;
+  position: relative;
 }
+
 .header-inner .gnb-list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    clear: left;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  clear: left;
 }
 
 .header-inner .gnb-list-cell {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    list-style-type: none;
-    font-size: 20px;
-    width: 150px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  list-style-type: none;
+  font-size: 20px;
+  width: 150px;
 }
 
 .header-inner .snb-list-wrap {
-    display: none;
+  display: none;
 }
 
 .header-inner .snb-list-cell {
-    text-align: center;
-    font-size: 17px;
-    margin: 5px;
+  text-align: center;
+  font-size: 17px;
+  margin: 5px;
 }
 
 .header-inner .snb-list-cell a:hover {
-    color: #06c;
+  color: #06c;
 }
 
-/* ==================================================
+.mobile-menu-btn {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.mobile-menu-btn span:nth-child(1) {
+  top: 0px;
+}
+
+.mobile-menu-btn span:nth-child(2) {
+  top: 8px;
+}
+
+.mobile-menu-btn span:nth-child(3) {
+  top: 16px;
+}
+
+.mobile-gnb-wrap {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.mobile-gnb-wrap.active {
+  left: 0;
+}
+
+.mobile-gnb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+.mobile-gnb-header .logo {
+  height: 35px;
+}
+.mobile-gnb-header .logo img {
+  height: 100%;
+}
+
+.mobile-menu-close {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-close span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  left: 0;
+  top: 11px;
+}
+
+.mobile-menu-close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.mobile-menu-close span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.mobile-gnb-body {
+  padding: 20px;
+}
+
+.mobile-gnb-list > li {
+  margin-bottom: 15px;
+}
+
+.mobile-gnb-list > li > a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mobile-snb-list {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.mobile-snb-list li {
+  margin-bottom: 8px;
+}
+
+.mobile-snb-list li a {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ========================================================
 footer
-================================================== */
+======================================================== */
 #dFoot {
-    position: relative;
-    background-color: #4c647f;
-    z-index: 155;
-    width: 100%;
-    height: 500px;
+  position: relative;
+  background-color: #4c647f;
+  z-index: 155;
+  width: 100%;
+  height: 600px;
 }
 
 .footer-top {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    display: block;
-    font-size: 0;
-    border-bottom: 1px solid #8f9eaf;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: block;
+  font-size: 0;
+  border-bottom: 1px solid #8f9eaf;
+}
+
+.footer-bottom {
+  position: relative;
+  width: 100%;
+  padding-top: 113px;
 }
 
 footer .inner {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 113px;
-    position: relative;
-    max-width: 1272px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 113px;
+  position: relative;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 footer .emblem {
-    position: absolute;
-    top: 45px;
-    left: 50px;
-    height: 40px;
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  height: 40px;
 }
 
 footer .family-menu {
-    position: absolute;
-    top: 40px;
-    right: 100px;
+  position: absolute;
+  top: 40px;
+  right: 100px;
 }
 
 footer .footer-info {
-    position: absolute;
-    top: 150px;
-    left: 50px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
 }
 
 footer .footer-sns {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 footer .sns-logo {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 footer .footer-copy {
-    margin-top: 40px;
-    font-size: 14px;
+  margin-top: 40px;
+  font-size: 14px;
 }
 
 footer .footer-site-menu {
-    position: absolute;
-    top: 150px;
-    right: 5px;
+  position: absolute;
+  top: 150px;
+  right: 5px;
 }
 
 footer .menu-item {
-    list-style-type: disc;
-    margin-bottom: 20px;
+  list-style-type: disc;
+  margin-bottom: 20px;
 }
 
 footer .menu-title {
-    display: inline-block;
-    width: 100px;
-    margin-right: 20px;
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
 }
 
 footer .menu-drop {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer .menu-drop li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ========================================================
+모바일 반응형 미디어 쿼리
+======================================================== */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #dHead {
+    height: 70px;
+  }
+
+  #dHead.active {
+    height: 70px;
+  }
+
+  .header-inner {
+    padding: 0 20px;
+  }
+
+  .header-inner .gnb-wrap {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block; 
+  }
+
+  #dFoot {
+    height: auto;
+    min-height: 600px;
+    padding: 30px 0;
+  }
+
+  .footer-top {
+    position: static;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom {
+    position: static;
+    padding-top: 0;
+  }
+
+  .footer-bottom .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0 20px;
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  footer .emblem {
+    position: static;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  footer .family-menu {
+    position: static;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  footer .footer-info {
+    position: static;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  footer .footer-address {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-sns {
+    margin: 20px 0;
+  }
+
+  footer .sns-logo {
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  footer .footer-copy {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  footer .footer-site-menu {
+    display: none;
+  }
+
+  footer .menu-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  footer .menu-item {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  footer .menu-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  footer .menu-drop {
+    display: block;
+  }
+
+  footer .menu-drop li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  #dHead {
+    height: 60px;
+  }
+
+  #dHead.active {
+    height: 60px;
+  }
+
+  .header-inner {
+    padding: 0 15px;
+  }
+
+  .header-inner .logo {
+    height: 35px;
+  }
+
+  #dFoot {
+    min-height: 500px;
+    padding: 20px 0;
+  }
+
+  .footer-top {
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    position: static;
+    padding-top: 0;
+  }
+
+  .footer-bottom .inner {
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  footer .footer-info {
+    text-align: left;
+  }
+
+  footer .footer-address {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-address span {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  footer .footer-sns {
+    margin: 15px 0;
+  }
+
+  footer .sns-logo {
+    gap: 10px;
+  }
+
+  footer .sns-logo img {
+    height: 25px;
+    width: auto;
+  }
+
+  footer .footer-copy {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  footer .menu-group {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  footer .menu-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  footer .menu-drop li {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #dFoot {
+    min-height: 450px;
+    padding: 15px 0;
+  }
+
+  .footer-top {
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    position: static;
+    padding-top: 0;
+  }
+
+  .footer-bottom .inner {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  footer .emblem img {
+    height: 35px;
+  }
+
+  footer .footer-address {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  footer .footer-copy {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+  footer .sns-logo img {
+    height: 20px;
+  }
+
+  footer .menu-title {
+    font-size: 12px;
+  }
+
+  footer .menu-drop li {
+    font-size: 10px;
+  }
 }

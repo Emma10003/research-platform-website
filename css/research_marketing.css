@@ -1,236 +1,360 @@
 #dBody {
-    position: relative;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.body-container {
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* =============================
 Section 1
 ============================= */
 .cover-container {
-    position: relative;
-    width: 100%;
-    max-width: 1920px;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
-    z-index: 0;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cover-container .cover-text-group {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 944px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .cover-container .page-title {
-    width: 944px;
+  width: 100%;
 }
 
 .cover-container .text-inner span {
-    display: block;
-    font-size: 100px;
-    line-height: 1;
+  display: block;
+  font-size: 100px;
+  line-height: 1.1;
 }
 
 .cover-container .text-inner span:nth-child(1) {
-    text-align: left;
+  text-align: left;
 }
 
 .cover-container .text-inner span:nth-child(2) {
-    text-align: right;
+  text-align: right;
 }
 
 .cover-container .page-desc {
-    font-size: 20px;
-    text-align: right;
-    margin-top: 20px;
-    padding-right: 18%;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 0;
 }
 
-/* 이미지 */
 .cover-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 /* =============================
 Section 2, 4
 ============================= */
 .right-business-container .text-group {
-    margin-top: 100px;
+  margin: 0;
 }
 
 .right-business-container .text-title {
-    line-height: 1.31;
+  line-height: 1.31;
 }
 
 .right-business-container .text-title h2 {
-    font-size: 48px;
-    text-align: center;
+  font-size: 48px;
+  text-align: center;
 }
 
 .right-business-container .text-title p {
-    text-align: center;
-    line-height: 1.44;
-    font-size: 18px;
-    margin-top: 20px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-top: 20px;
+  word-break: keep-all;
 }
 
 /* =============================
 Section 3
 ============================= */
 .mcd-container {
-    margin-top: 100px;
-    text-align: center;
+  text-align: center;
 }
 
 .mcd-container .text {
-    font-size: 120px;
-    /* text-align: center; */
+  font-size: 120px;
 }
 
 .mcd-container .dot {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
 }
 
 .mcd-container .dot:before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #0066cc;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #0066cc;
 }
 
 /* =============================
 Section 4
 ============================= */
 .right-business-container .point {
-    margin-top: 60px;
-}
-
-.right-business-container .point-items {
-    margin: 0;
-    padding: 0;
+  margin-top: 60px;
 }
 
 .right-business-container .point ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 .right-business-container .point li {
-    width: 25%;
-    box-sizing: border-box;
-    padding: 0 10px;
+  width: calc(25% - 15px);
+  box-sizing: border-box;
 }
 
 .right-business-container .item-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
 }
 
 .right-business-container .item-info {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .right-business-container .info-title {
-    font-size: 24px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.right-business-container .info-contents {
+  line-height: 1.6;
 }
 
 /* =============================
 Section 5
 ============================= */
 .solution-container .text-group {
-    margin-top: 100px;
+  margin: 0;
 }
 
 .solution-container .text-title {
-    line-height: 1.31;
+  line-height: 1.31;
 }
 
 .solution-container .text-title h2 {
-    font-size: 48px;
-    text-align: center;
+  font-size: 48px;
+  text-align: center;
 }
 
 .solution-container .point {
-    margin-top: 60px;
-}
-
-.solution-container .point-items {
-    margin: 0;
-    padding: 0;
+  margin-top: 60px;
 }
 
 .solution-container .point ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 .solution-container .point li {
-    width: 25%;
-    box-sizing: border-box;
-    padding: 0 10px;
+  width: calc(25% - 15px);
+  box-sizing: border-box;
 }
 
 .solution-container .item-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
 }
 
 .solution-container .item-info {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .solution-container .info-title {
-    font-size: 24px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.solution-container .info-contents {
+  line-height: 1.6;
 }
 
 /* =============================
-Section 5
+Section 6
 ============================= */
 .company-container .text-group {
-    margin-top: 100px;
+  margin: 0;
 }
 
 .company-container .text-title {
-    line-height: 1.31;
+  line-height: 1.31;
 }
 
 .company-container .text-title h2 {
-    font-size: 48px;
-    text-align: center;
+  font-size: 48px;
+  text-align: center;
 }
 
 .company-container .text-title p {
-    text-align: center;
-    line-height: 1.44;
-    font-size: 18px;
-    margin-top: 20px;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .company-container .img-group {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .company-container .img-group img {
+  margin: 10px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+#service_ask .form-container {
+  padding-top: 100px;
+}
+#service_ask .form-container h1 {
+  padding-top: 0;
+}
+
+/* ========================================================
+모바일 반응형 미디어 쿼리
+======================================================== */
+
+@media screen and (max-width: 1024px) {
+  .cover-container .text-inner span {
+    font-size: 8vw;
+  }
+  .right-business-container .point li,
+  .solution-container .point li {
+    width: calc(50% - 10px);
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cover-container .text-inner span {
+    font-size: 10vw;
+  }
+  .cover-container .text-inner span:nth-child(1),
+  .cover-container .text-inner span:nth-child(2) {
+    text-align: center;
+  }
+  .cover-container .page-desc {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .right-business-container .text-title h2,
+  .solution-container .text-title h2,
+  .company-container .text-title h2 {
+    font-size: 36px;
+  }
+
+  .mcd-container .text {
+    font-size: 15vw;
+  }
+  .mcd-container .dot {
     margin: 20px 0;
+  }
+  .mcd-container .dot:before {
+    width: 15px;
+    height: 15px;
+  }
+
+  .right-business-container .point,
+  .solution-container .point {
+    margin-top: 40px;
+  }
+
+  .right-business-container .info-title,
+  .solution-container .info-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body-container {
+    padding: 0 15px;
+  }
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .cover-container .text-inner span {
+    font-size: 12vw;
+  }
+  .cover-container .page-desc {
+    font-size: 16px;
+  }
+
+  .right-business-container .text-title h2,
+  .solution-container .text-title h2,
+  .company-container .text-title h2 {
+    font-size: 28px;
+  }
+  .right-business-container .text-title p,
+  .company-container .text-title p {
+    font-size: 16px;
+  }
+
+  .right-business-container .point li,
+  .solution-container .point li {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .right-business-container .point li:last-child,
+  .solution-container .point li:last-child {
+    margin-bottom: 0;
+  }
 }

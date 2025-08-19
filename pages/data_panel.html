@@ -1,290 +1,493 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>패널빅데이터 | 데이터 서비스</title>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/font.css" />
-        <link rel="stylesheet" href="../css/effect.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/data_panel.css" />
-        <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
-        <script type="text/javascript">
-            $(function () {
-                $("#service_ask").load("service_ask.html");
-            });
-        </script>
-    </head>
-    <body>
-        <div class="header-wrap">
-            <!-- dHead: 로고, 네비게이션 바 -->
-            <header id="dHead" class="dHead">
-                <!-- header-inner -->
-                <div class="header-inner .light">
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo/logo_blue.png" class="blue-logo" id="blue-logo" />
-                        </a>
-                    </div>
-                    <!-- gnb -->
-                    <div class="gnb-wrap">
-                        <ul class="gnb-list">
-                            <li class="gnb-list-cell font600">
-                                <a href="#">리서치 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="research_marketing.html">마케팅 리서치</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">데이터 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="data_panel.html">패널빅데이터</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">Ch.엠브레인</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="side.main.html">트렌드리포트</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">서비스 문의</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="service_ask.html">문의하기</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>패널빅데이터 | 데이터 서비스</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/effect.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/data_panel.css" />
+    <link rel="stylesheet" href="../css/service_ask.css" />
+    <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
+    <script type="text/javascript">
+      $(function () {
+        $("#service_ask").load("service_ask.html #dBody > *");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header id="dHead" class="dHead">
+        <div class="header-inner .light">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../img/logo/logo_blue.png"
+                class="blue-logo"
+                id="blue-logo"
+                alt="엠브레인 로고"
+              />
+            </a>
+          </div>
+          <div class="gnb-wrap">
+            <ul class="gnb-list">
+              <li class="gnb-list-cell font600">
+                <a href="#">리서치 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="research_marketing.html">마케팅 리서치</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- // header-inner -->
-            </header>
-            <!-- // dHead -->
-        </div>
-        <!-- // header-wrap -->
-
-        <!-- wrap 시작 -->
-        <div class="wrap">
-            <!-- dBody -->
-            <section id="dBody">
-                <div class="body-container">
-                    <!-- Section 1 : 표지 -->
-                    <div class="cover-container">
-                        <div class="cover-text-group">
-                            <div class="text-inner fontWhite">
-                                <h2 class="page-title">
-                                    <span class="font900">Panel</span>
-                                    <span class="font900">bigdata</span>
-                                </h2>
-                                <p class="page-desc font600">소비자의 생각과 행동 데이터를 분석합니다</p>
-                            </div>
-                        </div>
-                        <div class="cover-visual-group">
-                            <img src="../img/data_panel/sub-visual-panel-bigdata.png" class="cover-img shapeAnimation" />
-                        </div>
-                    </div>
-                    <!-- // Section 1 -->
-
-                    <!-- Section 2 : 패널빅데이터란 -->
-                    <div class="panel-bigdata-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">
-                                    <strong>
-                                        패널 빅데이터란 <br />
-                                        '조사결과'와 '빅데이터'를 <br />
-                                        함께 분석할 수 있는 통합 플랫폼입니다
-                                    </strong>
-                                </h2>
-                                <p class="text-appear">
-                                    패널빅데이터는 모바일 앱의 이용 행태, 생활 속 방문장소, 온오프라인 결제 행태 등 <br />
-                                    소비자의 행동 정보와 서베이를 통해 확보된 소비자 인식 및 프로파일을 결합하여<br />
-                                    클라이언트에게 한층 깊이 있는 소비자 인사이트를 제공합니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="img-group text-appear">
-                            <div class="img-group-item">
-                                <img src="../img/data_panel/info01.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // Section 2 -->
-
-                    <!-- Section 3 : 차별성 -->
-                    <div class="difference-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">패널빅데이터의<strong> 차별성 </strong></h2>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <ul>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class-="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/data_panel/panel001.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">편향성을 줄인 데이터</div>
-                                            <div class="info-contents fontGray">
-                                                특정 카드사나 통신사의 고객정보에 기반한 편중된 데이터가 아닌 엠브레인이 보유한
-                                                전국의 패널 회원들로부터 직접 수집한 데이터를 분석합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class-="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/data_panel/panel002.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">프로파일 정보 파악</div>
-                                            <div class="info-contents fontGray">
-                                                생산주체를 알 수 없는 다른 데이터와 달리 패널 회원들의 데모그래픽/라이프스타일 등
-                                                300여개 정보를 수집하여 프로파일링/세그먼트분석이 가능합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/data_panel/panel003.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">빅데이터와 리서치의 통합 분석</div>
-                                            <div class="info-contents fontGray">
-                                                행동데이터를 통해 발견한 가설이나 인사이트에 타겟 서베이를 붙여 행동원인을 파악할
-                                                수 있습니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- // Section 3 -->
-
-                    <!-- Section 4 : 빅데이터의 한계를 넘어 -->
-                    <div class="beyond-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">
-                                    <strong>빅데이터의 한계를 넘어, 보다 깊이 있는 이해</strong>
-                                </h2>
-                                <p class="fontBlue text-appear">
-                                    행동 결과만 분석할 수 있는 빅데이터의 한계를 넘어 행동의 바탕이 되는 생각과 인식을 함께
-                                    파악함으로써<br />
-                                    소비자에 대한 보다 깊이 있는 이해가 가능합니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <ul>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="img-category font700">Profile</div>
-                                        <div class="item-img">
-                                            <img src="../img/data_panel/panel_icon_001.png" class="panel-icon" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title fontBlue font700">데모그래픽/라이프스타일</div>
-                                            <div class="info-contents fontBlue">
-                                                소비자의 연령, 직업, 거주지 등의<br />
-                                                세그먼트 정보를 수집합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="img-category font700">Behavior</div>
-                                        <div class="item-img">
-                                            <img src="../img/data_panel/panel_icon_002.png" class="panel-icon" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title fontBlue font700">빅데이터</div>
-                                            <div class="info-contents fontBlue">
-                                                구매, 방문, 앱 이용 등의 행동 데이터를 통해 트렌드와 행동패턴을 파악합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="img-category font700">Think</div>
-                                        <div class="item-img">
-                                            <img src="../img/data_panel/panel_icon_003.png" class="panel-icon" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title fontBlue font700">서베이</div>
-                                            <div class="info-contents fontBlue">
-                                                서베이를 통해 소비자의<br />
-                                                생각과 인식을 파악합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="alps-btn">
-                            <div class="btn-group">
-                                <a href="https://alps.panel.co.kr/homepage/main" target="_blank" class="btn-inner">
-                                    <div class="btn-group-inner">
-                                        <div class="btn-inner-item fontBlue font700 item-txt">ALPS 분석시스템</div>
-                                        <div class="btn-inner-item icon-arrow">
-                                            <img src="../img/data_panel/icon-arrow-forward-blue-48.png" class="icon-arrow-img" />
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // Section 4 -->
-
-                    <!-- Section 5 : 서비스 문의 -->
-                    <div class="text-appear" id="service_ask"></div>
-                    <!-- // Section 5 -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">데이터 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="data_panel.html">패널빅데이터</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-            <!-- // dBody -->
-
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">Ch.엠브레인</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="side.main.html">트렌드리포트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">서비스 문의</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="service_ask.html">문의하기</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-menu-btn" aria-label="모바일 메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <!-- wrap 끝 -->
+      </header>
+    </div>
 
-        <script src="../js/script.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="../js/data_panel.js"></script>
-    </body>
+    <div class="mobile-gnb-wrap">
+      <div class="mobile-gnb-header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/logo/logo_blue.png" alt="엠브레인 로고" />
+          </a>
+        </div>
+        <button class="mobile-menu-close" aria-label="모바일 메뉴 닫기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-gnb-body">
+        <ul class="mobile-gnb-list">
+          <li>
+            <a href="#">리서치 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="research_marketing.html">마케팅 리서치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">데이터 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="data_panel.html">패널빅데이터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ch.엠브레인</a>
+            <ul class="mobile-snb-list">
+              <li><a href="side.main.html">트렌드리포트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스 문의</a>
+            <ul class="mobile-snb-list">
+              <li><a href="service_ask.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section id="dBody">
+        <div class="body-container">
+          <div class="cover-container">
+            <div class="cover-text-group">
+              <div class="text-inner fontWhite">
+                <h2 class="page-title">
+                  <span class="font900">Panel</span>
+                  <span class="font900">bigdata</span>
+                </h2>
+                <p class="page-desc font600">
+                  소비자의 생각과 행동 데이터를 분석합니다
+                </p>
+              </div>
+            </div>
+            <div class="cover-visual-group">
+              <img
+                src="../img/data_panel/sub-visual-panel-bigdata.png"
+                class="cover-img shapeAnimation"
+                alt="Panel bigdata background"
+              />
+            </div>
+          </div>
+
+          <div class="panel-bigdata-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  <strong>
+                    패널 빅데이터란 <br />
+                    '조사결과'와 '빅데이터'를 <br />
+                    함께 분석할 수 있는 통합 플랫폼입니다
+                  </strong>
+                </h2>
+                <p class="text-appear">
+                  패널빅데이터는 모바일 앱의 이용 행태, 생활 속 방문장소,
+                  온오프라인 결제 행태 등 <br />
+                  소비자의 행동 정보와 서베이를 통해 확보된 소비자 인식 및
+                  프로파일을 결합하여<br />
+                  클라이언트에게 한층 깊이 있는 소비자 인사이트를 제공합니다.
+                </p>
+              </div>
+            </div>
+            <div class="img-group text-appear">
+              <div class="img-group-item">
+                <img
+                  src="../img/data_panel/info01.png"
+                  alt="패널 빅데이터 정보"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="difference-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  패널빅데이터의<strong> 차별성 </strong>
+                </h2>
+              </div>
+            </div>
+            <div class="point">
+              <ul>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/data_panel/panel001.png"
+                          alt="편향성을 줄인 데이터"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">편향성을 줄인 데이터</div>
+                      <div class="info-contents fontGray">
+                        특정 카드사나 통신사의 고객정보에 기반한 편중된 데이터가
+                        아닌 엠브레인이 보유한 전국의 패널 회원들로부터 직접
+                        수집한 데이터를 분석합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/data_panel/panel002.png"
+                          alt="프로파일 정보 파악"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">프로파일 정보 파악</div>
+                      <div class="info-contents fontGray">
+                        생산주체를 알 수 없는 다른 데이터와 달리 패널 회원들의
+                        데모그래픽/라이프스타일 등 300여개 정보를 수집하여
+                        프로파일링/세그먼트분석이 가능합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/data_panel/panel003.png"
+                          alt="빅데이터와 리서치의 통합 분석"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">
+                        빅데이터와 리서치의 통합 분석
+                      </div>
+                      <div class="info-contents fontGray">
+                        행동데이터를 통해 발견한 가설이나 인사이트에 타겟
+                        서베이를 붙여 행동원인을 파악할 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="beyond-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  <strong>빅데이터의 한계를 넘어, 보다 깊이 있는 이해</strong>
+                </h2>
+                <p class="fontBlue text-appear">
+                  행동 결과만 분석할 수 있는 빅데이터의 한계를 넘어 행동의
+                  바탕이 되는 생각과 인식을 함께 파악함으로써<br />
+                  소비자에 대한 보다 깊이 있는 이해가 가능합니다.
+                </p>
+              </div>
+            </div>
+            <div class="point">
+              <ul>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="img-category font700">Profile</div>
+                    <div class="item-img">
+                      <img
+                        src="../img/data_panel/panel_icon_001.png"
+                        class="panel-icon"
+                        alt="Profile icon"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title fontBlue font700">
+                        데모그래픽/라이프스타일
+                      </div>
+                      <div class="info-contents fontBlue">
+                        소비자의 연령, 직업, 거주지 등의<br />
+                        세그먼트 정보를 수집합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="img-category font700">Behavior</div>
+                    <div class="item-img">
+                      <img
+                        src="../img/data_panel/panel_icon_002.png"
+                        class="panel-icon"
+                        alt="Behavior icon"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title fontBlue font700">빅데이터</div>
+                      <div class="info-contents fontBlue">
+                        구매, 방문, 앱 이용 등의 행동 데이터를 통해 트렌드와
+                        행동패턴을 파악합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="img-category font700">Think</div>
+                    <div class="item-img">
+                      <img
+                        src="../img/data_panel/panel_icon_003.png"
+                        class="panel-icon"
+                        alt="Think icon"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title fontBlue font700">서베이</div>
+                      <div class="info-contents fontBlue">
+                        서베이를 통해 소비자의<br />
+                        생각과 인식을 파악합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="alps-btn">
+              <div class="btn-group">
+                <a
+                  href="https://alps.panel.co.kr/homepage/main"
+                  target="_blank"
+                  class="btn-inner"
+                >
+                  <div class="btn-group-inner">
+                    <div class="btn-inner-item fontBlue font700 item-txt">
+                      ALPS 분석시스템
+                    </div>
+                    <div class="btn-inner-item icon-arrow">
+                      <img
+                        src="../img/data_panel/icon-arrow-forward-blue-48.png"
+                        class="icon-arrow-img"
+                        alt="화살표 아이콘"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-appear" id="service_ask"></div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="dFoot">
+      <div class="footer-top fontWhite">
+        <div class="inner">
+          <div class="emblem">
+            <img src="../img/logo/logo_white.png" alt="엠브레인 푸터 로고" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom fontWhite">
+        <div class="inner">
+          <div class="footer-info">
+            <div class="footer-address fontLightGray">
+              <span>(주)마크로밀 엠브레인</span><br />
+              <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
+              ><br />
+              <span>대표전화: <strong>02-3444-4000</strong></span
+              ><br />
+              <span>이메일: webmaster@embrain.com</span><br />
+              <span>대표이사: <strong>최인수</strong></span
+              ><br />
+              <span>사업자등록번호: <strong>02-3444-4000</strong></span
+              ><br />
+            </div>
+            <div class="footer-sns">
+              <ul class="sns-logo">
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_iso.png" alt="ISO 인증" />
+                </li>
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_blog.png" alt="블로그" />
+                </li>
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_insta.png" alt="인스타그램" />
+                </li>
+              </ul>
+            </div>
+            <div class="footer-copy fontLightGray">
+              Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
+            </div>
+          </div>
+          <div class="footer-site-menu">
+            <ul class="menu-group">
+              <li class="menu-item">
+                <div class="menu-title font700">Deep data</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>Deep data</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">리서치 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>마케팅 리서치</li>
+                  <li>·</li>
+                  <li>공공/여론 리서치</li>
+                  <li>·</li>
+                  <li>논문/학술 리서치</li>
+                  <li>·</li>
+                  <li>이지서베이</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">데이터 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>구매빅데이터</li>
+                  <li>·</li>
+                  <li>패널빅데이터</li>
+                  <li>·</li>
+                  <li>인공지능 학습용 데이터</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">마케팅 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>브랜드/마케팅 전략 컨설팅</li>
+                  <li>·</li>
+                  <li>마케팅 커뮤니케이션</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">Ch.엠브레인</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>트렌드리포트</li>
+                  <li>·</li>
+                  <li>스냅 인사이트</li>
+                  <li>·</li>
+                  <li>트렌드모니터</li>
+                  <li>·</li>
+                  <li>트렌드줍줍</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">회사소개</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>엠브레인</li>
+                  <li>·</li>
+                  <li>인프라</li>
+                  <li>·</li>
+                  <li>인재채용</li>
+                  <li>·</li>
+                  <li>공지사항</li>
+                  <li>·</li>
+                  <li>IR</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">서비스 문의</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>서비스 소개자료</li>
+                  <li>·</li>
+                  <li>서비스 문의</li>
+                  <li>·</li>
+                  <li>자주 묻는 질문</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/data_panel.js"></script>
+  </body>
 </html>

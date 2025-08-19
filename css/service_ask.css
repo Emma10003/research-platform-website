@@ -1,512 +1,624 @@
 #dBody {
-    position: relative;
+  position: relative;
 }
 
 .form-container {
-    height: 1700px;
+  height: auto;
+  padding-bottom: 100px;
 }
 
-/* 제목 영역 */
 .form-container h1 {
-    text-align: center;
-    font-size: 60px;
-    padding: 180px 0 80px 0;
+  text-align: center;
+  font-size: 60px;
+  padding: 180px 0 80px 0;
 }
 
-/* 내용 영역 */
+.contents .inner {
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .form-container .service-request-wrap {
-    display: flex;
-    gap: 100px;
-    padding: 0 20px;
+  display: flex;
+  gap: 100px;
 }
 
-/* 내용 영역 : form-info */
 .form-container .form-info {
-    padding-left: 50px;
-    margin-right: 10px;
-    width: 50%;
+  width: 50%;
+  flex-shrink: 0;
 }
 
 .form-container .title-text {
-    font-size: 40px;
+  font-size: 40px;
+  line-height: 1.4;
 }
 
 .form-container .form-info-inner-content {
-    margin: 20px 0;
+  margin: 20px 0;
+  line-height: 1.6;
 }
 
-/* 버튼 */
 .form-container .btns {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .form-container .faq-btn {
-    display: flex;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 15px 20px;
-    border: 1px solid #06c;
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 15px 20px;
+  border: 1px solid #06c;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-container .faq-btn:hover {
+  background-color: #f5f5f5;
 }
 
 .form-container .btn-text {
-    font-size: 16px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .form-container .icon {
-    display: inline-block;
-    height: 16px;
-    transform: translateY(2px);
-    margin-left: 20px;
+  display: inline-block;
+  height: 16px;
+  margin-left: 20px;
 }
 
 .form-container .icon-arrow {
-    justify-content: center;
+  justify-content: center;
 }
 
-/* 내용 영역 : form-data */
 .form-container .form-data {
-    /* padding-right: 30px; */
-    width: 50%;
+  width: 50%;
 }
 
 .form-container .item-header {
-    display: flex;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .form-container .item-detail {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
-/* 서비스 유형 */
 .form-container .item-input-label {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 
 .form-container .fontRequired {
-    margin-left: 10px;
+  margin-left: 5px;
+  color: #ff0000;
 }
 
 .form-container select {
-    width: 100%;
-    height: 70px;
-    margin: 10px 0;
-    padding: 0 0 0 20px;
-    font-size: 18px;
-    appearance: none; /* 기본 버튼 모양 없앰 */
-    background-image: url(../img/service_ask/icon-select-arrow.png);
-    background-position: right 20px center;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    border: 1px solid #aaa;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  font-size: 18px;
+  appearance: none;
+  background-image: url(../img/service_ask/icon-select-arrow.png);
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background-color: #fff;
 }
 
-/* 이름 */
 .form-container .grid-layout-inner {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form-container .grid-layout-cell {
+  width: 50%;
 }
 
 .form-container .form-input-items-vertical {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-container .item-detail.left {
-    padding-right: 10px;
-}
-
+.form-container .item-detail.left,
 .form-container .item-detail.right {
-    padding-left: 10px;
+  padding: 0;
 }
 
 .form-container .inquiry-half {
-    height: 70px;
-    margin: 10px 0;
-    padding: 0 50px 0 20px;
-    font-size: 18px;
-    border-radius: 2px;
-    border: 1px solid #aaa;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
 }
 
 select:focus,
 input:focus,
 textarea:focus {
-    outline: 1px solid #06c;
+  outline: none;
+  border: 1px solid #06c;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
 }
 
-/* 연락처 */
 .form-container .inquiry-full {
-    width: 100%;
-    height: 70px;
-    margin: 10px 0;
-    padding: 0 0 0 20px;
-    font-size: 18px;
-    border-radius: 2px;
-    border: 1px solid #aaa;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
 }
 
-/* 문의 내용 */
 .form-container .form-data-inquiry-grid {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-data-inquiry-grid-cell {
-    display: flex;
+  display: flex;
 }
 
 .form-container .icon-form-tip {
-    width: 20px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../img/service_ask/inquiry-contents.png);
+  width: 20px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../img/service_ask/inquiry-contents.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-container .icon-form-tip:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .form-container .form-grid-cell-text {
-    font-weight: 400;
-    transform: translateY(4px);
+  font-weight: 400;
 }
 
 .form-container .inquiry-contents {
-    display: relative;
-    display: block;
-    width: 100%;
-    height: 340px;
-    padding: 24px 20px;
-    color: #111;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: left;
-    line-height: 1.5;
-    border-radius: 2px;
-    border: 1px solid #aaa;
-    background-color: #fff;
-    resize: none;
-    overflow: auto;
+  display: block;
+  width: 100%;
+  height: 340px;
+  padding: 24px 20px;
+  color: #111;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  resize: none;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 .form-container .item-inquiry-detail {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-/* 문의 내용 - 모달 팝업 */
 .form-container .service-ask-modal-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0);
-    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  transition: visibility 0.3s, background-color 0.3s;
+  z-index: 100;
 }
 
 .form-container .service-ask-modal-page.actived {
-    left: 0;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-container .service-ask-modal {
-    position: absolute;
-    opacity: 0;
-    min-width: 480px;
-    max-width: 540px;
-    background-color: #fff;
-    transition: opacity 0.4s ease;
-    border: 1px solid #0c4d98;
-    border-radius: 3px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0;
+  min-width: 480px;
+  max-width: 540px;
+  background-color: #fff;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid #0c4d98;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.form-container .service-ask-modal-page.actived .service-ask-modal {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .form-container .service-ask-modal-grid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-container .service-ask-modal-grid-inner.innertitle {
-    padding: 30px;
+  padding: 30px;
 }
 
 .form-container .service-ask-modal-grid-inner.innercontent {
-    padding: 0 30px 30px 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .form-container .service-ask-modal-title-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .form-container .title-grid-item {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .form-container .icon-close {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .form-container .service-ask-modal-content li {
-    color: #444;
+  color: #444;
 }
 
-/* 개인정보 수집 */
 .form-container .form-check-grid-horizontal {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .form-container .form-check-grid {
-    display: flex;
-    margin-top: 20px;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .form-container .form-check-box {
-    cursor: pointer;
-    font-size: 18px;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  width: 100%;
 }
 
 .form-container .form-check-box input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .form-container .check-icon {
-    width: 36px;
-    height: 36px;
-    padding: 5px;
-    position: relative;
-    /* top: 15px; */
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    background-color: #fff;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: relative;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+.form-container .check-icon img {
+  width: 100%;
+  height: 100%;
 }
 
 .form-container .check-icon.hide {
-    display: none;
+  display: none;
 }
 
-.form-container .form-check-grid-item .form-check-text {
-    display: inline-block;
-    transform: translateY(-2px);
-}
-
+.form-container .form-check-grid-item .form-check-text,
 .form-container .form-check-grid-item .form-check-wholeInfo {
-    display: inline-block;
-    transform: translateY(-2px);
+  display: inline-block;
 }
 
 .form-container .form-check-grid-item .form-check-wholeInfo:hover {
-    cursor: pointer;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-/* 개인정보 수집 - 모달 팝업 */
 .form-container .personal-info-modal-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0);
-    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  transition: visibility 0.3s, background-color 0.3s;
+  z-index: 100;
 }
 
 .form-container .personal-info-modal-page.actived {
-    left: 0;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .form-container .personal-info-modal {
-    position: absolute;
-    opacity: 0;
-    min-width: 480px;
-    max-width: 555px;
-    background-color: #fff;
-    transition: opacity 0.4s ease;
-    border: 1px solid #0c4d98;
-    border-radius: 3px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0;
+  min-width: 480px;
+  max-width: 555px;
+  background-color: #fff;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid #0c4d98;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
 }
+
+.form-container .personal-info-modal-page.actived .personal-info-modal {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .form-container .personal-info-modal-grid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-container .personal-info-modal-grid-inner.innertitle {
-    padding: 30px;
+  padding: 30px;
 }
 
 .form-container .personal-info-modal-grid-inner.innercontent {
-    padding: 0 45px 30px 45px;
+  padding: 0 45px 30px 45px;
 }
 
 .form-container .personal-info-modal-title-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-/* 위쪽에 이미 정의해둠
-.form-container .title-grid-item {
-    font-size: 24px;
-}
-
-.form-container .icon-close {
-    cursor: pointer;
-} */
 
 .form-container .personal-info-modal-content .content-item::before {
-    content: "";
-    position: relative;
-    top: 13px;
-    left: -15px;
-    display: block;
-    width: 4px;
-    height: 4px;
-    background: #aaa;
-    border-radius: 50%;
+  content: "";
+  position: relative;
+  top: 13px;
+  left: -15px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #aaa;
+  border-radius: 50%;
 }
 
 .form-container .personal-info-modal-content .item-title {
-    font-size: 18px;
-    line-height: 1.44;
+  font-size: 18px;
+  line-height: 1.44;
 }
 
 .form-container .personal-info-modal-content .item-desc {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .form-container .content-item-last {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-/* 버튼 */
 .form-container .submit-btn {
-    display: flex;
-    width: 100%;
-    border: 0;
-    background-color: transparent;
-    /* font-size: 24px; */
+  display: flex;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 30px;
 }
 
 .form-container .btn {
-    margin-top: 30px;
-    width: 100%;
-    height: 100px;
-    padding: 0 40px;
-    border: none;
-    background-color: #06c;
-    border-radius: 2px;
-    cursor: pointer;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  border: none;
+  background-color: #06c;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease;
 }
 
 .form-container .btn:hover {
-    background-color: #115baf;
-    transition: background-color 0.4s ease;
+  background-color: #115baf;
 }
 
 .form-container .btn-grid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transform: translateY(14px);
-}
-
-.form-container .btn-grid-cell {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-container .submit-btn-text {
-    display: inline-block;
-    padding: 20px 0px;
-    color: #fff;
-    font-size: 24px;
-    vertical-align: middle;
-    cursor: pointer;
+  color: #fff;
+  font-size: 24px;
 }
 
-.form-container .btn-grid-item {
-    transform: translateY(3px);
+.form-container .btn-icon-arrow img {
+  width: 32px;
+  height: auto;
 }
 
-/* 버튼 팝업 */
 .alertpop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0);
-    transition: left 0s 0.4s ease, visibility 0s 0.4s background 0.4s 0s ease;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  transition: visibility 0.3s, background-color 0.3s;
+  z-index: 100;
 }
 
 .alertpop.actived {
-    left: 0;
-    visibility: visible;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: left 0s 0s ease, visibility 0s 0s ease, background 0.4s 0s ease;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .alertpop-wrap {
-    position: absolute;
-    opacity: 1;
-    min-width: 350px;
-    max-width: 500px;
-    background-color: #fff;
-    transition: opacity 0.4s ease;
-    border: 1px solid #0c4d98;
-    border-radius: 3px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 1;
+  min-width: 350px;
+  max-width: 500px;
+  background-color: #fff;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 1px solid #0c4d98;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .alertpop-item {
-    display: flex;
-    justify-content: center;
-    margin: 55px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  margin: 55px 30px 30px 30px;
 }
 
 .alertpop-title {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #check-btn {
-    background-color: #fff;
-    border: 1px solid #06c;
-    min-width: 92px;
-    padding: 10px 0px;
-    border-radius: 3px;
-    font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #06c;
+  min-width: 92px;
+  padding: 10px 0px;
+  border-radius: 3px;
+  font-size: 16px;
 }
 
 #check-btn:hover {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 1024px) {
+  .form-container .service-request-wrap {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container h1 {
+    font-size: 48px;
+    padding: 120px 0 60px 0;
+  }
+
+  .form-container .service-request-wrap {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .form-container .form-info,
+  .form-container .form-data {
+    width: 100%;
+  }
+
+  .form-container .form-info {
+    text-align: center;
+    padding: 0;
+  }
+
+  .form-container .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .form-container .tel-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container .title-text {
+    font-size: 36px;
+  }
+
+  .form-container .item-input-label {
+    font-size: 18px;
+  }
+
+  .form-container select,
+  .form-container .inquiry-half,
+  .form-container .inquiry-full {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .form-container .inquiry-contents {
+    height: 250px;
+    font-size: 16px;
+  }
+
+  .form-container .btn {
+    height: 80px;
+  }
+  .form-container .submit-btn-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contents .inner {
+    padding: 0 15px;
+  }
+
+  .form-container h1 {
+    font-size: 36px;
+    padding: 100px 0 40px 0;
+  }
+
+  .form-container .title-text {
+    font-size: 28px;
+  }
+
+  .form-container .grid-layout-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .form-container .grid-layout-cell {
+    width: 100%;
+  }
+
+  .form-container .form-check-grid-horizontal {
+    gap: 10px;
+  }
+  .form-container .form-check-grid-item .form-check-wholeInfo {
+    margin-top: 10px;
+  }
+
+  .form-container .btn {
+    height: 70px;
+  }
+  .form-container .submit-btn-text {
+    font-size: 18px;
+  }
+
+  .form-container .btn-icon-arrow img {
+    width: 24px;
+  }
+
+  .form-container .service-ask-modal,
+  .form-container .personal-info-modal {
+    min-width: 90%;
+    width: 90%;
+  }
 }

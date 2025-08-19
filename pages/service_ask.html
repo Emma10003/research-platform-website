@@ -1,520 +1,584 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>서비스 문의 | 엠브레인</title>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/font.css" />
-        <link rel="stylesheet" href="../css/effect.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/service_ask.css" />
-        <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
-    </head>
-    <body>
-        <!-- header-wrap -->
-        <div class="header-wrap">
-            <!-- dHead: 로고, 네비게이션 바 -->
-            <header id="dHead" class="dHead">
-                <!-- header-inner -->
-                <div class="header-inner .light">
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo/logo_blue.png" class="blue-logo" id="blue-logo" />
-                        </a>
-                    </div>
-                    <!-- gnb -->
-                    <div class="gnb-wrap">
-                        <ul class="gnb-list">
-                            <li class="gnb-list-cell font600">
-                                <a href="#">리서치 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="research_marketing.html">마케팅 리서치</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">데이터 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="data_panel.html">패널빅데이터</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">Ch.엠브레인</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="side.main.html">트렌드리포트</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">서비스 문의</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="service_ask.html">문의하기</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서비스 문의 | 엠브레인</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/effect.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/service_ask.css" />
+    <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header id="dHead" class="dHead">
+        <div class="header-inner .light">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../img/logo/logo_blue.png"
+                class="blue-logo"
+                id="blue-logo"
+                alt="엠브레인 로고"
+              />
+            </a>
+          </div>
+          <div class="gnb-wrap">
+            <ul class="gnb-list">
+              <li class="gnb-list-cell font600">
+                <a href="#">리서치 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="research_marketing.html">마케팅 리서치</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- // header-inner -->
-            </header>
-            <!-- // dHead -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">데이터 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="data_panel.html">패널빅데이터</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">Ch.엠브레인</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="side.main.html">트렌드리포트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">서비스 문의</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="service_ask.html">문의하기</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-menu-btn" aria-label="모바일 메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <!-- // header-wrap -->
+      </header>
+    </div>
+    <div class="mobile-gnb-wrap">
+      <div class="mobile-gnb-header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/logo/logo_blue.png" alt="엠브레인 로고" />
+          </a>
+        </div>
+        <button class="mobile-menu-close" aria-label="모바일 메뉴 닫기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-gnb-body">
+        <ul class="mobile-gnb-list">
+          <li>
+            <a href="#">리서치 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="research_marketing.html">마케팅 리서치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">데이터 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="data_panel.html">패널빅데이터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ch.엠브레인</a>
+            <ul class="mobile-snb-list">
+              <li><a href="side.main.html">트렌드리포트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스 문의</a>
+            <ul class="mobile-snb-list">
+              <li><a href="service_ask.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <!-- wrap -->
-        <div class="wrap">
-            <!-- dBody -->
-            <div id="dBody">
-                <!-- form-container -->
-                <div class="form-container">
-                    <!-- 제목 영역 -->
-                    <div class="title-group">
-                        <h1 class="fontBlue font700">서비스 문의</h1>
+    <div class="wrap">
+      <div id="dBody">
+        <div class="form-container">
+          <div class="title-group">
+            <h1 class="fontBlue font700">서비스 문의</h1>
+          </div>
+
+          <div class="contents">
+            <div class="inner">
+              <div class="service-request-wrap">
+                <div class="form-info">
+                  <div class="form-info-title">
+                    <h2 class="title-text fontBlue font500">
+                      엠브레인<br />
+                      <span class="font700">Deep data 서비스</span>를<br />
+                      문의해보세요
+                    </h2>
+                  </div>
+                  <div class="form-info-inner-content">
+                    엠브레인이 제공하는 서비스를 신청하시거나 문의사항이 있을
+                    시<br />
+                    다음 양식을 작성해주세요. <br />
+                    연락처를 남겨 주시면 담당자가 곧 연락 드리겠습니다.
+                  </div>
+                  <div class="form-info-inner-content">
+                    궁금하신 점을 빠르게 확인하고 싶으시다면<br />
+                    자주 묻는 질문을 확인해 보세요.
+                  </div>
+                  <div class="btns">
+                    <button type="button" class="faq-btn">
+                      <a
+                        href="https://www.embrain.com/kor/request/faq/list"
+                        target="_blank"
+                        class="btn-text fontBlue font700"
+                      >
+                        자주 묻는 질문
+                        <div class="icon">
+                          <img
+                            src="../img/index/index_section5_arrow_blue.png"
+                            class="icon-arrow"
+                            width="16px"
+                            height="16px"
+                            alt="화살표 아이콘"
+                          />
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                  <div class="tel-box" style="margin-top: 30px">
+                    <img
+                      src="../img/service_ask/유선문의.png"
+                      class="tel-box-img"
+                      width="320px"
+                      alt="유선문의 정보"
+                    />
+                  </div>
+                </div>
+                <div class="form-data">
+                  <div class="form-data-items">
+                    <div class="form-data-items-vertical" id="form-service">
+                      <div class="item-header">
+                        <div class="item-header-label">
+                          <div class="item-input-label font600">
+                            서비스 유형
+                            <strong class="fontRequired">*</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-body">
+                        <div class="item-detail">
+                          <select
+                            class="inquiry-full"
+                            id="ask-category"
+                            name="ask-category"
+                            required
+                          >
+                            <option value="">문의 유형을 선택해 주세요.</option>
+                            <option value="inquiry_category_research">
+                              리서치 서비스
+                            </option>
+                            <option value="inquiry_category_data">
+                              데이터 서비스
+                            </option>
+                            <option value="inquiry_category_marketing">
+                              마케팅 서비스
+                            </option>
+                            <option value="inquiry_category_ect">
+                              기타 문의
+                            </option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
-
-                    <!-- 내용 영역 -->
-                    <div class="contents">
-                        <div class="inner">
-                            <div class="service-request-wrap">
-                                <div class="form-info">
-                                    <div class="form-info-title">
-                                        <h2 class="title-text fontBlue font500">
-                                            엠브레인<br />
-                                            <span class="font700">Deep data 서비스</span>를<br />
-                                            문의해보세요
-                                        </h2>
-                                    </div>
-                                    <div class="form-info-inner-content">
-                                        엠브레인이 제공하는 서비스를 신청하시거나 문의사항이 있을 시<br />
-                                        다음 양식을 작성해주세요. <br />
-                                        연락처를 남겨 주시면 담당자가 곧 연락 드리겠습니다.
-                                    </div>
-                                    <div class="form-info-inner-content">
-                                        궁금하신 점을 빠르게 확인하고 싶으시다면<br />
-                                        자주 묻는 질문을 확인해 보세요.
-                                    </div>
-                                    <div class="btns">
-                                        <button type="button" class="faq-btn">
-                                            <a
-                                                href="https://www.embrain.com/kor/request/faq/list"
-                                                target="_blank"
-                                                class="btn-text fontBlue font700">
-                                                자주 묻는 질문
-                                                <div class="icon">
-                                                    <img
-                                                        src="../img/index/index_section5_arrow_blue.png"
-                                                        class="icon-arrow"
-                                                        width="16px"
-                                                        height="16px" />
-                                                </div>
-                                            </a>
-                                        </button>
-                                    </div>
-                                    <div class="tel-box" style="margin-top: 30px">
-                                        <img src="../img/service_ask/유선문의.png" class="tel-box-img" width="320px" />
-                                    </div>
+                    <div
+                      class="alertpop"
+                      id="alertpop-service"
+                      onclick="closeInputPopup()"
+                    ></div>
+                    <div class="form-data-items-vertical">
+                      <div class="grid-layout">
+                        <div class="grid-layout-inner">
+                          <div class="grid-layout-cell">
+                            <div class="form-input-items-vertical">
+                              <div class="item-header">
+                                <div class="item-header-label">
+                                  <div class="item-input-label font600">
+                                    이름
+                                    <strong class="fontRequired">*</strong>
+                                  </div>
                                 </div>
-                                <div class="form-data">
-                                    <div class="form-data-items">
-                                        <!-- 서비스유형 -->
-                                        <div class="form-data-items-vertical" id="form-service">
-                                            <div class="item-header">
-                                                <div class="item-header-label">
-                                                    <div class="item-input-label font600">
-                                                        서비스 유형
-                                                        <strong class="fontRequired">*</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-detail">
-                                                    <select class="inquiry-full" id="ask-category" name="ask-category" required>
-                                                        <option value="">문의 유형을 선택해 주세요.</option>
-                                                        <option value="inquiry_category_research">리서치 서비스</option>
-                                                        <option value="inquiry_category_data">데이터 서비스</option>
-                                                        <option value="inquiry_category_marketing">마케팅 서비스</option>
-                                                        <option value="inquiry_category_ect">기타 문의</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 미입력 시 팝업창 실행 -->
-                                        <div class="alertpop" id="alertpop-service" onclick="closeInputPopup()"></div>
-                                        <!-- 서비스유형 끝 -->
-
-                                        <!-- 이름 -->
-                                        <div class="form-data-items-vertical">
-                                            <!-- grid-layout 시작 -->
-                                            <div class="grid-layout">
-                                                <div class="grid-layout-inner">
-                                                    <!-- grid-layout-cell 시작 -->
-                                                    <div class="grid-layout-cell">
-                                                        <div class="form-input-items-vertical">
-                                                            <div class="item-header">
-                                                                <div class="item-header-label">
-                                                                    <div class="item-input-label font600">
-                                                                        이름
-                                                                        <strong class="fontRequired">*</strong>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-body">
-                                                                <div class="item-detail left">
-                                                                    <input
-                                                                        type="text"
-                                                                        class="inquiry-half"
-                                                                        id="inquiry-name"
-                                                                        placeholder="이름을 입력해 주세요." />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- form-input-items-vertical 끝 -->
-                                                    </div>
-                                                    <!-- 미입력 시 팝업창 실행 -->
-                                                    <div class="alertpop" id="alertpop-name" onclick="closeInputPopup()"></div>
-                                                    <!-- grid-layout-cell 끝 -->
-
-                                                    <!-- grid-layout-cell 시작 -->
-                                                    <div class="grid-layout-cell">
-                                                        <div class="form-input-items-vertical">
-                                                            <div class="item-header">
-                                                                <div class="item-header-label">
-                                                                    <div class="item-input-label font600">
-                                                                        기관 또는 회사명
-                                                                        <strong class="fontRequired">*</strong>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-body">
-                                                                <div class="item-detail right">
-                                                                    <input
-                                                                        type="text"
-                                                                        class="inquiry-half"
-                                                                        id="inquiry-firm"
-                                                                        placeholder="기관 또는 회사명을 입력해 주세요." />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- form-input-items-vertical 끝 -->
-                                                    </div>
-                                                </div>
-                                                <!-- 미입력 시 팝업창 실행 -->
-                                                <div class="alertpop" id="alertpop-firm" onclick="closeInputPopup()"></div>
-                                                <!-- grid-layout-cell 끝 -->
-                                            </div>
-                                            <!-- grid-layout 끝 -->
-                                        </div>
-                                        <!-- 이름 끝 -->
-
-                                        <!-- 연락처 -->
-                                        <div class="form-data-items-vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label">
-                                                    <div class="item-input-label font600">
-                                                        연락처
-                                                        <strong class="fontRequired">*</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-detail">
-                                                    <input
-                                                        type="text"
-                                                        class="inquiry-full"
-                                                        id="inquiry-tel"
-                                                        placeholder="연락처는 –을 제외하고 숫자만 입력해 주세요." />
-                                                </div>
-                                            </div>
-                                            <!-- 미입력 시 팝업창 실행 -->
-                                            <div class="alertpop" id="alertpop-tel" onclick="closeInputPopup()"></div>
-                                        </div>
-                                        <!-- 연락처 끝 -->
-
-                                        <!-- 이메일 -->
-                                        <div class="form-data-items-vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label">
-                                                    <div class="item-input-label font600">
-                                                        이메일
-                                                        <strong class="fontRequired">*</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-detail">
-                                                    <input
-                                                        type="email"
-                                                        class="inquiry-full"
-                                                        id="inquiry-email"
-                                                        placeholder="이메일을 입력해 주세요." />
-                                                </div>
-                                            </div>
-                                            <!-- 미입력 시 팝업창 실행 -->
-                                            <div class="alertpop" id="alertpop-email" onclick="closeInputPopup()"></div>
-                                        </div>
-                                        <!-- 이메일 끝 -->
-
-                                        <!-- 문의 내용 -->
-                                        <div class="form-data-items-vertical">
-                                            <div class="form-data-inquiry-grid">
-                                                <div class="form-data-inquiry-grid-item">
-                                                    <div class="form-data-inquiry-grid-cell">
-                                                        <div class="item-header">
-                                                            <div class="item-header-label">
-                                                                <div class="item-input-label font600">
-                                                                    문의 내용
-                                                                    <strong class="fontRequired">*</strong>
-                                                                    <!-- 클릭 시 모달팝업 -->
-                                                                    <span class="icon icon-form-tip"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-data-inquiry-grid-item">
-                                                    <div class="form-check-grid-cell">
-                                                        <div class="form-grid-cell-text">
-                                                            <!-- span 자리에 글자수 세기 -->
-                                                            <span class="text-count"><strong>0</strong></span> / 1,000 byte
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-detail item-inquiry-detail">
-                                                    <textarea
-                                                        title="문의 내용"
-                                                        class="inquiry-contents"
-                                                        id="inquiry-contents"
-                                                        placeholder="문의하실 내용을 작성해 주세요."></textarea>
-                                                </div>
-                                            </div>
-                                            <!-- 모달팝업 -->
-                                            <div class="service-ask-modal-page" onclick="closePopUpServiceAsk()">
-                                                <div class="service-ask-modal"></div>
-                                            </div>
-                                            <!-- 미입력 시 팝업창 실행 -->
-                                            <div class="alertpop" id="alertpop-contents" onclick="closeInputPopup()"></div>
-                                        </div>
-                                        <!-- 문의 내용 끝 -->
-
-                                        <!-- 개인정보 수집 -->
-                                        <div class="form-data-items-vertical">
-                                            <div class="item-header">
-                                                <div class="item-header-label">
-                                                    <div class="item-input-label font600">개인정보 수집 및 이용 동의</div>
-                                                </div>
-                                            </div>
-                                            <div class="item-body">
-                                                <div class="item-personal-detail">
-                                                    <label class="form-check-box">
-                                                        <input type="checkbox" id="chkAgree" />
-                                                        <div class="form-check-grid-horizontal">
-                                                            <div class="form-check-grid">
-                                                                <div class="form-check-grid-item">
-                                                                    <span class="form-check-icon">
-                                                                        <img
-                                                                            src="../img/service_ask/icon-checkbox-gray.png"
-                                                                            class="check-icon gray" />
-                                                                    </span>
-                                                                </div>
-                                                                <div class="form-check-grid-item">
-                                                                    <span class="form-check-text">
-                                                                        개인정보 수집 및 이용에 동의합니다.
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-check-grid">
-                                                                <div class="form-check-grid-item">
-                                                                    <!-- 클릭 시 모달팝업 -->
-                                                                    <span class="form-check-wholeInfo fontBlue font600">
-                                                                        [전문보기]
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <!-- 모달팝업 -->
-                                            <div class="personal-info-modal-page" onclick="closePopUpPersonalInfo()">
-                                                <div class="personal-info-modal"></div>
-                                            </div>
-                                        </div>
-                                        <!-- 개인정보 수집 끝 -->
-
-                                        <!-- 신청 버튼 -->
-                                        <button type="button" class="submit-btn" id="submit-btn">
-                                            <div class="btn">
-                                                <div class="btn-grid">
-                                                    <div class="btn-grid-item">
-                                                        <span class="submit-btn-text font700"> 서비스 문의 신청 </span>
-                                                    </div>
-                                                    <div class="btn-grid-item">
-                                                        <span class="btn-icon-arrow">
-                                                            <img src="../img/service_ask/icon-arrow-forward-white-48.png" />
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </div>
-                                    <!-- // form-data-items -->
+                              </div>
+                              <div class="item-body">
+                                <div class="item-detail left">
+                                  <input
+                                    type="text"
+                                    class="inquiry-half"
+                                    id="inquiry-name"
+                                    placeholder="이름을 입력해 주세요."
+                                  />
                                 </div>
-                                <!-- // form-data -->
+                              </div>
                             </div>
+                          </div>
+                          <div
+                            class="alertpop"
+                            id="alertpop-name"
+                            onclick="closeInputPopup()"
+                          ></div>
+                          <div class="grid-layout-cell">
+                            <div class="form-input-items-vertical">
+                              <div class="item-header">
+                                <div class="item-header-label">
+                                  <div class="item-input-label font600">
+                                    기관 또는 회사명
+                                    <strong class="fontRequired">*</strong>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item-body">
+                                <div class="item-detail right">
+                                  <input
+                                    type="text"
+                                    class="inquiry-half"
+                                    id="inquiry-firm"
+                                    placeholder="기관 또는 회사명을 입력해 주세요."
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div
+                          class="alertpop"
+                          id="alertpop-firm"
+                          onclick="closeInputPopup()"
+                        ></div>
+                      </div>
                     </div>
-                    <!-- // contents -->
+                    <div class="form-data-items-vertical">
+                      <div class="item-header">
+                        <div class="item-header-label">
+                          <div class="item-input-label font600">
+                            연락처
+                            <strong class="fontRequired">*</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-body">
+                        <div class="item-detail">
+                          <input
+                            type="text"
+                            class="inquiry-full"
+                            id="inquiry-tel"
+                            placeholder="연락처는 –을 제외하고 숫자만 입력해 주세요."
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="alertpop"
+                        id="alertpop-tel"
+                        onclick="closeInputPopup()"
+                      ></div>
+                    </div>
+                    <div class="form-data-items-vertical">
+                      <div class="item-header">
+                        <div class="item-header-label">
+                          <div class="item-input-label font600">
+                            이메일
+                            <strong class="fontRequired">*</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-body">
+                        <div class="item-detail">
+                          <input
+                            type="email"
+                            class="inquiry-full"
+                            id="inquiry-email"
+                            placeholder="이메일을 입력해 주세요."
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="alertpop"
+                        id="alertpop-email"
+                        onclick="closeInputPopup()"
+                      ></div>
+                    </div>
+                    <div class="form-data-items-vertical">
+                      <div class="form-data-inquiry-grid">
+                        <div class="form-data-inquiry-grid-item">
+                          <div class="form-data-inquiry-grid-cell">
+                            <div class="item-header">
+                              <div class="item-header-label">
+                                <div class="item-input-label font600">
+                                  문의 내용
+                                  <strong class="fontRequired">*</strong>
+                                  <span class="icon icon-form-tip"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-data-inquiry-grid-item">
+                          <div class="form-check-grid-cell">
+                            <div class="form-grid-cell-text">
+                              <span class="text-count"><strong>0</strong></span>
+                              / 1,000 byte
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-body">
+                        <div class="item-detail item-inquiry-detail">
+                          <textarea
+                            title="문의 내용"
+                            class="inquiry-contents"
+                            id="inquiry-contents"
+                            placeholder="문의하실 내용을 작성해 주세요."
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div
+                        class="service-ask-modal-page"
+                        onclick="closePopUpServiceAsk()"
+                      >
+                        <div class="service-ask-modal"></div>
+                      </div>
+                      <div
+                        class="alertpop"
+                        id="alertpop-contents"
+                        onclick="closeInputPopup()"
+                      ></div>
+                    </div>
+                    <div class="form-data-items-vertical">
+                      <div class="item-header">
+                        <div class="item-header-label">
+                          <div class="item-input-label font600">
+                            개인정보 수집 및 이용 동의
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-body">
+                        <div class="item-personal-detail">
+                          <label class="form-check-box">
+                            <input type="checkbox" id="chkAgree" />
+                            <div class="form-check-grid-horizontal">
+                              <div class="form-check-grid">
+                                <div class="form-check-grid-item">
+                                  <span class="form-check-icon">
+                                    <img
+                                      src="../img/service_ask/icon-checkbox-gray.png"
+                                      class="check-icon gray"
+                                      alt="체크박스"
+                                    />
+                                  </span>
+                                </div>
+                                <div class="form-check-grid-item">
+                                  <span class="form-check-text">
+                                    개인정보 수집 및 이용에 동의합니다.
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="form-check-grid">
+                                <div class="form-check-grid-item">
+                                  <span
+                                    class="form-check-wholeInfo fontBlue font600"
+                                  >
+                                    [전문보기]
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        class="personal-info-modal-page"
+                        onclick="closePopUpPersonalInfo()"
+                      >
+                        <div class="personal-info-modal"></div>
+                      </div>
+                    </div>
+                    <button type="button" class="submit-btn" id="submit-btn">
+                      <div class="btn">
+                        <div class="btn-grid">
+                          <div class="btn-grid-item">
+                            <span class="submit-btn-text font700">
+                              서비스 문의 신청
+                            </span>
+                          </div>
+                          <div class="btn-grid-item">
+                            <span class="btn-icon-arrow">
+                              <img
+                                src="../img/service_ask/icon-arrow-forward-white-48.png"
+                                alt="화살표 아이콘"
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
-                <!-- // form-container -->
+              </div>
             </div>
-            <!-- // dBody -->
+          </div>
         </div>
-        <!-- // wrap -->
+      </div>
+    </div>
 
-        <!-- dFoot -->
-        <footer id="dFoot">
-            <div class="footer-top fontWhite">
-                <div class="inner">
-                    <div class="emblem">
-                        <img src="../img/logo/logo_white.png" />
-                    </div>
-                </div>
+    <footer id="dFoot">
+      <div class="footer-top fontWhite">
+        <div class="inner">
+          <div class="emblem">
+            <img src="../img/logo/logo_white.png" alt="엠브레인 푸터 로고" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom fontWhite">
+        <div class="inner">
+          <div class="footer-info">
+            <div class="footer-address fontLightGray">
+              <span>(주)마크로밀 엠브레인</span><br />
+              <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
+              ><br />
+              <span>대표전화: <strong>02-3444-4000</strong></span
+              ><br />
+              <span>이메일: webmaster@embrain.com</span><br />
+              <span>대표이사: <strong>최인수</strong></span
+              ><br />
+              <span>사업자등록번호: <strong>02-3444-4000</strong></span
+              ><br />
             </div>
-            <div class="footer-bottom fontWhite">
-                <div class="inner">
-                    <div class="footer-info">
-                        <div class="footer-address fontLightGray">
-                            <span>(주)마크로밀 엠브레인</span><br />
-                            <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span><br />
-                            <span>대표전화: <strong>02-3444-4000</strong></span
-                            ><br />
-                            <span>이메일: webmaster@embrain.com</span><br />
-                            <span>대표이사: <strong>최인수</strong></span
-                            ><br />
-                            <span>사업자등록번호: <strong>02-3444-4000</strong></span
-                            ><br />
-                        </div>
-                        <div class="footer-sns">
-                            <ul class="sns-logo">
-                                <li class="sns-logo-item">
-                                    <img src="../img/footer/footer_iso.png" />
-                                </li>
-                                <li class="sns-logo-item">
-                                    <img src="../img/footer/footer_blog.png" />
-                                </li>
-                                <li class="sns-logo-item">
-                                    <img src="../img/footer/footer_insta.png" />
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-copy fontLightGray">Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.</div>
-                    </div>
-                    <div class="footer-site-menu">
-                        <ul class="menu-group">
-                            <li class="menu-item">
-                                <div class="menu-title font700">Deep data</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>Deep data</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">리서치 서비스</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>마케팅 리서치</li>
-                                    <li>·</li>
-                                    <li>공공/여론 리서치</li>
-                                    <li>·</li>
-                                    <li>논문/학술 리서치</li>
-                                    <li>·</li>
-                                    <li>이지서베이</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">데이터 서비스</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>구매빅데이터</li>
-                                    <li>·</li>
-                                    <li>패널빅데이터</li>
-                                    <li>·</li>
-                                    <li>인공지능 학습용 데이터</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">마케팅 서비스</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>브랜드/마케팅 전략 컨설팅</li>
-                                    <li>·</li>
-                                    <li>마케팅 커뮤니케이션</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">Ch.엠브레인</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>트렌드리포트</li>
-                                    <li>·</li>
-                                    <li>스냅 인사이트</li>
-                                    <li>·</li>
-                                    <li>트렌드모니터</li>
-                                    <li>·</li>
-                                    <li>트렌드줍줍</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">회사소개</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>엠브레인</li>
-                                    <li>·</li>
-                                    <li>인프라</li>
-                                    <li>·</li>
-                                    <li>인재채용</li>
-                                    <li>·</li>
-                                    <li>공지사항</li>
-                                    <li>·</li>
-                                    <li>IR</li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <div class="menu-title font700">서비스 문의</div>
-                                <ul class="menu-drop fontLightGray">
-                                    <li>서비스 소개자료</li>
-                                    <li>·</li>
-                                    <li>서비스 문의</li>
-                                    <li>·</li>
-                                    <li>자주 묻는 질문</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="footer-sns">
+              <ul class="sns-logo">
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_iso.png" alt="ISO 인증" />
+                </li>
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_blog.png" alt="블로그" />
+                </li>
+                <li class="sns-logo-item">
+                  <img src="../img/footer/footer_insta.png" alt="인스타그램" />
+                </li>
+              </ul>
             </div>
-        </footer>
-        <!-- //dFoot -->
+            <div class="footer-copy fontLightGray">
+              Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
+            </div>
+          </div>
+          <div class="footer-site-menu">
+            <ul class="menu-group">
+              <li class="menu-item">
+                <div class="menu-title font700">Deep data</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>Deep data</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">리서치 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>마케팅 리서치</li>
+                  <li>·</li>
+                  <li>공공/여론 리서치</li>
+                  <li>·</li>
+                  <li>논문/학술 리서치</li>
+                  <li>·</li>
+                  <li>이지서베이</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">데이터 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>구매빅데이터</li>
+                  <li>·</li>
+                  <li>패널빅데이터</li>
+                  <li>·</li>
+                  <li>인공지능 학습용 데이터</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">마케팅 서비스</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>브랜드/마케팅 전략 컨설팅</li>
+                  <li>·</li>
+                  <li>마케팅 커뮤니케이션</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">Ch.엠브레인</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>트렌드리포트</li>
+                  <li>·</li>
+                  <li>스냅 인사이트</li>
+                  <li>·</li>
+                  <li>트렌드모니터</li>
+                  <li>·</li>
+                  <li>트렌드줍줍</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">회사소개</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>엠브레인</li>
+                  <li>·</li>
+                  <li>인프라</li>
+                  <li>·</li>
+                  <li>인재채용</li>
+                  <li>·</li>
+                  <li>공지사항</li>
+                  <li>·</li>
+                  <li>IR</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <div class="menu-title font700">서비스 문의</div>
+                <ul class="menu-drop fontLightGray">
+                  <li>서비스 소개자료</li>
+                  <li>·</li>
+                  <li>서비스 문의</li>
+                  <li>·</li>
+                  <li>자주 묻는 질문</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <script src="../js/script.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="../js/service_ask.js"></script>
-    </body>
+    <script src="../js/header.js"></script>
+    <script src="../js/service_ask.js"></script>
+  </body>
 </html>

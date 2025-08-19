@@ -1,339 +1,542 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>마케팅 리서치 | 리서치 서비스</title>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/font.css" />
-        <link rel="stylesheet" href="../css/effect.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/research_marketing.css" />
-        <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
-        <script type="text/javascript">
-            $(function () {
-                $("#service_ask").load("service_ask.html");
-            });
-        </script>
-    </head>
-    <body>
-        <div class="header-wrap">
-            <!-- dHead: 로고, 네비게이션 바 -->
-            <header id="dHead" class="dHead">
-                <!-- header-inner -->
-                <div class="header-inner .light">
-                    <div class="logo">
-                        <a href="../index.html">
-                            <img src="../img/logo/logo_blue.png" class="blue-logo" id="blue-logo" />
-                        </a>
-                    </div>
-                    <!-- gnb -->
-                    <div class="gnb-wrap">
-                        <ul class="gnb-list">
-                            <li class="gnb-list-cell font600">
-                                <a href="#">리서치 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="research_marketing.html">마케팅 리서치</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">데이터 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="data_panel.html">패널빅데이터</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">Ch.엠브레인</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="side.main.html">트렌드리포트</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">서비스 문의</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="service_ask.html">문의하기</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마케팅 리서치 | 리서치 서비스</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/effect.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/research_marketing.css" />
+    <link rel="stylesheet" href="../css/service_ask.css" />
+    <link rel="icon" type="image/png" href="../img/logo/nav_logo_black.png" />
+    <script type="text/javascript">
+      $(function () {
+        $("#service_ask").load("service_ask.html #dBody > *");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header id="dHead" class="dHead">
+        <div class="header-inner .light">
+          <div class="logo">
+            <a href="../index.html">
+              <img
+                src="../img/logo/logo_blue.png"
+                class="blue-logo"
+                id="blue-logo"
+                alt="엠브레인 로고"
+              />
+            </a>
+          </div>
+          <div class="gnb-wrap">
+            <ul class="gnb-list">
+              <li class="gnb-list-cell font600">
+                <a href="#">리서치 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="research_marketing.html">마케팅 리서치</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- // header-inner -->
-            </header>
-            <!-- // dHead -->
-        </div>
-        <!-- // header-wrap -->
-
-        <!-- wrap 시작 -->
-        <div class="wrap">
-            <!-- dBody -->
-            <section id="dBody">
-                <div class="body-container">
-                    <!-- Section 1 : 표지 -->
-                    <div class="cover-container">
-                        <div class="cover-text-group">
-                            <div class="text-inner fontWhite">
-                                <h2 class="page-title">
-                                    <span class="font900">Marketing</span>
-                                    <span>research service</span>
-                                </h2>
-                                <p class="page-desc font600">고객사의 상황에 맞는 맞춤 리서치를 제공합니다</p>
-                            </div>
-                        </div>
-                        <div class="cover-visual-group">
-                            <img
-                                src="../img/research_marketing/sub-visual-research-service.png"
-                                class="cover-img shapeAnimation" />
-                        </div>
-                    </div>
-                    <!-- // Section 1 -->
-
-                    <!-- Section 2 : 올바른 비즈니스 의사결정 -->
-                    <div class="right-business-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">
-                                    올바른 비즈니스 의사결정을 위한<br />
-                                    <strong>맞춤형 리서치</strong>
-                                </h2>
-                                <p class="text-appear">
-                                    엠브레인은 소비자 및 시장에 대한 인사이트를 얻기 위한 맞춤 리서치 서비스를 제공합니다. <br />
-                                    국내 최대 170만명 이상의 패널과 자체 조사관리 시스템을 통해 높은 품질의 서비스를 제공하며 매년
-                                    1,400개 이상의 기업 및 기관과 함께<br />
-                                    프로젝트를 수행하고 있습니다. 일반 소비재 부터 첨단 IT분야까지 고객 눈높이에 맞는 전문적인
-                                    맞춤형 서비스를 제공합니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // Section 2 -->
-
-                    <!-- Section 3 : maximum, correct, deep -->
-                    <div class="mcd-container">
-                        <div class="headline">
-                            <div class="text text-appear font800">MAXIMUM</div>
-                            <div class="dot text-appear font800"></div>
-                            <div class="text text-appear font800">CORRECT</div>
-                            <div class="dot text-appear font800"></div>
-                            <div class="text text-appear font800">DEEP</div>
-                            <div class="dot text-appear font800"></div>
-                        </div>
-                    </div>
-                    <!-- // Section 3 -->
-
-                    <!-- Section 4 : 프로젝트 노하우 -->
-                    <div class="right-business-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">
-                                    올바른 비즈니스 의사결정을 위한<br />
-                                    <strong>맞춤형 리서치</strong>
-                                </h2>
-                                <p class="text-appear">
-                                    엠브레인은 소비자 및 시장에 대한 인사이트를 얻기 위한 맞춤 리서치 서비스를 제공합니다. <br />
-                                    국내 최대 170만명 이상의 패널과 자체 조사관리 시스템을 통해 높은 품질의 서비스를 제공하며 매년
-                                    1,400개 이상의 기업 및 기관과 함께<br />
-                                    프로젝트를 수행하고 있습니다. 일반 소비재 부터 첨단 IT분야까지 고객 눈높이에 맞는 전문적인
-                                    맞춤형 서비스를 제공합니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <ul>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class-="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/research_marketing/research-service-experience-visual-1.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">대규모 패널</div>
-                                            <div class="info-contents fontGray">
-                                                170만명 이상의 국내 최대 패널 보유로 빠르고 정확하게 데이터를 확보합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class-="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/research_marketing/research-service-experience-visual-2.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">체계적 조사 시스템</div>
-                                            <div class="info-contents fontGray">
-                                                IT기반의 자체 조사 시스템을 개발하여 조사 진행을 체계적으로 운영하고 있습니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/research_marketing/research-service-experience-visual-3.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">자동화 솔루션</div>
-                                            <div class="info-contents fontGray">
-                                                설문개발, 실사, 분석 등 프로젝트 과정 전반에 자체 자동화 솔루션을 적용해
-                                                효율적이고 경쟁력 있는 서비스를 제공합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class-="point-items">
-                                        <div class="item-grid">
-                                            <div class="item-img">
-                                                <img src="../img/research_marketing/research-service-experience-visual-4.png" />
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">전문조사기업</div>
-                                            <div class="info-contents fontGray">
-                                                전문적인 툴과 기법을 활용한 조사를 통해 어렵고 복잡한 비즈니스 이슈를 해결하기
-                                                위한 질적 정보를 제공합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- // Section 4 -->
-
-                    <!-- Section 5 -->
-                    <div class="solution-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear">
-                                    <strong>자체 개발 솔루션</strong> 및 <strong>기법을 통해</strong><br />
-                                    신속하고 정확하게 프로젝트를 수행합니다
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="point">
-                            <ul>
-                                <li class="text-appear">
-                                    <div class="point-items">
-                                        <div class="item-img">
-                                            <img src="../img/research_marketing/research-service-solution-visual-1.png" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">마케팅 인덱스 개발 모듈</div>
-                                            <div class="info-contents fontGray">
-                                                소비자 조사 자료, 내부 구성원, 인터뷰, 매출 성과 자료 등을 종합하여 내부 마케팅
-                                                성과 측정을 위한 KPI 지표를 개발합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class="point-items">
-                                        <div class="item-img">
-                                            <img src="../img/research_marketing/research-service-solution-visual-2.png" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">비즈니스 가치측정 모듈</div>
-                                            <div class="info-contents fontGray">
-                                                예비타당성 조사, 무형재 가치 산출에 주로 활용되는 CVM (Contingent Valuation
-                                                Methods) 기법을 기반으로 미래 특정 비즈니스 가치를 금액으로 산출합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class="point-items">
-                                        <div class="item-img">
-                                            <img src="../img/research_marketing/research-service-solution-visual-3.png" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">적정가 분석 모듈</div>
-                                            <div class="info-contents fontGray">
-                                                기대가격의 분포, 가격 민감도, 가격 시나리오별 시뮬레이션 분석을 통해 시장점유율 및
-                                                이익극대화를 도모할 수 있는 가격대를 도출합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="text-appear">
-                                    <div class="point-items">
-                                        <div class="item-img">
-                                            <img src="../img/research_marketing/research-service-solution-visual-4.png" />
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="info-title font700">제품 Spec/ 기능 최적화 모듈</div>
-                                            <div class="info-contents fontGray">
-                                                CBC, Maxdiff 등의 선호도 측정 프로그램을 활용해 고객 선호와 가격수용 수준을
-                                                종합적으로 고려한 Product Optimization을 수행합니다.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- // Section 5 -->
-
-                    <!-- Section 6 -->
-                    <div class="company-container">
-                        <div class="text-group">
-                            <div class="text-title">
-                                <h2 class="fontBlue text-appear"><strong>1400+</strong> 기업 및 기관</h2>
-                                <p class="text-appear">
-                                    엠브레인은 매년 1,400개가 넘는 기업 및 기관과 함께 국내에서 가장 많은 프로젝트를 수행하고
-                                    있습니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="img-group">
-                            <img src="../img/research_marketing/research-service-client-visual-1.png" class="text-appear" />
-                            <img src="../img/research_marketing/research-service-client-visual-2.png" class="text-appear" />
-                            <img src="../img/research_marketing/research-service-client-visual-3.png" class="text-appear" />
-                        </div>
-                    </div>
-                    <!-- // Section 6 -->
-
-                    <!-- Section 7 -->
-                    <!-- // Section 7 -->
-
-                    <!-- Section 8 : service_ask.html 의 내용 가져옴 -->
-                    <div class="text-appear" id="service_ask"></div>
-                    <!-- // Section 8 -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">데이터 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="data_panel.html">패널빅데이터</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-            <!-- //dBody -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">Ch.엠브레인</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="side.main.html">트렌드리포트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#">서비스 문의</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="service_ask.html">문의하기</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-menu-btn" aria-label="모바일 메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+      </header>
+    </div>
+    <div class="mobile-gnb-wrap">
+      <div class="mobile-gnb-header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/logo/logo_blue.png" alt="엠브레인 로고" />
+          </a>
+        </div>
+        <button class="mobile-menu-close" aria-label="모바일 메뉴 닫기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-gnb-body">
+        <ul class="mobile-gnb-list">
+          <li>
+            <a href="#">리서치 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="research_marketing.html">마케팅 리서치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">데이터 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="data_panel.html">패널빅데이터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ch.엠브레인</a>
+            <ul class="mobile-snb-list">
+              <li><a href="side.main.html">트렌드리포트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스 문의</a>
+            <ul class="mobile-snb-list">
+              <li><a href="service_ask.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <script src="../js/script.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="../js/research_marketing.js"></script>
-    </body>
+    <div class="wrap">
+      <section id="dBody">
+        <div class="body-container">
+          <div class="cover-container">
+            <div class="cover-text-group">
+              <div class="text-inner fontWhite">
+                <h2 class="page-title">
+                  <span class="font900">Marketing</span>
+                  <span>research service</span>
+                </h2>
+                <p class="page-desc font600">
+                  고객사의 상황에 맞는 맞춤 리서치를 제공합니다
+                </p>
+              </div>
+            </div>
+            <div class="cover-visual-group">
+              <img
+                src="../img/research_marketing/sub-visual-research-service.png"
+                class="cover-img shapeAnimation"
+                alt="Marketing research service background"
+              />
+            </div>
+          </div>
+          <div class="right-business-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  올바른 비즈니스 의사결정을 위한<br />
+                  <strong>맞춤형 리서치</strong>
+                </h2>
+                <p class="text-appear">
+                  엠브레인은 소비자 및 시장에 대한 인사이트를 얻기 위한 맞춤
+                  리서치 서비스를 제공합니다. <br />
+                  국내 최대 170만명 이상의 패널과 자체 조사관리 시스템을 통해
+                  높은 품질의 서비스를 제공하며 매년 1,400개 이상의 기업 및
+                  기관과 함께<br />
+                  프로젝트를 수행하고 있습니다. 일반 소비재 부터 첨단 IT분야까지
+                  고객 눈높이에 맞는 전문적인 맞춤형 서비스를 제공합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mcd-container section-padding">
+            <div class="headline">
+              <div class="text text-appear font800">MAXIMUM</div>
+              <div class="dot text-appear font800"></div>
+              <div class="text text-appear font800">CORRECT</div>
+              <div class="dot text-appear font800"></div>
+              <div class="text text-appear font800">DEEP</div>
+              <div class="dot text-appear font800"></div>
+            </div>
+          </div>
+          <div class="right-business-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  올바른 비즈니스 의사결정을 위한<br />
+                  <strong>맞춤형 리서치</strong>
+                </h2>
+                <p class="text-appear">
+                  엠브레인은 소비자 및 시장에 대한 인사이트를 얻기 위한 맞춤
+                  리서치 서비스를 제공합니다. <br />
+                  국내 최대 170만명 이상의 패널과 자체 조사관리 시스템을 통해
+                  높은 품질의 서비스를 제공하며 매년 1,400개 이상의 기업 및
+                  기관과 함께<br />
+                  프로젝트를 수행하고 있습니다. 일반 소비재 부터 첨단 IT분야까지
+                  고객 눈높이에 맞는 전문적인 맞춤형 서비스를 제공합니다.
+                </p>
+              </div>
+            </div>
+            <div class="point">
+              <ul>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/research_marketing/research-service-experience-visual-1.png"
+                          alt="대규모 패널"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">대규모 패널</div>
+                      <div class="info-contents fontGray">
+                        170만명 이상의 국내 최대 패널 보유로 빠르고 정확하게
+                        데이터를 확보합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/research_marketing/research-service-experience-visual-2.png"
+                          alt="체계적 조사 시스템"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">체계적 조사 시스템</div>
+                      <div class="info-contents fontGray">
+                        IT기반의 자체 조사 시스템을 개발하여 조사 진행을
+                        체계적으로 운영하고 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/research_marketing/research-service-experience-visual-3.png"
+                          alt="자동화 솔루션"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">자동화 솔루션</div>
+                      <div class="info-contents fontGray">
+                        설문개발, 실사, 분석 등 프로젝트 과정 전반에 자체 자동화
+                        솔루션을 적용해 효율적이고 경쟁력 있는 서비스를
+                        제공합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-grid">
+                      <div class="item-img">
+                        <img
+                          src="../img/research_marketing/research-service-experience-visual-4.png"
+                          alt="전문조사기업"
+                        />
+                      </div>
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">전문조사기업</div>
+                      <div class="info-contents fontGray">
+                        전문적인 툴과 기법을 활용한 조사를 통해 어렵고 복잡한
+                        비즈니스 이슈를 해결하기 위한 질적 정보를 제공합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="solution-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  <strong>자체 개발 솔루션</strong> 및
+                  <strong>기법을 통해</strong><br />
+                  신속하고 정확하게 프로젝트를 수행합니다
+                </h2>
+              </div>
+            </div>
+            <div class="point">
+              <ul>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-img">
+                      <img
+                        src="../img/research_marketing/research-service-solution-visual-1.png"
+                        alt="마케팅 인덱스 개발 모듈"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">
+                        마케팅 인덱스 개발 모듈
+                      </div>
+                      <div class="info-contents fontGray">
+                        소비자 조사 자료, 내부 구성원, 인터뷰, 매출 성과 자료
+                        등을 종합하여 내부 마케팅 성과 측정을 위한 KPI 지표를
+                        개발합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-img">
+                      <img
+                        src="../img/research_marketing/research-service-solution-visual-2.png"
+                        alt="비즈니스 가치측정 모듈"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">
+                        비즈니스 가치측정 모듈
+                      </div>
+                      <div class="info-contents fontGray">
+                        예비타당성 조사, 무형재 가치 산출에 주로 활용되는 CVM
+                        (Contingent Valuation Methods) 기법을 기반으로 미래 특정
+                        비즈니스 가치를 금액으로 산출합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-img">
+                      <img
+                        src="../img/research_marketing/research-service-solution-visual-3.png"
+                        alt="적정가 분석 모듈"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">적정가 분석 모듈</div>
+                      <div class="info-contents fontGray">
+                        기대가격의 분포, 가격 민감도, 가격 시나리오별 시뮬레이션
+                        분석을 통해 시장점유율 및 이익극대화를 도모할 수 있는
+                        가격대를 도출합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="text-appear">
+                  <div class="point-items">
+                    <div class="item-img">
+                      <img
+                        src="../img/research_marketing/research-service-solution-visual-4.png"
+                        alt="제품 Spec/ 기능 최적화 모듈"
+                      />
+                    </div>
+                    <div class="item-info">
+                      <div class="info-title font700">
+                        제품 Spec/ 기능 최적화 모듈
+                      </div>
+                      <div class="info-contents fontGray">
+                        CBC, Maxdiff 등의 선호도 측정 프로그램을 활용해 고객
+                        선호와 가격수용 수준을 종합적으로 고려한 Product
+                        Optimization을 수행합니다.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="company-container section-padding">
+            <div class="text-group">
+              <div class="text-title">
+                <h2 class="fontBlue text-appear">
+                  <strong>1400+</strong> 기업 및 기관
+                </h2>
+                <p class="text-appear">
+                  엠브레인은 매년 1,400개가 넘는 기업 및 기관과 함께 국내에서
+                  가장 많은 프로젝트를 수행하고 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="img-group">
+              <img
+                src="../img/research_marketing/research-service-client-visual-1.png"
+                class="text-appear"
+                alt="Client logos 1"
+              />
+              <img
+                src="../img/research_marketing/research-service-client-visual-2.png"
+                class="text-appear"
+                alt="Client logos 2"
+              />
+              <img
+                src="../img/research_marketing/research-service-client-visual-3.png"
+                class="text-appear"
+                alt="Client logos 3"
+              />
+            </div>
+          </div>
+          <div class="text-appear" id="service_ask"></div>
+        </div>
+      </section>
+      <footer id="dFoot">
+        <div class="footer-top fontWhite">
+          <div class="inner">
+            <div class="emblem">
+              <img src="../img/logo/logo_white.png" alt="엠브레인 푸터 로고" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fontWhite">
+          <div class="inner">
+            <div class="footer-info">
+              <div class="footer-address fontLightGray">
+                <span>(주)마크로밀 엠브레인</span><br />
+                <span
+                  >서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
+                ><br />
+                <span>대표전화: <strong>02-3444-4000</strong></span
+                ><br />
+                <span>이메일: webmaster@embrain.com</span><br />
+                <span>대표이사: <strong>최인수</strong></span
+                ><br />
+                <span>사업자등록번호: <strong>02-3444-4000</strong></span
+                ><br />
+              </div>
+              <div class="footer-sns">
+                <ul class="sns-logo">
+                  <li class="sns-logo-item">
+                    <img src="../img/footer/footer_iso.png" alt="ISO 인증" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img src="../img/footer/footer_blog.png" alt="블로그" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img
+                      src="../img/footer/footer_insta.png"
+                      alt="인스타그램"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-copy fontLightGray">
+                Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
+              </div>
+            </div>
+            <div class="footer-site-menu">
+              <ul class="menu-group">
+                <li class="menu-item">
+                  <div class="menu-title font700">Deep data</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>Deep data</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">리서치 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>마케팅 리서치</li>
+                    <li>·</li>
+                    <li>공공/여론 리서치</li>
+                    <li>·</li>
+                    <li>논문/학술 리서치</li>
+                    <li>·</li>
+                    <li>이지서베이</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">데이터 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>구매빅데이터</li>
+                    <li>·</li>
+                    <li>패널빅데이터</li>
+                    <li>·</li>
+                    <li>인공지능 학습용 데이터</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">마케팅 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>브랜드/마케팅 전략 컨설팅</li>
+                    <li>·</li>
+                    <li>마케팅 커뮤니케이션</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">Ch.엠브레인</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>트렌드리포트</li>
+                    <li>·</li>
+                    <li>스냅 인사이트</li>
+                    <li>·</li>
+                    <li>트렌드모니터</li>
+                    <li>·</li>
+                    <li>트렌드줍줍</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">회사소개</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>엠브레인</li>
+                    <li>·</li>
+                    <li>인프라</li>
+                    <li>·</li>
+                    <li>인재채용</li>
+                    <li>·</li>
+                    <li>공지사항</li>
+                    <li>·</li>
+                    <li>IR</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">서비스 문의</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>서비스 소개자료</li>
+                    <li>·</li>
+                    <li>서비스 문의</li>
+                    <li>·</li>
+                    <li>자주 묻는 질문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/research_marketing.js"></script>
+  </body>
 </html>

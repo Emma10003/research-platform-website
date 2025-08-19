@@ -1,485 +1,590 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>메인 | 엠브레인</title>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/font.css" />
-        <link rel="stylesheet" href="css/effect.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/index.css" />
-        <link rel="icon" type="image/png" href="img/logo/nav_logo_black.png" />
-    </head>
-    <body>
-        <div class="header-wrap">
-            <!-- dHead: 로고, 네비게이션 바 -->
-            <header id="dHead" class="dHead">
-                <!-- header-inner -->
-                <div class="header-inner .light">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo/logo_blue.png" class="blue-logo" id="blue-logo" />
-                        </a>
-                    </div>
-                    <!-- gnb -->
-                    <div class="gnb-wrap">
-                        <ul class="gnb-list">
-                            <li class="gnb-list-cell font600">
-                                <a href="#">리서치 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="pages/research_marketing.html">마케팅 리서치</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">데이터 서비스</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="pages/data_panel.html">패널빅데이터</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">Ch.엠브레인</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="pages/side.main.html">트렌드리포트</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="gnb-list-cell font600">
-                                <a href="#">서비스 문의</a>
-                                <div class="snb-list-wrap">
-                                    <ul class="snb-list font600">
-                                        <li class="snb-list-cell">&nbsp;</li>
-                                        <li class="snb-list-cell">
-                                            <a href="pages/service_ask.html">문의하기</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>메인 | 엠브레인</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/effect.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="img/logo/nav_logo_black.png" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#06c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header id="dHead" class="dHead">
+        <div class="header-inner .light">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="img/logo/logo_blue.png"
+                class="blue-logo"
+                id="blue-logo"
+                alt="엠브레인 로고"
+              />
+            </a>
+          </div>
+          <div class="gnb-wrap">
+            <ul class="gnb-list">
+              <li class="gnb-list-cell font600">
+                <a href="#" aria-label="리서치 서비스">리서치 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="pages/research_marketing.html">마케팅 리서치</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- // header-inner -->
-            </header>
-            <!-- // dHead -->
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#" aria-label="데이터 서비스">데이터 서비스</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="pages/data_panel.html">패널빅데이터</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#" aria-label="Ch.엠브레인">Ch.엠브레인</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="pages/side.main.html">트렌드리포트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb-list-cell font600">
+                <a href="#" aria-label="서비스 문의">서비스 문의</a>
+                <div class="snb-list-wrap">
+                  <ul class="snb-list font600">
+                    <li class="snb-list-cell">&nbsp;</li>
+                    <li class="snb-list-cell">
+                      <a href="pages/service_ask.html">문의하기</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-menu-btn" aria-label="모바일 메뉴">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <!-- // header-wrap -->
-
-        <!-- wrap 시작 -->
-        <div class="wrap">
-            <!-- dBody -->
-            <section id="dBody">
-                <!-- Section 1 -->
-                <div class="deepData-container">
-                    <div class="text-group">
-                        <div class="text fontWhite font800">
-                            <div class="text-row row1" id="text-row1">Deep&nbsp;data,</div>
-                            <div class="text-row row2" id="text-row2">better&nbsp;insights</div>
-                        </div>
-                    </div>
-
-                    <div class="image-group">
-                        <!-- <img
-                            src="img/index/index_main_intro_visual.jpg"
-                            id="image-main"
-                        /> -->
-                    </div>
-                </div>
-                <!-- Section 1 끝 -->
-
-                <!-- Section 2 -->
-                <div class="technology-container">
-                    <!-- headline -->
-                    <div class="headline text-appear">
-                        <div class="outer">
-                            <h3 class="inner effect-data">
-                                <span class="effect-headline fontHead font700"> 엠브레인은 데이터 테크놀로지로 앞서갑니다 </span>
-                            </h3>
-                            <p class="inner effect-data text-appear">
-                                <span class="effect-subheadline fontSubHead">
-                                    우리는 리서치에 머무르지 않고 더 큰 가치를 제공하기 위해 리서치의 기본인 데이터부터 다시
-                                    혁신합니다.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- content -->
-                    <div class="content text-appear">
-                        <div class="inner">
-                            <ul class="inner-grid">
-                                <li class="inner-item">
-                                    <img src="img/index/index_section2_1_research.jpg" />
-                                    <div class="inner-title fontBlue fontTitle">Research</div>
-                                    <div class="inner-content fontGray fontContent">
-                                        데이터부터 다른<br />
-                                        리서치 서비스를 제공합니다.
-                                    </div>
-                                </li>
-                                <li class="inner-item">
-                                    <img src="img/index/index_section2_2_technology.jpg" />
-                                    <div class="inner-title fontBlue fontTitle">Technology</div>
-                                    <div class="inner-content fontGray fontContent">
-                                        리서치 그리고 리서치의 기본이 되는 데이터를 <br />
-                                        기술로 연결합니다.
-                                    </div>
-                                </li>
-                                <li class="inner-item">
-                                    <img src="img/index/index_section2_3_data.jpg" />
-                                    <div class="inner-title fontBlue fontTitle">Data</div>
-                                    <div class="inner-content fontGray fontContent">
-                                        우리만의 깊이 있는 데이터로<br />
-                                        새로운 시각을 제공합니다.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section 2 끝 -->
-
-                <!-- Section 3 -->
-                <div class="beyondBig-container text-appear">
-                    <div class="inner-head effect-data fontWhite font700">Beyond big, Deep data</div>
-                    <div class="slider-nav">
-                        <button type="button" class="btn-slider-nav active"></button>
-                        <button type="button" class="btn-slider-nav"></button>
-                        <button type="button" class="btn-slider-nav"></button>
-                    </div>
-                    <!-- 1. 시작이 다른 -->
-                    <div class="text-group effect-data fontWhite">
-                        <div class="text-cell active">
-                            <h4 class="main-title font700">시작이 다른</h4>
-                            <div class="sub-title font600">
-                                우리의 데이터는 엄격하게 관리된 국내 최대 패널에서 시작되어<br />
-                                데이터 질과 정확도부터 차이를 나타냅니다.
-                            </div>
-                        </div>
-                        <!-- 2. 밀도가 다른 -->
-                        <div class="text-cell">
-                            <h4 class="main-title font700">밀도가 다른</h4>
-                            <div class="sub-title font600">
-                                단순히 많은 데이터를 넘어 소비자 생각과 행동 속 숨겨진 인사이트를 담은<br />
-                                밀도 있는 deep data를 제공합니다.
-                            </div>
-                        </div>
-                        <!-- 3. 시각이 다른 -->
-                        <div class="text-cell">
-                            <div class="main-title font700">시각이 다른</div>
-                            <div class="sub-title font600">
-                                deep data는 단순 결과가 아닌 세상을 바라보는 새로운 시각을 제공해<br />
-                                지금까지 찾지 못했던 숨은 기회를 발견합니다.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image-group">
-                        <div class="image-cell active">
-                            <img src="img/index/index_section3_visual_1.jpg" />
-                        </div>
-                        <div class="image-cell">
-                            <img src="img/index/index_section3_visual_2.jpg" />
-                        </div>
-                        <div class="image-cell">
-                            <img src="img/index/index_section3_visual_3.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <!-- Section 3 끝 -->
-
-                <!-- Section 4 -->
-                <!-- Section 2와 같은 스크롤 효과 -->
-                <div class="quality-container">
-                    <!-- headline -->
-                    <div class="headline text-appear">
-                        <div class="outer">
-                            <h3 class="inner effect-data">
-                                <span class="effect-headline fontHead font700"> 데이터 퀄리티는 패널로부터 시작됩니다 </span>
-                            </h3>
-                            <p class="inner effect-data">
-                                <span class="effect-subheadline fontSubHead">
-                                    170만 이상의 국내 최대 패널과 엄격하게 관리되는 규정에 따라 질적으로 다른 데이터를 수집합니다.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- content -->
-                    <div class="content text-appear">
-                        <div class="inner">
-                            <ul class="inner-grid">
-                                <li class="inner-item">
-                                    <div class="point-items">
-                                        <img src="img/index/index_section4_1.png" />
-                                        <div class="inner-title fontBlue fontTitle">높은 정확도의 데이터</div>
-                                        <div class="inner-content fontGray fontContent">
-                                            엄격한 패널 관리 시스템으로 데이터 수집의 오류를<br />
-                                            줄이고 정확도를 향상시킵니다.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="inner-item">
-                                    <div class="point-items">
-                                        <div class="inner-title fontBlue fontTitle">1,787,362</div>
-                                        <div class="inner-content fontGray fontContent">
-                                            철저한 관리를 통해 국내 최대 규모의 소비자 패널을<br />
-                                            유지하고 있습니다.
-                                        </div>
-                                        <img src="img/index/index_section4_2.png" />
-                                    </div>
-                                </li>
-                                <li class="inner-item">
-                                    <div class="point-items">
-                                        <img src="img/index/index_section4_3.png" />
-                                        <div class="inner-title fontBlue fontTitle">넓고 다양한 패널</div>
-                                        <div class="inner-content fontGray fontContent">
-                                            다양하고 넓게 분포되어 있는 패널을 통해 여러 각도에서<br />
-                                            깊이 있는 데이터를 분석할 수 있습니다.
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section 4 끝 -->
-
-                <!-- Section 5 -->
-                <div class="service-container">
-                    <div class="inner">
-                        <!-- 타이틀 -->
-                        <div class="title-group text-appear">
-                            <div class="title-inner">
-                                <h3 class="inner-title effect-data fontWhite font700">엠브레인<br />서비스</h3>
-                                <p class="inner-content effect-data fontWhite">
-                                    고객의 니즈에 맞춘 전방위적인<br />
-                                    리서치와 데이터 서비스를 제공합니다.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- 카드 아이템 -->
-                        <div class="service-list">
-                            <div class="grid-layout">
-                                <ul class="grid-layout-inner">
-                                    <!-- 마케팅 리서치 -->
-                                    <li class="grid-layout-cell">
-                                        <a href="pages/research_marketing.html" class="card-items effect-data">
-                                            <div class="card-items-inner">
-                                                <div class="item-icon">
-                                                    <img src="img/index/index_section5_icon1_marketing.png" />
-                                                </div>
-                                                <div class="item-subject font700">마케팅 리서치</div>
-                                                <div class="item-contents fontGray">
-                                                    올바른 비즈니스 의사결정을 위한 맞춤형 리서치를<br />
-                                                    제공합니다.
-                                                </div>
-                                                <div class="icon-arrow">
-                                                    <img src="img/index/index_section5_arrow_gray.png" />
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- 패널빅데이터 -->
-                                    <li class="grid-layout-cell">
-                                        <a href="pages/research_marketing.html" class="card-items effect-data">
-                                            <div class="card-items-inner">
-                                                <div class="item-icon">
-                                                    <img src="img/index/index_section5_icon2_purcahse.png" />
-                                                </div>
-                                                <div class="item-subject font700">패널빅데이터</div>
-                                                <div class="item-contents">
-                                                    소비 행동 및 트렌드를 분석하고 예측하기 위한
-                                                    <br />
-                                                    데이터를 제공하며, 제품의 성장과 기회를 포착하기<br />
-                                                    위한 전략적 의사결정에 활용할 수 있습니다.
-                                                </div>
-                                                <div class="icon-arrow">
-                                                    <img src="img/index/index_section5_arrow_gray.png" />
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 배경 이미지 -->
-                        <div class="image-group">
-                            <div class="image-outer">
-                                <img src="img/index/index_section5.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section 5 끝 -->
-
-                <!-- Section 6 -->
-                <div class="relations-container text-appear">
-                    <div class="relations-item">
-                        <div class="item-top">Investor Relations</div>
-                        <div class="item-subject">
-                            코스닥 상장 기업 엠브레인의<br />
-                            공시 및 기업 주요 발표를 확인해 보세요
-                        </div>
-                        <div class="item-ui">
-                            <a href="https://embrain.irpage.co.kr/" target="_blank" class="linkBtn">
-                                IR 사이트
-                                <span class="icon icon-arrow"></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="relations-item">
-                        <div class="item-top">Trend Monitor</div>
-                        <div class="item-subject">
-                            엠브레인이 제공하는 트렌드 관련 새로운<br />
-                            정보와 인사이트를 확인해 보세요
-                        </div>
-                        <div class="item-ui">
-                            <a href="https://www.trendmonitor.co.kr/tmweb/main.do" target="_blank" class="linkBtn">
-                                트렌드모니터
-                                <span class="icon icon-arrow"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Section 6 끝 -->
-            </section>
-            <!-- // dBody -->
-
-            <!-- dFoot -->
-            <footer id="dFoot">
-                <div class="footer-top fontWhite">
-                    <div class="inner">
-                        <div class="emblem">
-                            <img src="img/logo/logo_white.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom fontWhite">
-                    <div class="inner">
-                        <div class="footer-info">
-                            <div class="footer-address fontLightGray">
-                                <span>(주)마크로밀 엠브레인</span><br />
-                                <span>서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span><br />
-                                <span>대표전화: <strong>02-3444-4000</strong></span
-                                ><br />
-                                <span>이메일: webmaster@embrain.com</span><br />
-                                <span>대표이사: <strong>최인수</strong></span
-                                ><br />
-                                <span>사업자등록번호: <strong>02-3444-4000</strong></span
-                                ><br />
-                            </div>
-                            <div class="footer-sns">
-                                <ul class="sns-logo">
-                                    <li class="sns-logo-item">
-                                        <img src="img/footer/footer_iso.png" />
-                                    </li>
-                                    <li class="sns-logo-item">
-                                        <img src="img/footer/footer_blog.png" />
-                                    </li>
-                                    <li class="sns-logo-item">
-                                        <img src="img/footer/footer_insta.png" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-copy fontLightGray">Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.</div>
-                        </div>
-                        <div class="footer-site-menu">
-                            <ul class="menu-group">
-                                <li class="menu-item">
-                                    <div class="menu-title font700">Deep data</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>Deep data</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">리서치 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>마케팅 리서치</li>
-                                        <li>·</li>
-                                        <li>공공/여론 리서치</li>
-                                        <li>·</li>
-                                        <li>논문/학술 리서치</li>
-                                        <li>·</li>
-                                        <li>이지서베이</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">데이터 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>구매빅데이터</li>
-                                        <li>·</li>
-                                        <li>패널빅데이터</li>
-                                        <li>·</li>
-                                        <li>인공지능 학습용 데이터</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">마케팅 서비스</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>브랜드/마케팅 전략 컨설팅</li>
-                                        <li>·</li>
-                                        <li>마케팅 커뮤니케이션</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">Ch.엠브레인</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>트렌드리포트</li>
-                                        <li>·</li>
-                                        <li>스냅 인사이트</li>
-                                        <li>·</li>
-                                        <li>트렌드모니터</li>
-                                        <li>·</li>
-                                        <li>트렌드줍줍</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">회사소개</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>엠브레인</li>
-                                        <li>·</li>
-                                        <li>인프라</li>
-                                        <li>·</li>
-                                        <li>인재채용</li>
-                                        <li>·</li>
-                                        <li>공지사항</li>
-                                        <li>·</li>
-                                        <li>IR</li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <div class="menu-title font700">서비스 문의</div>
-                                    <ul class="menu-drop fontLightGray">
-                                        <li>서비스 소개자료</li>
-                                        <li>·</li>
-                                        <li>서비스 문의</li>
-                                        <li>·</li>
-                                        <li>자주 묻는 질문</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- //dFoot -->
+      </header>
+    </div>
+    <div class="mobile-gnb-wrap">
+      <div class="mobile-gnb-header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo/logo_blue.png" alt="엠브레인 로고" />
+          </a>
         </div>
-        <!-- wrap 끝 -->
+        <button class="mobile-menu-close" aria-label="모바일 메뉴 닫기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-gnb-body">
+        <ul class="mobile-gnb-list">
+          <li>
+            <a href="#">리서치 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="pages/research_marketing.html">마케팅 리서치</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">데이터 서비스</a>
+            <ul class="mobile-snb-list">
+              <li><a href="pages/data_panel.html">패널빅데이터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Ch.엠브레인</a>
+            <ul class="mobile-snb-list">
+              <li><a href="pages/side.main.html">트렌드리포트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스 문의</a>
+            <ul class="mobile-snb-list">
+              <li><a href="pages/service_ask.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <script src="js/header.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+    <div class="wrap">
+      <main id="dBody">
+        <section class="deepData-container">
+          <div class="text-group">
+            <div class="text fontWhite font800">
+              <div class="text-row row1" id="text-row1">Deep&nbsp;data,</div>
+              <div class="text-row row2" id="text-row2">
+                better&nbsp;insights
+              </div>
+            </div>
+          </div>
+
+          <div class="image-group"></div>
+        </section>
+        <section class="technology-container">
+          <div class="headline text-appear">
+            <div class="outer">
+              <h2 class="inner effect-data">
+                <span class="effect-headline fontHead font700">
+                  엠브레인은 데이터 테크놀로지로 앞서갑니다
+                </span>
+              </h2>
+              <p class="inner effect-data text-appear">
+                <span class="effect-subheadline fontSubHead">
+                  우리는 리서치에 머무르지 않고 더 큰 가치를 제공하기 위해
+                  리서치의 기본인 데이터부터 다시 혁신합니다.
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="content text-appear">
+            <div class="inner">
+              <ul class="inner-grid">
+                <li class="inner-item">
+                  <img
+                    src="img/index/index_section2_1_research.jpg"
+                    alt="Research 이미지"
+                  />
+                  <div class="inner-title fontBlue fontTitle">Research</div>
+                  <div class="inner-content fontGray fontContent">
+                    데이터부터 다른<br />
+                    리서치 서비스를 제공합니다.
+                  </div>
+                </li>
+                <li class="inner-item">
+                  <img
+                    src="img/index/index_section2_2_technology.jpg"
+                    alt="Technology 이미지"
+                  />
+                  <div class="inner-title fontBlue fontTitle">Technology</div>
+                  <div class="inner-content fontGray fontContent">
+                    리서치 그리고 리서치의 기본이 되는 데이터를 <br />
+                    기술로 연결합니다.
+                  </div>
+                </li>
+                <li class="inner-item">
+                  <img
+                    src="img/index/index_section2_3_data.jpg"
+                    alt="Data 이미지"
+                  />
+                  <div class="inner-title fontBlue fontTitle">Data</div>
+                  <div class="inner-content fontGray fontContent">
+                    우리만의 깊이 있는 데이터로<br />
+                    새로운 시각을 제공합니다.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="beyondBig-container text-appear">
+          <div class="inner-head effect-data fontWhite font700">
+            Beyond big, Deep data
+          </div>
+          <div class="slider-nav">
+            <button
+              type="button"
+              class="btn-slider-nav active"
+              aria-label="슬라이드 1"
+            ></button>
+            <button
+              type="button"
+              class="btn-slider-nav"
+              aria-label="슬라이드 2"
+            ></button>
+            <button
+              type="button"
+              class="btn-slider-nav"
+              aria-label="슬라이드 3"
+            ></button>
+          </div>
+          <div class="text-group effect-data fontWhite">
+            <div class="text-cell active">
+              <h3 class="main-title font700">시작이 다른</h3>
+              <div class="sub-title font600">
+                우리의 데이터는 엄격하게 관리된 국내 최대 패널에서 시작되어<br />
+                데이터 질과 정확도부터 차이를 나타냅니다.
+              </div>
+            </div>
+            <div class="text-cell">
+              <h3 class="main-title font700">밀도가 다른</h3>
+              <div class="sub-title font600">
+                단순히 많은 데이터를 넘어 소비자 생각과 행동 속 숨겨진
+                인사이트를 담은<br />
+                밀도 있는 deep data를 제공합니다.
+              </div>
+            </div>
+            <div class="text-cell">
+              <h3 class="main-title font700">시각이 다른</h3>
+              <div class="sub-title font600">
+                deep data는 단순 결과가 아닌 세상을 바라보는 새로운 시각을
+                제공해<br />
+                지금까지 찾지 못했던 숨은 기회를 발견합니다.
+              </div>
+            </div>
+          </div>
+          <div class="image-group">
+            <div class="image-cell active">
+              <img
+                src="img/index/index_section3_visual_1.jpg"
+                alt="시작이 다른 이미지"
+              />
+            </div>
+            <div class="image-cell">
+              <img
+                src="img/index/index_section3_visual_2.jpg"
+                alt="밀도가 다른 이미지"
+              />
+            </div>
+            <div class="image-cell">
+              <img
+                src="img/index/index_section3_visual_3.jpg"
+                alt="시각이 다른 이미지"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="quality-container">
+          <div class="headline text-appear">
+            <div class="outer">
+              <h2 class="inner effect-data">
+                <span class="effect-headline fontHead font700">
+                  데이터 퀄리티는 패널로부터 시작됩니다
+                </span>
+              </h2>
+              <p class="inner effect-data">
+                <span class="effect-subheadline fontSubHead">
+                  170만 이상의 국내 최대 패널과 엄격하게 관리되는 규정에 따라
+                  질적으로 다른 데이터를 수집합니다.
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="content text-appear">
+            <div class="inner">
+              <ul class="inner-grid">
+                <li class="inner-item">
+                  <div class="point-items">
+                    <img
+                      src="img/index/index_section4_1.png"
+                      alt="높은 정확도 아이콘"
+                    />
+                    <div class="inner-title fontBlue fontTitle">
+                      높은 정확도의 데이터
+                    </div>
+                    <div class="inner-content fontGray fontContent">
+                      엄격한 패널 관리 시스템으로 데이터 수집의 오류를<br />
+                      줄이고 정확도를 향상시킵니다.
+                    </div>
+                  </div>
+                </li>
+                <li class="inner-item">
+                  <div class="point-items">
+                    <div class="inner-title fontBlue fontTitle">1,787,362</div>
+                    <div class="inner-content fontGray fontContent">
+                      철저한 관리를 통해 국내 최대 규모의 소비자 패널을<br />
+                      유지하고 있습니다.
+                    </div>
+                    <img
+                      src="img/index/index_section4_2.png"
+                      alt="패널 수 통계"
+                    />
+                  </div>
+                </li>
+                <li class="inner-item">
+                  <div class="point-items">
+                    <img
+                      src="img/index/index_section4_3.png"
+                      alt="넓고 다양한 패널 아이콘"
+                    />
+                    <div class="inner-title fontBlue fontTitle">
+                      넓고 다양한 패널
+                    </div>
+                    <div class="inner-content fontGray fontContent">
+                      다양하고 넓게 분포되어 있는 패널을 통해 여러 각도에서<br />
+                      깊이 있는 데이터를 분석할 수 있습니다.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="service-container">
+          <div class="inner">
+            <div class="title-group text-appear">
+              <div class="title-inner">
+                <h2 class="inner-title effect-data fontWhite font700">
+                  엠브레인<br />서비스
+                </h2>
+                <p class="inner-content effect-data fontWhite">
+                  고객의 니즈에 맞춘 전방위적인<br />
+                  리서치와 데이터 서비스를 제공합니다.
+                </p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="grid-layout">
+                <ul class="grid-layout-inner">
+                  <li class="grid-layout-cell">
+                    <a
+                      href="pages/research_marketing.html"
+                      class="card-items effect-data"
+                    >
+                      <div class="card-items-inner">
+                        <div class="item-icon">
+                          <img
+                            src="img/index/index_section5_icon1_marketing.png"
+                            alt="마케팅 리서치 아이콘"
+                          />
+                        </div>
+                        <div class="item-subject font700">마케팅 리서치</div>
+                        <div class="item-contents fontGray">
+                          올바른 비즈니스 의사결정을 위한 맞춤형 리서치를<br />
+                          제공합니다.
+                        </div>
+                        <div class="icon-arrow">
+                          <img
+                            src="img/index/index_section5_arrow_gray.png"
+                            alt="화살표"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="grid-layout-cell">
+                    <a
+                      href="pages/research_marketing.html"
+                      class="card-items effect-data"
+                    >
+                      <div class="card-items-inner">
+                        <div class="item-icon">
+                          <img
+                            src="img/index/index_section5_icon2_purcahse.png"
+                            alt="패널빅데이터 아이콘"
+                          />
+                        </div>
+                        <div class="item-subject font700">패널빅데이터</div>
+                        <div class="item-contents">
+                          소비 행동 및 트렌드를 분석하고 예측하기 위한
+                          <br />
+                          데이터를 제공하며, 제품의 성장과 기회를 포착하기<br />
+                          위한 전략적 의사결정에 활용할 수 있습니다.
+                        </div>
+                        <div class="icon-arrow">
+                          <img
+                            src="img/index/index_section5_arrow_gray.png"
+                            alt="화살표"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="image-group">
+              <div class="image-outer">
+                <img
+                  src="img/index/index_section5.png"
+                  alt="서비스 배경 이미지"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="relations-container text-appear">
+          <div class="relations-item">
+            <div class="item-top">Investor Relations</div>
+            <div class="item-subject">
+              코스닥 상장 기업 엠브레인의<br />
+              공시 및 기업 주요 발표를 확인해 보세요
+            </div>
+            <div class="item-ui">
+              <a
+                href="https://embrain.irpage.co.kr/"
+                target="_blank"
+                class="linkBtn"
+                rel="noopener noreferrer"
+                aria-label="IR 사이트 새 창에서 열기"
+              >
+                IR 사이트
+                <span class="icon icon-arrow"></span>
+              </a>
+            </div>
+          </div>
+          <div class="relations-item">
+            <div class="item-top">Trend Monitor</div>
+            <div class="item-subject">
+              엠브레인이 제공하는 트렌드 관련 새로운<br />
+              정보와 인사이트를 확인해 보세요
+            </div>
+            <div class="item-ui">
+              <a
+                href="https://www.trendmonitor.co.kr/tmweb/main.do"
+                target="_blank"
+                class="linkBtn"
+                rel="noopener noreferrer"
+                aria-label="트렌드모니터 새 창에서 열기"
+              >
+                트렌드모니터
+                <span class="icon icon-arrow"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="dFoot">
+        <div class="footer-top fontWhite">
+          <div class="inner">
+            <div class="emblem">
+              <img src="img/logo/logo_white.png" alt="엠브레인 푸터 로고" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom fontWhite">
+          <div class="inner">
+            <div class="footer-info">
+              <div class="footer-address fontLightGray">
+                <span>(주)마크로밀 엠브레인</span><br />
+                <span
+                  >서울시 서초구 명달로 9 테라스B (구. 방배빌딩) 1, 7~9층</span
+                ><br />
+                <span>대표전화: <strong>02-3444-4000</strong></span
+                ><br />
+                <span>이메일: webmaster@embrain.com</span><br />
+                <span>대표이사: <strong>최인수</strong></span
+                ><br />
+                <span>사업자등록번호: <strong>02-3444-4000</strong></span
+                ><br />
+              </div>
+              <div class="footer-sns">
+                <ul class="sns-logo">
+                  <li class="sns-logo-item">
+                    <img src="img/footer/footer_iso.png" alt="ISO 인증" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img src="img/footer/footer_blog.png" alt="블로그" />
+                  </li>
+                  <li class="sns-logo-item">
+                    <img src="img/footer/footer_insta.png" alt="인스타그램" />
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-copy fontLightGray">
+                Copyright(C) MACROMILL EMBRAIN ALL Right Reserved.
+              </div>
+            </div>
+            <div class="footer-site-menu">
+              <ul class="menu-group">
+                <li class="menu-item">
+                  <div class="menu-title font700">Deep data</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>Deep data</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">리서치 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>마케팅 리서치</li>
+                    <li>·</li>
+                    <li>공공/여론 리서치</li>
+                    <li>·</li>
+                    <li>논문/학술 리서치</li>
+                    <li>·</li>
+                    <li>이지서베이</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">데이터 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>구매빅데이터</li>
+                    <li>·</li>
+                    <li>패널빅데이터</li>
+                    <li>·</li>
+                    <li>인공지능 학습용 데이터</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">마케팅 서비스</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>브랜드/마케팅 전략 컨설팅</li>
+                    <li>·</li>
+                    <li>마케팅 커뮤니케이션</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">Ch.엠브레인</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>트렌드리포트</li>
+                    <li>·</li>
+                    <li>스냅 인사이트</li>
+                    <li>·</li>
+                    <li>트렌드모니터</li>
+                    <li>·</li>
+                    <li>트렌드줌줌</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">회사소개</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>엠브레인</li>
+                    <li>·</li>
+                    <li>인프라</li>
+                    <li>·</li>
+                    <li>인재채용</li>
+                    <li>·</li>
+                    <li>공지사항</li>
+                    <li>·</li>
+                    <li>IR</li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-title font700">서비스 문의</div>
+                  <ul class="menu-drop fontLightGray">
+                    <li>서비스 소개자료</li>
+                    <li>·</li>
+                    <li>서비스 문의</li>
+                    <li>·</li>
+                    <li>자주 묻는 질문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
