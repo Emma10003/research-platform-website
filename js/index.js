@@ -75,6 +75,5 @@ function addFlyInEffect() {
 Section 3 : 스크롤할 때 이미지와 텍스트 올라가는 효과
 =========================================================== */
 function imageScroll() {
-
     $(".text-cell").addClass("active");
 }
