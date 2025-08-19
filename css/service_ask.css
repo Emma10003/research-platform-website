@@ -130,6 +130,11 @@
     border: 1px solid #aaa;
 }
 
+select:focus,
+input:focus {
+    outline: 1px solid #06c;
+}
+
 /* 연락처 */
 .form-container .inquiry-full {
     width: 100%;

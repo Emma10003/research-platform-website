@@ -129,7 +129,7 @@ function changeCheckIconGray() {
 
 // 문의내용 글자수 세기
 function textCount() {
-    $("#inquiry-contents").keydown((e) => {
+    $("#inquiry-contents").keyup((e) => {
         const count = $("#inquiry-contents").val().length;
         $(".text-count").html(`<strong>${count}</strong>`);
     });
