@@ -137,12 +137,12 @@ function textCount() {
 
 // 입력창 입력확인
 function inputRequiredCheck() {
-    const inputService = $("#ask-category").val();
-    const inputName = $("#inquiry-name").val();
-    const inputFirm = $("#inquiry-firm").val();
-    const inputPhone = $("#inquiry-tel").val();
-    const inputEmail = $("#inquiry-email").val();
-    const inputContents = $("#inquiry-contents").val();
+    const inputService = $("#ask-category").val().trim();
+    const inputName = $("#inquiry-name").val().trim();
+    const inputFirm = $("#inquiry-firm").val().trim();
+    const inputPhone = $("#inquiry-tel").val().trim();
+    const inputEmail = $("#inquiry-email").val().trim();
+    const inputContents = $("#inquiry-contents").val().trim();
 
     if (inputService === "") {
         $("#alertpop-service").addClass("actived");
@@ -263,6 +263,8 @@ function inputRequiredCheck() {
         $("#alertpop-contents").focus();
         return;
     }
+
+    saveInquiry();
 }
 
 function closeInputPopup() {
@@ -270,25 +272,28 @@ function closeInputPopup() {
 }
 
 // 입력한 데이터 localStorage에 저장
-const serviceCate = $("#ask-category").val();
-const inputName = $("#inquiry-name").val();
-const inputFirm = $("#inquiry-firm").val();
-const inputTel = $("#inquirty-tel").val();
-const inputEmail = $("#inquiry-email").val();
-const inputContents = $("#inquiry-contents").val();
-
 function saveInquiry() {
+    const serviceCate = $("#ask-category").val().trim();
+    const inputName = $("#inquiry-name").val().trim();
+    const inputFirm = $("#inquiry-firm").val().trim();
+    const inputTel = $("#inquiry-tel").val().trim();
+    const inputEmail = $("#inquiry-email").val().trim();
+    const inputContents = $("#inquiry-contents").val().trim();
+
     if ($("#chkAgree").prop("checked")) {
         let inquiryList = JSON.parse(localStorage.getItem("inquiryList") || "[]");
+        // id : 이름 + 전화번호 뒤 네자리 조합으로 생성
+        const idSetting = `${inputName}${inputTel.slice(7, 11)}`;
 
         const newInquiry = {
-            serviceCate: {
-                name: inputName,
-                firm: inputFirm,
-                tel: inputTel,
-                email: inputEmail,
-                contents: inputContents,
-            },
+            id: idSetting,
+            category: serviceCate,
+            name: inputName,
+            firm: inputFirm,
+            tel: inputTel,
+            email: inputEmail,
+            contents: inputContents,
+            submitDate: new Date().toLocaleString("ko-KR"),
         };
 
         inquiryList.push(newInquiry);
@@ -299,5 +304,6 @@ function saveInquiry() {
         location.reload();
     } else {
         alert("개인정보 수집 및 이용 동의에 체크해 주세요.");
+        return;
     }
 }
