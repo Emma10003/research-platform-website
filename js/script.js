@@ -6,6 +6,7 @@ $(function () {
     showHeader();
     // 화면 면적에 따라 로고 변경
     emblemChange();
+    $(window).on("resize", emblemChange);
 });
 
 /* ==============================================
@@ -17,6 +18,8 @@ function emblemChange() {
     if (browserWidth <= 1290) {
         $("#blue-logo").attr("src", "../img/logo/nav_logo_blue.png");
         return;
+    } else {
+        $("#blue-logo").attr("src", "../img/logo/logo_blue.png");
     }
 }
 

@@ -267,6 +267,7 @@ function inputRequiredCheck() {
     saveInquiry();
 }
 
+// 팝업 닫기
 function closeInputPopup() {
     $(".alertpop").removeClass("actived");
 }

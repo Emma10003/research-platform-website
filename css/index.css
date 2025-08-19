@@ -179,6 +179,10 @@ Section 3
 }
 
 /* 이미지 */
+.beyondBig-container .image-group {
+    position: relative;
+}
+
 .beyondBig-container .image-cell {
     position: absolute;
     opacity: 0;

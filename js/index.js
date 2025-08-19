@@ -10,7 +10,8 @@ $(function () {
     /* ------------------------------
     Section 3
     ------------------------------ */
-    $("");
+
+
 });
 
 /* ===========================================================
@@ -34,7 +35,6 @@ Section 1
 function deepDataSplitLetters() {
     for (let i = 0; i < 2; i++) {
         let content = $(`#text-row${i + 1}`).text();
-        console.log("content: ", content);
         let html = content
             .split("")
             .map((char) => `<span class="charChild">${char}</span>`)
@@ -60,12 +60,10 @@ function addFlyInEffect() {
 
         // 애니메이션 효과를 위한 클래스 추가
         $(this).addClass("intro-effect");
-        console.log("애니메이션 시작");
     });
 
     // 애니메이션 종료 후 클래스 제거
     $(".charChild").on("animationend", function () {
-        console.log("애니메이션 종료");
         $(this).removeClass("intro-effect");
         $("#dHead").addClass("active").show({ delay: 3000 });
     });
