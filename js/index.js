@@ -1,10 +1,16 @@
 $(function () {
     emblemChange();
+    $(window).on("resize", emblemChange);
     /* ------------------------------
     Section 1 : 텍스트 애니메이션
     ------------------------------ */
     // 이펙트 클래스 추가
     addFlyInEffect();
+
+    /* ------------------------------
+    Section 3
+    ------------------------------ */
+    $("")
 });
 
 /* ===========================================================
@@ -16,6 +22,8 @@ function emblemChange() {
     if (browserWidth <= 1290) {
         $("#blue-logo").attr("src", "../img/logo/nav_logo_blue.png");
         return;
+    } else {
+        $("#blue-logo").attr("src", "../img/logo/logo_blue.png");
     }
 }
 
@@ -64,5 +72,9 @@ function addFlyInEffect() {
 }
 
 /* ===========================================================
-Section 2
+Section 3 : 스크롤할 때 이미지와 텍스트 올라가는 효과
 =========================================================== */
+function imageScroll() {
+    if(window.loca)
+    $(".text-cell").addClass("active");
+}

@@ -112,7 +112,7 @@ dHead (네비게이션 포함)
 }
 
 #dHead.active-snb {
-    height: 180px;
+    height: 160px;
     transition: height 0.5s ease;
 }
 

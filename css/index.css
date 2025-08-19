@@ -24,10 +24,9 @@ Section 1
 ================================================== */
 .deepData-container {
     text-align: center;
-    height: 1000px;
+    height: 100vh;
     overflow: hidden;
-    background: url("../img/index/index_main_intro_visual.jpg") center center
-        no-repeat;
+    background: url("../img/index/index_main_intro_visual.jpg") center center no-repeat;
     position: relative;
     z-index: 0;
 }
@@ -35,9 +34,9 @@ Section 1
 .deepData-container .text-group {
     display: inline-block;
     position: absolute;
-    top: 300px;
+    top: 50vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -40%);
 }
 
 .deepData-container .row1 {
@@ -66,7 +65,7 @@ Section 2
 ================================================== */
 /* headline */
 .technology-container {
-    min-height: 1500px;
+    min-height: 1100px;
     align-content: center;
 }
 
@@ -161,13 +160,14 @@ Section 3
     left: 100px;
     opacity: 0;
     z-index: 0;
+    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
 }
 
 .beyondBig-container .text-cell.active {
     /* js로 active 클래스 추가 */
     opacity: 1;
     z-index: 9;
-    /* transform: translate(); */
+    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
 }
 
 .beyondBig-container .main-title {
@@ -183,6 +183,7 @@ Section 3
     position: absolute;
     opacity: 0;
     z-index: 0;
+    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
 }
 
 .beyondBig-container .image-cell.active {
@@ -190,13 +191,14 @@ Section 3
     position: relative;
     opacity: 1;
     z-index: 4;
+    transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1), z-index 0.4s ease;
 }
 
 /* ==================================================
 Section 4
 ================================================== */
 .quality-container {
-    height: 1500px;
+    height: 1200px;
     align-content: center;
 }
 
@@ -237,7 +239,7 @@ Section 4
 Section 5
 ================================================== */
 .service-container {
-    height: 1500px;
+    height: 1000px;
     position: relative;
 }
 
@@ -257,13 +259,13 @@ Section 5
 .service-container .grid-layout-inner {
     display: flex;
     position: absolute;
-    top: 270px;
+    top: 250px;
     right: 60px;
 }
 
 .service-container .grid-layout-cell {
     background-color: #fff;
-    margin: 20px;
+    margin: 30px;
     padding: 10px 40px;
     border-radius: 4px;
 }
@@ -320,8 +322,7 @@ Section 6
 }
 
 .relations-container .relations-item:nth-child(1) {
-    background: url("../img/index/index_section6_IR_image.png") center center
-        no-repeat;
+    background: url("../img/index/index_section6_IR_image.png") center center no-repeat;
     background-size: cover;
     font-size: 24px;
     line-height: 1.33;
@@ -329,8 +330,7 @@ Section 6
     color: #fff;
 }
 .relations-container .relations-item:nth-child(2) {
-    background: url("../img/index/index_section6_TrendMonitor_image.png") center
-        center no-repeat;
+    background: url("../img/index/index_section6_TrendMonitor_image.png") center center no-repeat;
     background-size: cover;
     font-size: 24px;
     line-height: 1.33;
