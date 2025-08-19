@@ -268,3 +268,36 @@ function inputRequiredCheck() {
 function closeInputPopup() {
     $(".alertpop").removeClass("actived");
 }
+
+// 입력한 데이터 localStorage에 저장
+const serviceCate = $("#ask-category").val();
+const inputName = $("#inquiry-name").val();
+const inputFirm = $("#inquiry-firm").val();
+const inputTel = $("#inquirty-tel").val();
+const inputEmail = $("#inquiry-email").val();
+const inputContents = $("#inquiry-contents").val();
+
+function saveInquiry() {
+    if ($("#chkAgree").prop("checked")) {
+        let inquiryList = JSON.parse(localStorage.getItem("inquiryList") || "[]");
+
+        const newInquiry = {
+            serviceCate: {
+                name: inputName,
+                firm: inputFirm,
+                tel: inputTel,
+                email: inputEmail,
+                contents: inputContents,
+            },
+        };
+
+        inquiryList.push(newInquiry);
+        localStorage.setItem("inquiryList", JSON.stringify(inquiryList));
+
+        alert("문의가 정상적으로 접수되었습니다.");
+
+        location.reload();
+    } else {
+        alert("개인정보 수집 및 이용 동의에 체크해 주세요.");
+    }
+}
