@@ -80,11 +80,12 @@
 }
 
 /* ============================================================
-                    Section 3 스크롤 효과
+                    Section 3 스크롤 효과 －＞ 미완성
 ============================================================ */
 .img-slideup {
     animation-name: imgSlideUp;
     animation-timeline: scroll();
+    /* tran */
 }
 
 @keyframes imgSlideUp {
